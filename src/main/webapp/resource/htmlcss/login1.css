@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+
+
+}
+
+main {
+
+    width: 100%;
+    height: 100vh;
+    background-color: #ff855f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 850px;
+    padding-top: 60px;
+
+}
+
+.signup-sms {
+    margin-left: 174px;
+}
+
+.signup {
+    padding: 20px 75px;
+    background-color: #fff;
+    height: 600px;
+    width: 550px;
+    border-radius: 5px;
+}
+
+.signup-hedding {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+.signup-input {
+    margin-top: 40px;
+    display: block;
+    width: 400px;
+    height: 30px;
+    padding: 25px;
+    font-size: 15px;
+    margin-bottom: 30px;
+
+}
+
+.signup-password {
+    display: block;
+    width: 400px;
+    height: 30px;
+    padding: 25px;
+    font-size: 15px;
+    margin-bottom: 30px;
+
+}
+
+.signup-submit {
+    display: block;
+    width: 400px;
+    height: 30px;
+    padding: 25px;
+    font-size: 15px;
+    margin-bottom: 30px;
+    background-color: rgba(255, 30, 0, 0.638);
+    text-align: center;
+    te border-radius: 5px;
+    color: white;
+    display: block;
+
+}
+
+.signup-of {
+    text-align: center;
+    font-size: 20px;
+    margin: 8px auto;
+    position: relative;
+}
+
+.signup-of span {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.signup-of ::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.facebook {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.signup-social-facebook {
+    width: 100px;
+    height: 30px;
+    background-color:transparent;
+}
+
+.signup-social-google {
+    width: 100px;
+    height: 30px;
+    background-color:transparent;
+}
+
+.signup-social-apple {
+    width: 100px;
+    height: 30px;
+    background-color:transparent;
+}
+
+
+.dangki {
+    text-align: center;
+}
+
+.signup-dangky {
+    color: red;
+}

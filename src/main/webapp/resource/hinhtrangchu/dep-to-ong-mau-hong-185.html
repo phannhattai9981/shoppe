@@ -1,0 +1,2955 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+
+<link rel="shortcut icon" href="/default/template/img/fav.png?v=3">
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:700,600,800,400' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" type="text/css" href="/default/template/js/calendar/calendar-win2k-1.css" />
+<link rel="stylesheet" type="text/css" href="/default/template/skin/frontend/base/default/css/magikfees.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/default/template/skin/frontend/rwd/linea-blue/magik/css/jquery.fancybox.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/default/template/skin/frontend/rwd/linea/css/font-awesome.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/default/template/skin/frontend/rwd/linea-blue/css/simple-line-icons.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/default/template/skin/frontend/rwd/linea-blue/css/owl.carousel.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/default/template/skin/frontend/rwd/linea-blue/css/owl.theme.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/default/template/skin/frontend/rwd/linea-blue/css/jquery.bxslider.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/default/template/skin/frontend/rwd/linea-blue/css/flexslider.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/default/template/skin/frontend/rwd/linea-blue/css/color-swatch.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/default/template/skin/frontend/rwd/linea-blue/css/scrollingcart/scroll.css" media="all" />
+<!-- <link rel="stylesheet" href="/default/template/skin/frontend/rwd/linea-blue/css/bootstrap.min.css" type="text/css" /> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="/default/template/skin/frontend/rwd/linea-blue/css/revslider.css" type="text/css" />
+<link rel="stylesheet" href="/default/template/skin/frontend/rwd/linea-blue/css/jquery.mobile-menu.css" type="text/css" />
+<link rel="stylesheet" href="/default/template/skin/frontend/rwd/linea-blue/css/style.css" type="text/css" />
+<link rel="stylesheet" href="/default/template/skin/frontend/rwd/linea-blue/css/countdowntimer/countdowntimer.css" type="text/css" />
+
+<!-- Arcontactus ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
+<link href="/default/template/lib/arcontactus/css/jquery.contactus.min.css" rel="stylesheet">
+<!-- /Arcontactus ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
+
+<style>
+
+	/* Ẩn nút recapcha */
+	.grecaptcha-badge{display:none}
+
+	 /* Chỉnh lại kích thước icon chat */
+    .arcontactus-widget .arcontactus-message-button {
+        width: 60px !important;
+        height: 60px !important;
+    }
+
+    .arcontactus-widget.arcontactus-message {
+        height: 60px;
+        width: 60px
+    }
+
+    .arcontactus-widget .arcontactus-message-button .pulsation {
+        left: -12px;
+        top: -12px
+    }
+    .arcontactus-widget .messanger span{
+	    line-height: 40px
+    }
+
+
+	@media only screen and (max-width: 479px) and (min-width: 320px){
+		.logo {
+		    margin-top: 15px;
+		}
+	}
+	.search-box {
+	    margin-top: 30px;
+	}
+	.related-pro .block-title h2 {
+	    color: #333;
+	    display: inline-block;
+	    font-size: 22px;
+	    font-weight: 600;
+	    letter-spacing: 1px;
+	    line-height: 46px;
+	    margin: auto;
+	    text-transform: uppercase;
+	}
+	.availability.out-stock {
+	    padding: 3px 0px;
+	    position: absolute;
+	    top: 18px;
+	    right: 0px;
+	}
+	.availability.out-stock span {
+	    color: #fff;
+	    font-size: 11px;
+	    line-height: 16px;
+	    display: block;
+	    background: #ff6550;
+	    text-transform: uppercase;
+	    padding: 3px 6px;
+	    border-radius: 2px;
+	}
+	.availability.out-stock span:before {
+	    content: "\f05c";
+	    font-family: 'FontAwesome';
+	    display: inline-block;
+	    margin-right: 5px;
+	    font-size: 11px;
+	    vertical-align: middle;
+	}
+	.container_404 {
+    width: 555px;
+    margin: auto;
+    text-align: center;
+}
+
+.not_found_404 {
+    color: #ff4557;
+    font-size: 240px;
+    font-weight: 900;
+    line-height: .79em;
+    padding-top: 35px;
+}
+.not_found {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.container_404 p:not(.not_found_404) {
+    margin-bottom: 25px;
+}
+p:last-of-type + [class*="button"]:last-child {
+    margin-top: 15px;
+}
+.container_404 [class*="button"] {
+    margin-bottom: 40px;
+}
+.button_dark_grey, .button_black:hover {
+    background: #777;
+    color: #fff;
+}
+.middle_btn {
+    padding: 8px 20px 9px;
+    font-size: 16px;
+}
+.offer-label:hover{
+	color: black
+}
+.hidden{
+	display: none
+}
+.footer-middle .col-md-4 {
+    border-left: 1px solid #444;
+    margin: auto;
+    padding: 35px 20px;
+    overflow: hidden;
+}
+.footer-middle .col-md-6 {
+    border-left: 1px solid #444;
+    margin: auto;
+    padding: 35px 20px;
+    overflow: hidden;
+}
+.time-icon:before {
+    content: "\f017";
+    border: 1px solid #0083c1;
+    border-radius: 25px;
+    color: #fff;
+    display: inline-block;
+    float: left;
+    font-family: FontAwesome;
+    font-size: 15px;
+    font-style: normal;
+    height: 35px;
+    line-height: 34px;
+    margin-right: 10px;
+    text-align: center;
+    width: 35px;
+    background: #0083c1;
+}
+nav{
+	margin-top: 0
+}
+.logo {
+    vertical-align: middle;
+    text-align: center;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.product-view .product-name h1 {
+    font-size: 32px;
+    margin: 0px;
+    text-align: left;
+    padding-bottom: 10px;
+    font-weight: 600;
+    padding-right: 55px;
+    text-transform: uppercase;
+    line-height: 56px;
+}
+.grecaptcha-badge{
+	display: none
+}
+.products-grid .item .item-inner .item-info .info-inner .item-title{
+		    height: 49px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+        white-space: inherit;
+
+	}
+	.fix_content, .product-view .short-description p, blockquote{
+		    font-size: 15px;
+    line-height: 26px;
+
+
+
+	}
+	.video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+.video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+#toTop{
+	display: none!important
+}
+</style>
+
+
+
+
+
+<!-- SEO ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
+	<title>Dép tổ ong màu hồng - Đồng phục Bảo Anh</title>
+	<meta name="description" content="Dép tổ ong đi trong nhà, đi nhà tắm, dép to phù hợp nhiều loại chân. Đặc biệt nếu bạn yêu thích sự khác biệt, thì có thể tậu ngay dép tổ ong làm  đồng phục.">
+	<meta name="keywords" content="dép tổ ong, bán dép tổ ong, sỉ số lượng lớn dép tổ ong, dép tổ ong giá rẻ, mua dép tổ ong số lượng lớn, dép tổ ong nhiều màu">
+	<meta property="og:title" content="Dép tổ ong màu hồng">
+	<meta property="og:url" content="/san-pham/185.html">
+	<meta property="og:image" content="https://dongphucba.com/upload/product/15/82/79/dep-to-ong-mau-hong-851704.jpg">
+	<meta property="og:image:width" content="500">
+	<meta property="og:image:height" content="640">
+	<meta property="og:site_name" content="Đồng phục Bảo Anh">
+	<meta property="og:description" content="Dép tổ ong đi trong nhà, đi nhà tắm, dép to phù hợp nhiều loại chân. Đặc biệt nếu bạn yêu thích sự khác biệt, thì có thể tậu ngay dép tổ ong làm  đồng phục.">
+	<meta property="og:type" content="product">
+	<meta property="fb:app_id" content="2535320856709981">
+<!-- /SEO ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
+
+
+
+
+
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '2535320856709981',
+      xfbml      : true,
+      version    : 'v6.0'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/vi_VN/sdk.js"; 
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159660857-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-159660857-1');
+</script>
+
+</head>
+
+<body class=" catalog-product-view catalog-product-view product-vbirds-mens-army-cotton-cargo-pant category-page">
+    <div id="page">
+
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 logo-block">
+                <div class="logo"> 
+                    
+                    <a href="/" class="logo"><div><img src="/default/template/img/logo.png?v=2" alt="Logo Đồng phục Bảo Anh" title="Logo Đồng phục Bảo Anh" class="img-responsive"></div></a>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-3 hidden-xs category-search-form">
+                <div class="search-box">
+                    <form id="search_mini_form" action="/tim-kiem/" method="get"> 
+	                    <input id="search" type="text" name="q" value="" class="searchbox" placeholder="Tìm kiếm..." maxlength="128" required=""> 
+	                    <button type="submit" title="Tìm kiếm" class="search-btn-bg" id="submit-button">&nbsp;</button>
+                        
+                    </form>
+                </div>
+            </div>
+            <div class="hidden-lg hidden-md hidden-sm col-lg-2 col-md-3 col-sm-3 col-xs-12  card_wishlist_area" style="height: 52px">
+			    <div class="mm-toggle-wrap">
+			        <div class="mm-toggle"><i class="fa fa-bars"></i><span class="mm-label">Menu</span></div>
+			    </div>
+			    <div class="top-cart-contain">
+					
+					<a href="tel:0963821912" class="offer-label" style="    margin-top: 12px;"> 
+                    	Hotline: 0963821912                	</a>  
+
+     			</div>
+			</div>
+        </div>
+    </div>
+    <nav class="hidden-xs">
+        <div class="nav-container">
+            <div class="col-md-3 col-xs-12 col-sm-3">
+                <div class="mega-container visible-lg visible-md visible-sm">
+                    <div class="navleft-container">
+                        <div class="mega-menu-title">
+                            <h3><i class="fa fa-navicon"></i> Chuyên mục</h3>
+                        </div>
+                        <div class="mega-menu-category" style="display: none">
+                            <ul class="nav">
+	                            <li class="nosub">
+					            	<a class="" href="/">Trang chủ</a>
+					            </li>
+                                																			<li class="nosub">
+					                    													<a href="/bai-viet/tin-tuc-22/" class="">Tin tức</a>
+												
+					                    </li>
+																																				<li class="nosub">
+					                    		
+												<a href="/san-pham/quan-ao-bao-ho-18/" class="">Quần áo bảo hộ</a>
+												
+					                    </li>
+																																				<li class="nosub">
+					                    		
+												<a href="/san-pham/dong-phuc-bao-ho-lao-dong-9/" class="">Đồng phục bảo hộ lao động</a>
+												
+					                    </li>
+																																				<li class="nosub">
+					                    		
+												<a href="/san-pham/ao-thun-dong-phuc-11/" class="">Áo thun đồng phục</a>
+												
+					                    </li>
+																																				<li class="nosub">
+					                    		
+												<a href="/san-pham/dong-phuc-cong-so-7/" class="">Đồng phục công sở</a>
+												
+					                    </li>
+																																				<li class="nosub">
+					                    		
+												<a href="/san-pham/dong-phuc-cong-nhan-14/" class="">Đồng phục công nhân</a>
+												
+					                    </li>
+																																				<li class="nosub">
+					                    		
+												<a href="/san-pham/ao-lop-13/" class="">Áo lớp</a>
+												
+					                    </li>
+																																				<li class="nosub">
+					                    		
+												<a href="/san-pham/dong-phuc-bao-ve-15/" class="">Đồng phục bảo vệ</a>
+												
+					                    </li>
+																																				<li class="nosub">
+					                    		
+												<a href="/san-pham/dong-phuc-benh-vien-16/" class="">Đồng phục bệnh viện</a>
+												
+					                    </li>
+																																				<li class="nosub">
+					                    		
+												<a href="/san-pham/dong-phuc-nha-hang-17/" class="">Đồng phục nhà hàng</a>
+												
+					                    </li>
+																																				<li class="nosub">
+					                    		
+												<a href="/san-pham/ao-khoac-dong-phuc-12/" class="">Áo khoác đồng phục</a>
+												
+					                    </li>
+																																				<li class="nosub">
+					                    		
+												<a href="/san-pham/non-ket-1/" class="">Nón kết</a>
+												
+					                    </li>
+																																				<li class="nosub">
+					                    		
+												<a href="/san-pham/tap-de-10/" class="">Tạp dề</a>
+												
+					                    </li>
+																																				<li class="nosub">
+					                    		
+												<a href="/san-pham/dep-to-ong-8/" class=" active">Dép tổ ong</a>
+												
+					                    </li>
+																																				<li class="nosub">
+					                    		
+												<a href="/san-pham/tui-vai-khong-det-2/" class="">Túi vải không dệt</a>
+												
+					                    </li>
+																																				<li class="nosub">
+					                    		
+												<a href="/san-pham/ao-mua-19/" class="">Áo mưa</a>
+												
+					                    </li>
+																																				<li class="nosub">
+					                    		
+												<a href="/san-pham/ao-thun-quang-cao-20/" class="">Áo thun quảng cáo</a>
+												
+					                    </li>
+																																				<li class="nosub">
+					                    		
+												<a href="/san-pham/dong-phuc-hoc-sinh-21/" class="">Đồng phục học sinh</a>
+												
+					                    </li>
+																	                                <li class="nosub">
+					            	<a class="" href="/lien-he/">Liên hệ</a>
+					            </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="our-features-box hidden-xs">
+                <div class="features-block">
+                    <div class="col-lg-7 col-md-9 col-xs-12 col-sm-9 offer-block">
+                        <div class="feature-box first">
+                            <div class="content">
+                                <h3><i class="fa fa-eye"></i> Xem mẫu online</h3>
+                            </div>
+                        </div> <span class="separator">/</span>
+                        <div class="feature-box">
+                            <div class="content">
+                                <h3><i class="fa fa-cart-arrow-down"></i> Đặt hàng online</h3>
+                            </div>
+                        </div> <span class="separator">/</span>
+                        <div class="feature-box last">
+                            <div class="content">
+                                <h3><i class="fa fa-truck"></i> Vận chuyên miễn phí nội thành</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-1 col-sm-2 hidden-sm hidden-md">
+	                    <a href="tel:0963821912" class="offer-label"> 
+                        	Hotline: 0963821912                    	</a>
+	                </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+	
+        <div class="main-container col1-layout">
+            <div class="container">
+                <div class="row">
+                    <div class="breadcrumbs">
+                        <ul>
+                            <li><a href="/">Trang chủ</a> <span>/ </span></li>
+										                <li><a href="/san-pham/dep-to-ong-8/">Dép tổ ong</a> <span>/ </span></li>
+			                <li>Dép tổ ong màu hồng</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-xs-12">
+                        <div class="col-main">
+                            <div class="product-view" itemscope itemtype="http://schema.org/Product" itemid="#product_base">
+
+                            	<div class="product-essential">
+
+                                    <div class="product-img-box col-lg-4 col-sm-5 col-xs-12">
+                                        <div class="product-image">
+                                            <div class="product-full">
+                                                <img itemprop="image" id="product-zoom" src="https://dongphucba.com/upload/product/15/82/79/dep-to-ong-mau-hong-image-20200227151400-709039.jpg" data-zoom-image="https://dongphucba.com/upload/product/15/82/79/dep-to-ong-mau-hong-image-20200227151400-709039.jpg" alt="Dép tổ ong màu hồng" title="Dép tổ ong màu hồng" /></div>
+                                            <div class="more-views">
+                                                <div class="slider-items-products">
+                                                    <div id="gallery_01" class="product-flexslider hidden-buttons product-img-thumb">
+                                                        <div class="slider-items slider-width-col4 block-content">
+                                                            								                                <div class="more-views-items">
+									                                <a href="https://dongphucba.com/upload/product/15/82/79/dep-to-ong-mau-hong-image-20200227151400-709039.jpg" data-zoom-image="https://dongphucba.com/upload/product/15/82/79/dep-to-ong-mau-hong-image-20200227151400-709039.jpg" data-image="https://dongphucba.com/upload/product/15/82/79/dep-to-ong-mau-hong-image-20200227151400-709039.jpg" data-zoom-image="https://dongphucba.com/upload/product/15/82/79/dep-to-ong-mau-hong-image-20200227151400-709039.jpg" data-zoom-image="https://dongphucba.com/upload/product/15/82/79/dep-to-ong-mau-hong-image-20200227151400-709039.jpg" data-zoom-image="https://dongphucba.com/upload/product/15/82/79/dep-to-ong-mau-hong-image-20200227151400-709039.jpg">
+										                                <img id="product-zoom" src="https://dongphucba.com/upload/product/15/82/79/dep-to-ong-mau-hong-image-20200227151400-709039.jpg" data-zoom-image="https://dongphucba.com/upload/product/15/82/79/dep-to-ong-mau-hong-image-20200227151400-709039.jpg" alt="Dép tổ ong màu hồng">
+										                            </a>
+										                        </div>
+									                                                                                </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="product-shop col-lg-8 col-sm-7 col-xs-12">
+
+                                        <div class="product-name">
+                                            <h1 itemprop="name">Dép tổ ong màu hồng</h1>
+                                            <p class="h4">Mã sản phẩm: 185</p>
+                                        </div>
+                                        <div class="price-block">
+                                            <div class="price-box">
+	                                            <span class="regular-price">
+	                                            	<span class="price">
+                                                    																										                    	<a href="tel:0963821912"><i class="flaticon-call"></i> 0963821912</a>
+										                    						                                                                                	</span>
+	                                            </span>
+	                                        </div>
+	                                        	                                            <p class="availability in-stock">
+		                                            <span>
+		                                            	Còn hàng
+		                                            </span>
+	                                            </p>
+                                                                                    </div>
+
+                                        <div class="short-description">
+                                            <p>Dép tổ ong đi trong nhà, đi nhà tắm, dép to phù hợp nhiều loại chân. Đặc biệt nếu bạn yêu thích sự khác biệt, thì có thể tậu ngay dép tổ ong làm  đồng phục.</p>
+                                        </div>
+                                        <br>
+                                        <h2 class="title mb-4" id="form_contact"><span>Đặt hàng</span></h2>
+
+
+
+
+
+<!-- !Thông báo chính ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
+						        <div id="notifi">
+						            						        </div>
+<!-- /Thông báo chính ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
+
+
+
+
+
+<!-- !Form ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
+									                                <form class="row" method="post" action="#form_contact">
+	                                    <div class="form-group col-sm-6">
+											<input type="text" id="Contact_Name" name="Contact_Name" value="" class="form-control" placeholder="Họ tên *">
+																					</div>
+	                                    <div class="form-group col-sm-6">
+											<input type="text" id="Contact_Mobile" name="Contact_Mobile" value="" class="form-control" placeholder="Điện thoại *">
+												                                    </div>
+	                                    <div class="form-group col-sm-12">
+											<input type="text" id="Contact_Email" name="Contact_Email" value="" class="form-control" placeholder="Email">
+																					</div>
+										<div class="form-group col-sm-12">
+											<textarea id="Contact_Message" name="Contact_Message" rows="3" class="form-control" placeholder="Lời nhắn *"></textarea>
+															                        </div>
+	                                    <div class="col-sm-12">
+		                                    <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+											<button type="submit" class="btn btn-primary btn-radius" name="submit-contact"><span>Gửi</span></button>
+		                                </div>
+	                                </form>
+
+	                            <!-- /Form ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
+
+
+
+
+
+                                        <br>
+                                        <div class="addthis_inline_share_toolbox_llgz"></div>
+                                        				                            <footer class="bottom_box">
+					                            Từ khóa:
+				                                					                                					                                	<a href="/tim-kiem/?q=d%C3%A9p+t%E1%BB%95+ong">dép tổ ong</a>,					                                					                            					                                					                                	<a href="/tim-kiem/?q=b%C3%A1n+d%C3%A9p+t%E1%BB%95+ong"> bán dép tổ ong</a>,					                                					                            					                                					                                	<a href="/tim-kiem/?q=s%E1%BB%89+s%E1%BB%91+l%C6%B0%E1%BB%A3ng+l%E1%BB%9Bn+d%C3%A9p+t%E1%BB%95+ong"> sỉ số lượng lớn dép tổ ong</a>,					                                					                            					                                					                                	<a href="/tim-kiem/?q=d%C3%A9p+t%E1%BB%95+ong+gi%C3%A1+r%E1%BA%BB"> dép tổ ong giá rẻ</a>,					                                					                            					                                					                                	<a href="/tim-kiem/?q=mua+d%C3%A9p+t%E1%BB%95+ong+s%E1%BB%91+l%C6%B0%E1%BB%A3ng+l%E1%BB%9Bn"> mua dép tổ ong số lượng lớn</a>,					                                					                            					                                					                                	<a href="/tim-kiem/?q=d%C3%A9p+t%E1%BB%95+ong+nhi%E1%BB%81u+m%C3%A0u"> dép tổ ong nhiều màu</a>					                                					                            					                        </footer>
+				                                                            </div>
+                                </div>
+
+                                <div class="product-collateral">
+                                    <div class="add_info">
+                                        <div class="tabs">
+                                            <ul class="nav nav-tabs product-tabs" id="product-detail-tab">
+                                                <li id="product_tabs_description" class="tabLink active first"><a href="#">Chi tiết sản phẩm</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-content" id="productTabContent">
+                                            <div id="product1_tabs_custom_contents">
+                                                <div class="product-tabs-content-inner clearfix active fix_content">
+                                                    <p>Đồng Phục Bảo Anh chuyên cung cấp dép tổ ong đủ màu và mẫu mã.</p><p>Bán buôn số lượng lớn nhỏ, nhận đặt sản xuất tổ ong màu, tổ ong đại trà số lượng lớn; nhiều mẫu mã có sẵn với giá sỉ tổ ong có độ cạnh tranh cao trên thị trường.</p>
+                                                    <p>Mọi chi tiết xin vui lòng liên hệ để được tư vấn và báo giá:<br>
+													Đồng Phục Bảo Anh<br>
+													Số điện thoại: <a href="tel:0963821912">0963821912</a> - <a href="tel:0915781001">0915781001</a><br>
+													Email: <a href="mailto:nguyenthuy15996@gmail.com">nguyenthuy15996@gmail.com</a> - <a href="mailto:maydongphucdep01@gmail.com">maydongphucdep01@gmail.com</a> <br>
+													Fanpage: <a href="https://Fb.com/Công-Ty-May-Mặc-Bảo-Anh-129484501149927/" target="_blank">Fb.com/Công-Ty-May-Mặc-Bảo-Anh-129484501149927/</a><br>
+													Địa chỉ:<br>
+													- Chi nhánh TPHCM: 328/25A Đường Tân Thới Hiệp 07, Phường Tân Thới Hiệp, Quận 12<br>
+													- Chi nhánh Hà Nội: 718 Láng, Quận Đống Đa</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+
+
+
+<!-- !Sản phẩm liên quan ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
+                                	                                <div class="related-pro">
+	                                    <div class="slider-items-products">
+	                                        <div class="related-block">
+	                                            <div class="home-block-inner">
+	                                                <div class="block-title">
+	                                                    <h2>Sản phẩm liên quan</h2>
+	                                                </div>
+	                                            </div>
+	                                            <div id="related-products-slider" class="product-flexslider hidden-buttons">
+	                                                <div class="slider-items slider-width-col4 products-grid block-content">
+	                                                    						                                    <div class="item">
+						                                        <div class="item-inner">
+						                                            <div class="item-img">
+						                                                <div class="item-img-info">
+						                                                	<a class="product-image" href="/san-pham/dep-to-ong-nhieu-mau-178.html">
+										                                        <img src="https://dongphucba.com/upload/product/15/82/79/dep-to-ong-nhieu-mau-593790.jpg" alt="Dép tổ ong nhiều màu" class="img-responsive">
+									                                        </a>
+						                                                    <!--<div class="new-label new-top-left"><span> New </span></div>-->
+						                                                </div>
+						                                            </div>
+						                                            <div class="item-info">
+						                                                <div class="info-inner">
+						                                                    <div class="item-title"><a href="/san-pham/dep-to-ong-nhieu-mau-178.html" class="fix_title_product"> Dép tổ ong nhiều màu </a></div>
+
+						                                                    <div class="item-content">
+						                                                        <div class="item-price">
+						                                                            <div class="price-box">
+							                                                            <span class="regular-price">
+							                                                            	<span class="price">
+								                                                            																																														                    	<a href="tel:0963821912"><i class="flaticon-call"></i> 0963821912</a>
+																				                    																                                							                                                            	</span>
+							                                                            </span>
+							                                                        </div>
+						                                                        </div>
+						                                                    </div>
+						                                                </div>
+						                                            </div>
+						                                        </div>
+						                                    </div>
+					                                    						                                    <div class="item">
+						                                        <div class="item-inner">
+						                                            <div class="item-img">
+						                                                <div class="item-img-info">
+						                                                	<a class="product-image" href="/san-pham/dep-to-ong-nhieu-mau-179.html">
+										                                        <img src="https://dongphucba.com/upload/product/15/82/79/dep-to-ong-nhieu-mau-872630.jpg" alt="Dép tổ ong nhiều màu" class="img-responsive">
+									                                        </a>
+						                                                    <!--<div class="new-label new-top-left"><span> New </span></div>-->
+						                                                </div>
+						                                            </div>
+						                                            <div class="item-info">
+						                                                <div class="info-inner">
+						                                                    <div class="item-title"><a href="/san-pham/dep-to-ong-nhieu-mau-179.html" class="fix_title_product"> Dép tổ ong nhiều màu </a></div>
+
+						                                                    <div class="item-content">
+						                                                        <div class="item-price">
+						                                                            <div class="price-box">
+							                                                            <span class="regular-price">
+							                                                            	<span class="price">
+								                                                            																																														                    	<a href="tel:0963821912"><i class="flaticon-call"></i> 0963821912</a>
+																				                    																                                							                                                            	</span>
+							                                                            </span>
+							                                                        </div>
+						                                                        </div>
+						                                                    </div>
+						                                                </div>
+						                                            </div>
+						                                        </div>
+						                                    </div>
+					                                    						                                    <div class="item">
+						                                        <div class="item-inner">
+						                                            <div class="item-img">
+						                                                <div class="item-img-info">
+						                                                	<a class="product-image" href="/san-pham/dep-to-ong-mau-xanh-bien-181.html">
+										                                        <img src="https://dongphucba.com/upload/product/15/82/79/dep-to-ong-mau-xanh-bien-833914.jpg" alt="Dép tổ ong màu xanh biển" class="img-responsive">
+									                                        </a>
+						                                                    <!--<div class="new-label new-top-left"><span> New </span></div>-->
+						                                                </div>
+						                                            </div>
+						                                            <div class="item-info">
+						                                                <div class="info-inner">
+						                                                    <div class="item-title"><a href="/san-pham/dep-to-ong-mau-xanh-bien-181.html" class="fix_title_product"> Dép tổ ong màu xanh biển </a></div>
+
+						                                                    <div class="item-content">
+						                                                        <div class="item-price">
+						                                                            <div class="price-box">
+							                                                            <span class="regular-price">
+							                                                            	<span class="price">
+								                                                            																																														                    	<a href="tel:0963821912"><i class="flaticon-call"></i> 0963821912</a>
+																				                    																                                							                                                            	</span>
+							                                                            </span>
+							                                                        </div>
+						                                                        </div>
+						                                                    </div>
+						                                                </div>
+						                                            </div>
+						                                        </div>
+						                                    </div>
+					                                    						                                    <div class="item">
+						                                        <div class="item-inner">
+						                                            <div class="item-img">
+						                                                <div class="item-img-info">
+						                                                	<a class="product-image" href="/san-pham/dep-to-ong-mau-vang-182.html">
+										                                        <img src="https://dongphucba.com/upload/product/15/82/79/dep-to-ong-mau-vang-257483.jpg" alt="Dép tổ ong màu vàng" class="img-responsive">
+									                                        </a>
+						                                                    <!--<div class="new-label new-top-left"><span> New </span></div>-->
+						                                                </div>
+						                                            </div>
+						                                            <div class="item-info">
+						                                                <div class="info-inner">
+						                                                    <div class="item-title"><a href="/san-pham/dep-to-ong-mau-vang-182.html" class="fix_title_product"> Dép tổ ong màu vàng </a></div>
+
+						                                                    <div class="item-content">
+						                                                        <div class="item-price">
+						                                                            <div class="price-box">
+							                                                            <span class="regular-price">
+							                                                            	<span class="price">
+								                                                            																																														                    	<a href="tel:0963821912"><i class="flaticon-call"></i> 0963821912</a>
+																				                    																                                							                                                            	</span>
+							                                                            </span>
+							                                                        </div>
+						                                                        </div>
+						                                                    </div>
+						                                                </div>
+						                                            </div>
+						                                        </div>
+						                                    </div>
+					                                    						                                    <div class="item">
+						                                        <div class="item-inner">
+						                                            <div class="item-img">
+						                                                <div class="item-img-info">
+						                                                	<a class="product-image" href="/san-pham/dep-to-ong-mau-xanh-la-cay-184.html">
+										                                        <img src="https://dongphucba.com/upload/product/15/82/79/dep-to-ong-mau-xanh-la-cay-237982.jpg" alt="Dép tổ ong màu xanh lá cây" class="img-responsive">
+									                                        </a>
+						                                                    <!--<div class="new-label new-top-left"><span> New </span></div>-->
+						                                                </div>
+						                                            </div>
+						                                            <div class="item-info">
+						                                                <div class="info-inner">
+						                                                    <div class="item-title"><a href="/san-pham/dep-to-ong-mau-xanh-la-cay-184.html" class="fix_title_product"> Dép tổ ong màu xanh lá cây </a></div>
+
+						                                                    <div class="item-content">
+						                                                        <div class="item-price">
+						                                                            <div class="price-box">
+							                                                            <span class="regular-price">
+							                                                            	<span class="price">
+								                                                            																																														                    	<a href="tel:0963821912"><i class="flaticon-call"></i> 0963821912</a>
+																				                    																                                							                                                            	</span>
+							                                                            </span>
+							                                                        </div>
+						                                                        </div>
+						                                                    </div>
+						                                                </div>
+						                                            </div>
+						                                        </div>
+						                                    </div>
+					                                    						                                    <div class="item">
+						                                        <div class="item-inner">
+						                                            <div class="item-img">
+						                                                <div class="item-img-info">
+						                                                	<a class="product-image" href="/san-pham/dep-to-ong-nhieu-mau-180.html">
+										                                        <img src="https://dongphucba.com/upload/product/15/82/79/dep-to-ong-nhieu-mau-126295.jpg" alt="Dép tổ ong nhiều màu" class="img-responsive">
+									                                        </a>
+						                                                    <!--<div class="new-label new-top-left"><span> New </span></div>-->
+						                                                </div>
+						                                            </div>
+						                                            <div class="item-info">
+						                                                <div class="info-inner">
+						                                                    <div class="item-title"><a href="/san-pham/dep-to-ong-nhieu-mau-180.html" class="fix_title_product"> Dép tổ ong nhiều màu </a></div>
+
+						                                                    <div class="item-content">
+						                                                        <div class="item-price">
+						                                                            <div class="price-box">
+							                                                            <span class="regular-price">
+							                                                            	<span class="price">
+								                                                            																																														                    	<a href="tel:0963821912"><i class="flaticon-call"></i> 0963821912</a>
+																				                    																                                							                                                            	</span>
+							                                                            </span>
+							                                                        </div>
+						                                                        </div>
+						                                                    </div>
+						                                                </div>
+						                                            </div>
+						                                        </div>
+						                                    </div>
+					                                    	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	                                </div>
+                                <!-- /Sản phẩm liên quan ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+<footer class="footer">
+    <div class="newsletter-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="newsletter" id="subscribe">
+
+
+
+
+
+<!-- Thông báo chính ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
+						<!-- /Thông báo chính ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
+
+
+
+
+
+<!-- !Form ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
+													<div>
+
+
+
+								<form method="post" action="#subscribe">
+										<h4><span>ĐĂNG KÝ NHẬN TIN</span></h4>
+	                                    <input type="text" id="Subscription_Email" name="Subscription_Email" placeholder="Email của bạn..." value="" class="input-text" placeholder="Email *">
+
+
+
+											<button type="submit" class="subscribe" name="submit_subscribe">Gửi</button>
+
+	                            </form>
+
+
+
+		                    </div>
+                        <!-- /Form ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-middle">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="footer-column pull-left">
+
+                        <h4 class="color-white">Đồng phục Bảo Anh</h4>
+	                    <p>
+		                        <a class="color-white">Áo thun- Bảo hộ lao động- Sơmi quần tây- Nón kết.</a>
+	                        </p>
+	                        <p>
+		                    <a>
+			                    Đồng phục Bảo Anh chuyên cung cấp các loại đồng phục áo thun, đồng phục bảo hộ lao động, đồng phục sơ mi công sở, mũ nón đồng phục, tạp dề, dép tổ ong,...		                    </a>
+	                    </p>
+	                    <div class="contacts-info">
+		                    								<address>
+									<i class="add-icon">&nbsp;</i>
+								    - <a href="https://www.google.com/maps?q=328/25A Đường Tân Thới Hiệp 07, Phường Tân Thới Hiệp, Q12" target="_blank">328/25A Đường Tân Thới Hiệp 07, Phường Tân Thới Hiệp, Q12</a>
+								    <br>
+								    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <a href="https://www.google.com/maps?q=HH03D KĐT Thanh Hà- Hà Nội" target="_blank">HH03D KĐT Thanh Hà- Hà Nội</a>
+								</address>
+								                        								<div class="phone-footer">
+									<i class="phone-icon">&nbsp;</i>
+								    <a href="tel:0963821912">
+			                        	0963821912			                       	</a>
+			                       			                        		-
+		                        				                       										    <a href="tel:0915781001">
+				                        	0915781001				                       	</a>
+			                       									</div>
+															                        	<div class="email-footer">
+		                        	<i class="email-icon">&nbsp;</i>
+		                        	<a href="mailto:nguyenthuy15996@gmail.com">
+		                            	nguyenthuy15996@gmail.com		                        	</a>
+		                        			                        	<a href="mailto:" style="margin-left: 51px">
+		                            			                        	</a>
+		                        </div>
+	                        	                    </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <!--<div class="social">
+                        <ul>
+
+                            <li class="fb"><a href="https://www.facebook.com/129484501149927/posts/614638572634515/?d=n" target="_blank" title="Đồng phục Bảo Anh trên Facebook"> </a></li>					        					        					                                </ul>
+                    </div>-->
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="footer-column pull-left">
+                        <h4>Liên kết nhanh</h4>
+                        <div class="row">
+	                        <div class="col-sm-6">
+		                    	<ul class="links">
+		                            <li><a href="/">Trang chủ</a></li>
+				                    				                    						                    	<li>
+					                    															<a href="/san-pham/dong-phuc-bao-ho-lao-dong-9/"  class="">Đồng phục bảo hộ lao động</a>
+																	                    	</li>
+				                    					                    				                    						                    	<li>
+					                    															<a href="/san-pham/quan-ao-bao-ho-18/"  class="">Quần áo bảo hộ</a>
+																	                    	</li>
+				                    					                    				                    						                    	<li>
+					                    															<a class="" href="/bai-viet/tin-tuc-22/">Tin tức</a>
+																	                    	</li>
+				                    					                    				                    						                    	<li>
+					                    															<a href="/san-pham/ao-thun-dong-phuc-11/"  class="">Áo thun đồng phục</a>
+																	                    	</li>
+				                    					                    				                    						                    	<li>
+					                    															<a href="/san-pham/dong-phuc-cong-so-7/"  class="">Đồng phục công sở</a>
+																	                    	</li>
+				                    					                    				                    						                    	<li>
+					                    															<a href="/san-pham/dong-phuc-cong-nhan-14/"  class="">Đồng phục công nhân</a>
+																	                    	</li>
+				                    					                    				                    						                    	<li>
+					                    															<a href="/san-pham/ao-lop-13/"  class="">Áo lớp</a>
+																	                    	</li>
+				                    					                    				                    						                    	<li>
+					                    															<a href="/san-pham/dong-phuc-bao-ve-15/"  class="">Đồng phục bảo vệ</a>
+																	                    	</li>
+				                    					                    				                    						                    	<li>
+					                    															<a href="/san-pham/dong-phuc-benh-vien-16/"  class="">Đồng phục bệnh viện</a>
+																	                    	</li>
+				                    					                    				                    					                    				                    					                    				                    					                    				                    					                    				                    					                    				                    					                    				                    					                    				                    					                    				                    					                    		                        </ul>
+	                        </div>
+	                        <div class="col-sm-6">
+		                        <ul class="links">
+				                    				                    					                    				                    					                    				                    					                    				                    					                    				                    					                    				                    					                    				                    					                    				                    					                    				                    					                    				                    						                    	<li>
+					                    															<a href="/san-pham/dong-phuc-nha-hang-17/"  class="">Đồng phục nhà hàng</a>
+																	                    	</li>
+				                    					                    				                    						                    	<li>
+					                    															<a href="/san-pham/ao-khoac-dong-phuc-12/"  class="">Áo khoác đồng phục</a>
+																	                    	</li>
+				                    					                    				                    						                    	<li>
+					                    															<a href="/san-pham/non-ket-1/"  class="">Nón kết</a>
+																	                    	</li>
+				                    					                    				                    						                    	<li>
+					                    															<a href="/san-pham/tap-de-10/"  class="">Tạp dề</a>
+																	                    	</li>
+				                    					                    				                    						                    	<li>
+					                    															<a href="/san-pham/dep-to-ong-8/"  class=" active">Dép tổ ong</a>
+																	                    	</li>
+				                    					                    				                    						                    	<li>
+					                    															<a href="/san-pham/tui-vai-khong-det-2/"  class="">Túi vải không dệt</a>
+																	                    	</li>
+				                    					                    				                    						                    	<li>
+					                    															<a href="/san-pham/ao-mua-19/"  class="">Áo mưa</a>
+																	                    	</li>
+				                    					                    				                    						                    	<li>
+					                    															<a href="/san-pham/ao-thun-quang-cao-20/"  class="">Áo thun quảng cáo</a>
+																	                    	</li>
+				                    					                    				                    						                    	<li>
+					                    															<a href="/san-pham/dong-phuc-hoc-sinh-21/"  class="">Đồng phục học sinh</a>
+																	                    	</li>
+				                    					                    				                    <li><a href="/lien-he/">Liên hệ</a></li>
+		                        </ul>
+	                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="footer-column pull-left">
+                        <h4>Fanpage</h4>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F129484501149927%2Fposts%2F614638572634515%2F%3Fd%3Dn&tabs&width=340&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=170869336881463" width="100%" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 col-xs-12 coppyright"><p>Bản quyền © 2020 <b><a href="https://dongphucba.com/">Đồng phục Bảo Anh</a></b></p></div>
+                <div class="col-sm-7 col-xs-12 company-links">
+                    	                    <ul class="links">
+	                        	                            <li><a href="/thong-tin-can-biet/xuong-may-quan-ao-bao-ho-lao-dong-4.html" title="Xưởng may quần áo bảo hộ lao động"> Xưởng may quần áo bảo hộ lao động</a></li>
+	                        	                            <li><a href="/thong-tin-can-biet/may-dong-phuc-cong-so-gia-tot-nhat-tai-quan-1-3.html" title="may đồng phục công sở giá tốt nhất tại quận 1"> may đồng phục công sở giá tốt nhất tại quận 1</a></li>
+	                        	                    </ul>
+                                    </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+    </div>
+
+<div id="mobile-menu">
+    <ul class="mobile-menu">
+        <li>
+            <div class="mm-search">
+                <form id="search1" action="/tim-kiem/" method="get">
+                    <div class="input-group">
+                        <div class="input-group-btn">
+	                        <button type="submit" title="Tìm kiếm" class="btn btn-default"><i class="fa fa-search"></i></button></div><input class="form-control simple" id="srch-term" type="text" name="q" value="" maxlength="128" placeholder="Tìm kiếm ">
+                    </div>
+                </form>
+            </div>
+        </li>
+
+        <li class="level0 nav-4 level-top">
+        	<a class="" href="/" class="level-top">Trang chủ</a>
+        </li>
+        							<li class="level0 nav-4 level-top">
+                							<a href="/bai-viet/tin-tuc-22/" class="level-top ">Tin tức</a>
+					                </li>
+												<li class="level0 nav-4 level-top">
+                							<a href="/san-pham/quan-ao-bao-ho-18/" class="level-top ">Quần áo bảo hộ</a>
+					                </li>
+												<li class="level0 nav-4 level-top">
+                							<a href="/san-pham/dong-phuc-bao-ho-lao-dong-9/" class="level-top ">Đồng phục bảo hộ lao động</a>
+					                </li>
+												<li class="level0 nav-4 level-top">
+                							<a href="/san-pham/ao-thun-dong-phuc-11/" class="level-top ">Áo thun đồng phục</a>
+					                </li>
+												<li class="level0 nav-4 level-top">
+                							<a href="/san-pham/dong-phuc-cong-so-7/" class="level-top ">Đồng phục công sở</a>
+					                </li>
+												<li class="level0 nav-4 level-top">
+                							<a href="/san-pham/dong-phuc-cong-nhan-14/" class="level-top ">Đồng phục công nhân</a>
+					                </li>
+												<li class="level0 nav-4 level-top">
+                							<a href="/san-pham/ao-lop-13/" class="level-top ">Áo lớp</a>
+					                </li>
+												<li class="level0 nav-4 level-top">
+                							<a href="/san-pham/dong-phuc-bao-ve-15/" class="level-top ">Đồng phục bảo vệ</a>
+					                </li>
+												<li class="level0 nav-4 level-top">
+                							<a href="/san-pham/dong-phuc-benh-vien-16/" class="level-top ">Đồng phục bệnh viện</a>
+					                </li>
+												<li class="level0 nav-4 level-top">
+                							<a href="/san-pham/dong-phuc-nha-hang-17/" class="level-top ">Đồng phục nhà hàng</a>
+					                </li>
+												<li class="level0 nav-4 level-top">
+                							<a href="/san-pham/ao-khoac-dong-phuc-12/" class="level-top ">Áo khoác đồng phục</a>
+					                </li>
+												<li class="level0 nav-4 level-top">
+                							<a href="/san-pham/non-ket-1/" class="level-top ">Nón kết</a>
+					                </li>
+												<li class="level0 nav-4 level-top">
+                							<a href="/san-pham/tap-de-10/" class="level-top ">Tạp dề</a>
+					                </li>
+												<li class="level0 nav-4 level-top">
+                							<a href="/san-pham/dep-to-ong-8/" class="level-top  active">Dép tổ ong</a>
+					                </li>
+												<li class="level0 nav-4 level-top">
+                							<a href="/san-pham/tui-vai-khong-det-2/" class="level-top ">Túi vải không dệt</a>
+					                </li>
+												<li class="level0 nav-4 level-top">
+                							<a href="/san-pham/ao-mua-19/" class="level-top ">Áo mưa</a>
+					                </li>
+												<li class="level0 nav-4 level-top">
+                							<a href="/san-pham/ao-thun-quang-cao-20/" class="level-top ">Áo thun quảng cáo</a>
+					                </li>
+												<li class="level0 nav-4 level-top">
+                							<a href="/san-pham/dong-phuc-hoc-sinh-21/" class="level-top ">Đồng phục học sinh</a>
+					                </li>
+					
+        <li class="level0 nav-4 level-top">
+        	<a class="" href="/lien-he/" class="level-top">Liên hệ</a>
+        </li>
+    </ul>
+</div>
+
+
+
+
+
+
+<script type="text/javascript" src="/default/template/js/prototype/prototype.js"></script>
+    <script type="text/javascript" src="/default/template/js/lib/jquery/jquery-1.10.2.min.js"></script>
+
+<!--     <script type="text/javascript" src="/default/template/js/lib/jquery/noconflict.js"></script> -->
+
+    <script type="text/javascript" src="/default/template/js/lib/ccard.js"></script>
+    <script type="text/javascript" src="/default/template/js/prototype/validation.js"></script>
+    <script type="text/javascript" src="/default/template/js/scriptaculous/builder.js"></script>
+    <script type="text/javascript" src="/default/template/js/scriptaculous/effects.js"></script>
+    <script type="text/javascript" src="/default/template/js/scriptaculous/dragdrop.js"></script>
+    <script type="text/javascript" src="/default/template/js/scriptaculous/controls.js"></script>
+    <script type="text/javascript" src="/default/template/js/scriptaculous/slider.js"></script>
+    <script type="text/javascript" src="/default/template/js/varien/js.js"></script>
+    <script type="text/javascript" src="/default/template/js/varien/form.js"></script>
+    <script type="text/javascript" src="/default/template/js/mage/translate.js"></script>
+    <script type="text/javascript" src="/default/template/js/mage/cookies.js"></script>
+    <script type="text/javascript" src="/default/template/js/magik/quickview/jquery.fancybox.pack.js"></script>
+<!--     <script type="text/javascript" src="/default/template/js/magik/quickview/mgkquickview.js"></script> -->
+    <script type="text/javascript" src="/default/template/js/varien/product.js"></script>
+    <script type="text/javascript" src="/default/template/js/varien/configurable.js"></script>
+    <script type="text/javascript" src="/default/template/js/calendar/calendar.js"></script>
+    <script type="text/javascript" src="/default/template/js/calendar/calendar-setup.js"></script>
+    <script type="text/javascript" src="/default/template/skin/frontend/rwd/linea-blue/js/lib/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="/default/template/skin/frontend/rwd/linea-blue/js/lib/selectivizr.js"></script>
+    <script type="text/javascript" src="/default/template/skin/frontend/rwd/linea-blue/js/lib/matchMedia.js"></script>
+    <script type="text/javascript" src="/default/template/skin/frontend/rwd/linea-blue/js/lib/matchMedia.addListener.js"></script>
+    <script type="text/javascript" src="/default/template/skin/frontend/rwd/linea-blue/js/lib/enquire.js"></script>
+    <script type="text/javascript" src="/default/template/skin/frontend/rwd/linea-blue/js/app.js"></script>
+    <script type="text/javascript" src="/default/template/skin/frontend/rwd/linea-blue/js/lib/jquery.cycle2.min.js"></script>
+    <script type="text/javascript" src="/default/template/skin/frontend/rwd/linea-blue/js/lib/jquery.cycle2.swipe.min.js"></script>
+    <script type="text/javascript" src="/default/template/skin/frontend/rwd/linea-blue/js/slideshow.js"></script>
+    <script type="text/javascript" src="/default/template/skin/frontend/rwd/linea-blue/js/lib/imagesloaded.js"></script>
+    <script type="text/javascript" src="/default/template/skin/frontend/rwd/linea-blue/js/minicart.js"></script>
+    <!-- <script type="text/javascript" src="/default/template/skin/frontend/rwd/linea-blue/js/countdowntimer/countdowntimer.js"></script>-->
+    <script type="text/javascript" src="/default/template/skin/frontend/base/default/js/bundle.js"></script>
+    <script type="text/javascript" src="/default/template/skin/frontend/rwd/linea-blue/js/lib/elevatezoom/jquery.elevateZoom-3.0.8.min.js"></script>
+ <!--   <script type="text/javascript" src="/default/template/skin/frontend/rwd/linea-blue/js/jquery.min.js"></script>-->
+
+
+
+
+    <script type="text/javascript" src="/default/template/skin/frontend/rwd/linea-blue/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/default/template/skin/frontend/rwd/linea-blue/js/parallax.js"></script>
+    <script type="text/javascript" src="/default/template/skin/frontend/rwd/linea-blue/js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="/default/template/skin/frontend/rwd/linea-blue/js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="/default/template/skin/frontend/rwd/linea-blue/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="/default/template/skin/frontend/rwd/linea-blue/js/jquery.mobile-menu.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,600" />
+    <!--[if (lte IE 8) & (!IEMobile)]><link rel="stylesheet" type="text/css" href="http://mas1.magikthemes.com/skin/frontend/rwd/default/css/styles-ie8.css" media="all" /><link rel="stylesheet" type="text/css" href="http://mas1.magikthemes.com/skin/frontend/rwd/default/css/madisonisland-ie8.css" media="all" /> <![endif]-->
+    <script type="text/javascript">
+        Mage.Cookies.path = 'http://mas1.magikthemes.com/';
+        Mage.Cookies.domain = '.mas1.magikthemes.com';
+    </script>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <script type="text/javascript">
+        optionalZipCountries = ["HK", "IE", "MO", "PA"];
+    </script>
+    <script type="text/javascript">
+        var Translator = new Translate([]);
+    </script>
+
+    <script src="/default/template/skin/frontend/rwd/linea-blue/js/revslider.js" type="text/javascript"></script>
+    <script src="/default/template/skin/frontend/rwd/linea-blue/js/common.js" type="text/javascript"></script>
+    <script type='text/javascript'>
+        jQuery(document).ready(function() {
+            jQuery('#rev_slider_4').show().revolution({
+                dottedOverlay: 'none',
+                delay: 5000,
+                startwidth: 850,
+                startheight: 445,
+                hideThumbs: 200,
+                thumbWidth: 200,
+                thumbHeight: 50,
+                thumbAmount: 2,
+                navigationType: 'thumb',
+                navigationArrows: 'solo',
+                navigationStyle: 'round',
+                touchenabled: 'on',
+                onHoverStop: 'on',
+                swipe_velocity: 0.7,
+                swipe_min_touches: 1,
+                swipe_max_touches: 1,
+                drag_block_vertical: false,
+                spinner: 'spinner0',
+                keyboardNavigation: 'off',
+                navigationHAlign: 'center',
+                navigationVAlign: 'bottom',
+                navigationHOffset: 0,
+                navigationVOffset: 20,
+                soloArrowLeftHalign: 'left',
+                soloArrowLeftValign: 'center',
+                soloArrowLeftHOffset: 20,
+                soloArrowLeftVOffset: 0,
+                soloArrowRightHalign: 'right',
+                soloArrowRightValign: 'center',
+                soloArrowRightHOffset: 20,
+                soloArrowRightVOffset: 0,
+                shadow: 0,
+                fullWidth: 'on',
+                fullScreen: 'off',
+                stopLoop: 'off',
+                stopAfterLoops: -1,
+                stopAtSlide: -1,
+                shuffle: 'off',
+                autoHeight: 'off',
+                forceFullWidth: 'on',
+                fullScreenAlignForce: 'off',
+                minFullScreenHeight: 0,
+                hideNavDelayOnMobile: 1500,
+                hideThumbsOnMobile: 'off',
+                hideBulletsOnMobile: 'off',
+                hideArrowsOnMobile: 'off',
+                hideThumbsUnderResolution: 0,
+                hideSliderAtLimit: 0,
+                hideCaptionAtLimit: 0,
+                hideAllCaptionAtLilmit: 0,
+                startWithSlide: 0,
+                fullScreenOffsetContainer: ''
+            });
+        });
+    </script>
+
+
+<!-- !Tawk.to ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API = Tawk_API || {};
+
+
+Tawk_LoadStart = new Date();
+
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5e5f1dcbc32b5c1917396b2e/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+<!-- /Tawk.to ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
+
+
+
+
+
+<!-- Arcontactus ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
+<div id="arcontactus"></div>
+
+<script src="/default/template/lib/arcontactus/js/jquery.contactus.min.js?v=5"></script>
+<script>
+
+
+	window.addEventListener('load', function(){
+        $('#arcontactus').contactUs({
+			buttonText: 'Liên hệ',
+            align: 'right',
+            theme: '#1283BE',
+            items: [
+	            {
+					title: 'Chat online',
+					icon: '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 511.62 511.619" style="enable-background:new 0 0 511.62 511.619;" xml:space="preserve" class=""><g><g><g><path fill="currentColor" d="M301.923,327.602c30.93-13.038,55.34-30.785,73.228-53.248c17.891-22.458,26.837-46.915,26.837-73.372    c0-26.458-8.946-50.914-26.837-73.376c-17.888-22.459-42.298-40.208-73.228-53.249c-30.93-13.039-64.571-19.556-100.928-19.556    c-36.354,0-69.995,6.521-100.927,19.56C69.14,87.4,44.729,105.149,26.84,127.609C8.947,150.068,0,174.523,0,200.982    c0,22.648,6.764,43.975,20.276,63.957c13.512,19.985,32.071,36.833,55.671,50.535c-1.902,4.572-3.853,8.754-5.852,12.566    c-2,3.806-4.377,7.467-7.139,10.991c-2.76,3.525-4.899,6.283-6.423,8.275c-1.523,1.998-3.997,4.809-7.424,8.422    c-3.428,3.617-5.618,5.996-6.567,7.135c0-0.191-0.383,0.24-1.143,1.287c-0.763,1.047-1.191,1.52-1.287,1.431    c-0.094-0.103-0.476,0.373-1.141,1.42c-0.666,1.048-1,1.571-1,1.571l-0.715,1.423c-0.284,0.568-0.476,1.137-0.57,1.712    c-0.096,0.567-0.144,1.19-0.144,1.854s0.094,1.28,0.286,1.854c0.383,2.471,1.477,4.466,3.284,5.996    c1.809,1.52,3.757,2.279,5.854,2.279h0.857c9.515-1.332,17.701-2.854,24.552-4.569c29.312-7.614,55.771-19.797,79.372-36.545    c17.128,3.046,33.88,4.568,50.248,4.568C237.349,347.156,270.994,340.641,301.923,327.602z M142.184,303.767l-12.564,8.846    c-5.33,3.614-11.227,7.331-17.7,11.14l9.995-23.986l-27.694-15.988c-18.276-10.656-32.454-23.219-42.542-37.685    c-10.089-14.465-15.131-29.502-15.131-45.111c0-19.417,7.474-37.594,22.414-54.534c14.938-16.94,35.067-30.358,60.382-40.259    c25.313-9.895,52.532-14.847,81.653-14.847c29.121,0,56.342,4.952,81.654,14.847c25.313,9.9,45.442,23.319,60.388,40.259    c14.94,16.939,22.408,35.116,22.408,54.534c0,19.414-7.468,37.59-22.408,54.53c-14.945,16.945-35.074,30.36-60.388,40.256    c-25.312,9.897-52.53,14.846-81.654,14.846c-14.272,0-28.833-1.335-43.681-3.997L142.184,303.767z" data-original="#000000" class="active-path" data-old_color="#ffffff" fill="#ffffff"/><path fill="currentColor" d="M491.347,338.156c13.518-19.896,20.272-41.255,20.272-64.098c0-23.411-7.139-45.303-21.409-65.666    c-14.277-20.362-33.694-37.305-58.245-50.819c4.374,14.274,6.563,28.739,6.563,43.398c0,25.503-6.368,49.676-19.129,72.519    c-12.752,22.836-31.025,43.01-54.816,60.524c-22.08,15.988-47.205,28.261-75.377,36.829    c-28.164,8.562-57.573,12.848-88.218,12.848c-5.708,0-14.084-0.377-25.122-1.137c38.256,25.119,83.177,37.685,134.756,37.685    c16.371,0,33.119-1.526,50.251-4.571c23.6,16.755,50.06,28.931,79.37,36.549c6.852,1.718,15.037,3.237,24.554,4.568    c2.283,0.195,4.381-0.476,6.283-1.995c1.903-1.526,3.142-3.614,3.71-6.276c-0.089-1.143,0-1.77,0.287-1.861    c0.281-0.09,0.233-0.712-0.144-1.852c-0.376-1.144-0.568-1.715-0.568-1.715l-0.712-1.424c-0.198-0.376-0.52-0.903-0.999-1.567    c-0.476-0.66-0.855-1.14-1.143-1.427c-0.28-0.284-0.705-0.763-1.28-1.424c-0.568-0.66-0.951-1.092-1.143-1.283    c-0.951-1.143-3.139-3.521-6.564-7.139c-3.429-3.613-5.899-6.42-7.422-8.418c-1.523-1.999-3.665-4.757-6.424-8.282    c-2.758-3.518-5.14-7.183-7.139-10.991c-1.998-3.806-3.949-7.995-5.852-12.56C459.281,374.855,477.843,358.059,491.347,338.156z" data-original="#000000" class="active-path" data-old_color="#ffffff" fill="#ffffff"/></g></g></g> </svg>',
+					color: '#03a84e',
+                    onClick:function(){
+	                    $('#arcontactus').contactUs('closeMenu');
+	                    $('#arcontactus').contactUs('hide');
+	                    Tawk_API.showWidget(Tawk_API.toggle());
+                    }
+				},
+	            		            {
+	                    title: '0963821912',
+	                    icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"></path></svg>',
+	                    href: 'tel:0963821912',
+	                    target: '_blank',
+	                    color: '#69DB63'
+	                },
+	                {
+	                    title: 'Zalo',
+	                    icon: '<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460.1 436.6" width="2500" height="2372"><style>.st0{fill:#fdfefe}.st1{fill:#0180c7}.st2{fill:#0172b1}.st3{fill:none;stroke:#0180c7;stroke-width:2;stroke-miterlimit:10}</style><title>logo-zalo-vector</title><path class="st0" d="M82.6 380.9c-1.8-.8-3.1-1.7-1-3.5 1.3-1 2.7-1.9 4.1-2.8 13.1-8.5 25.4-17.8 33.5-31.5 6.8-11.4 5.7-18.1-2.8-26.5C69 269.2 48.2 212.5 58.6 145.5 64.5 107.7 81.8 75 107 46.6c15.2-17.2 33.3-31.1 53.1-42.7 1.2-.7 2.9-.9 3.1-2.7-.4-1-1.1-.7-1.7-.7-33.7 0-67.4-.7-101 .2C28.3 1.7.5 26.6.6 62.3c.2 104.3 0 208.6 0 313 0 32.4 24.7 59.5 57 60.7 27.3 1.1 54.6.2 82 .1 2 .1 4 .2 6 .2H290c36 0 72 .2 108 0 33.4 0 60.5-27 60.5-60.3v-.6-58.5c0-1.4.5-2.9-.4-4.4-1.8.1-2.5 1.6-3.5 2.6-19.4 19.5-42.3 35.2-67.4 46.3-61.5 27.1-124.1 29-187.6 7.2-5.5-2-11.5-2.2-17.2-.8-8.4 2.1-16.7 4.6-25 7.1-24.4 7.6-49.3 11-74.8 6zm72.5-168.5c1.7-2.2 2.6-3.5 3.6-4.8 13.1-16.6 26.2-33.2 39.3-49.9 3.8-4.8 7.6-9.7 10-15.5 2.8-6.6-.2-12.8-7-15.2-3-.9-6.2-1.3-9.4-1.1-17.8-.1-35.7-.1-53.5 0-2.5 0-5 .3-7.4.9-5.6 1.4-9 7.1-7.6 12.8 1 3.8 4 6.8 7.8 7.7 2.4.6 4.9.9 7.4.8 10.8.1 21.7 0 32.5.1 1.2 0 2.7-.8 3.6 1-.9 1.2-1.8 2.4-2.7 3.5-15.5 19.6-30.9 39.3-46.4 58.9-3.8 4.9-5.8 10.3-3 16.3s8.5 7.1 14.3 7.5c4.6.3 9.3.1 14 .1 16.2 0 32.3.1 48.5-.1 8.6-.1 13.2-5.3 12.3-13.3-.7-6.3-5-9.6-13-9.7-14.1-.1-28.2 0-43.3 0zm116-52.6c-12.5-10.9-26.3-11.6-39.8-3.6-16.4 9.6-22.4 25.3-20.4 43.5 1.9 17 9.3 30.9 27.1 36.6 11.1 3.6 21.4 2.3 30.5-5.1 2.4-1.9 3.1-1.5 4.8.6 3.3 4.2 9 5.8 14 3.9 5-1.5 8.3-6.1 8.3-11.3.1-20 .2-40 0-60-.1-8-7.6-13.1-15.4-11.5-4.3.9-6.7 3.8-9.1 6.9zm69.3 37.1c-.4 25 20.3 43.9 46.3 41.3 23.9-2.4 39.4-20.3 38.6-45.6-.8-25-19.4-42.1-44.9-41.3-23.9.7-40.8 19.9-40 45.6zm-8.8-19.9c0-15.7.1-31.3 0-47 0-8-5.1-13-12.7-12.9-7.4.1-12.3 5.1-12.4 12.8-.1 4.7 0 9.3 0 14v79.5c0 6.2 3.8 11.6 8.8 12.9 6.9 1.9 14-2.2 15.8-9.1.3-1.2.5-2.4.4-3.7.2-15.5.1-31 .1-46.5z"/><path class="st1" d="M139.5 436.2c-27.3 0-54.7.9-82-.1-32.3-1.3-57-28.4-57-60.7 0-104.3.2-208.6 0-313C.5 26.7 28.4 1.8 60.5.9c33.6-.9 67.3-.2 101-.2.6 0 1.4-.3 1.7.7-.2 1.8-2 2-3.1 2.7-19.8 11.6-37.9 25.5-53.1 42.7-25.1 28.4-42.5 61-48.4 98.9-10.4 66.9 10.5 123.7 57.8 171.1 8.4 8.5 9.5 15.1 2.8 26.5-8.1 13.7-20.4 23-33.5 31.5-1.4.8-2.8 1.8-4.2 2.7-2.1 1.8-.8 2.7 1 3.5.4.9.9 1.7 1.5 2.5 11.5 10.2 22.4 21.1 33.7 31.5 5.3 4.9 10.6 10 15.7 15.1 2.1 1.9 5.6 2.5 6.1 6.1z"/><path class="st2" d="M139.5 436.2c-.5-3.5-4-4.1-6.1-6.2-5.1-5.2-10.4-10.2-15.7-15.1-11.3-10.4-22.2-21.3-33.7-31.5-.6-.8-1.1-1.6-1.5-2.5 25.5 5 50.4 1.6 74.9-5.9 8.3-2.5 16.6-5 25-7.1 5.7-1.5 11.7-1.2 17.2.8 63.4 21.8 126 19.8 187.6-7.2 25.1-11.1 48-26.7 67.4-46.2 1-1 1.7-2.5 3.5-2.6.9 1.4.4 2.9.4 4.4v58.5c.2 33.4-26.6 60.6-60 60.9h-.5c-36 .2-72 0-108 0H145.5c-2-.2-4-.3-6-.3z"/><path class="st1" d="M155.1 212.4c15.1 0 29.3-.1 43.4 0 7.9.1 12.2 3.4 13 9.7.9 7.9-3.7 13.2-12.3 13.3-16.2.2-32.3.1-48.5.1-4.7 0-9.3.2-14-.1-5.8-.3-11.5-1.5-14.3-7.5s-.8-11.4 3-16.3c15.4-19.6 30.9-39.3 46.4-58.9.9-1.2 1.8-2.4 2.7-3.5-1-1.7-2.4-.9-3.6-1-10.8-.1-21.7 0-32.5-.1-2.5 0-5-.3-7.4-.8-5.7-1.3-9.2-7-7.9-12.6.9-3.8 3.9-6.9 7.7-7.8 2.4-.6 4.9-.9 7.4-.9 17.8-.1 35.7-.1 53.5 0 3.2-.1 6.3.3 9.4 1.1 6.8 2.3 9.7 8.6 7 15.2-2.4 5.7-6.2 10.6-10 15.5-13.1 16.7-26.2 33.3-39.3 49.8-1.1 1.3-2.1 2.6-3.7 4.8z"/><path class="st1" d="M271.1 159.8c2.4-3.1 4.9-6 9-6.8 7.9-1.6 15.3 3.5 15.4 11.5.3 20 .2 40 0 60 0 5.2-3.4 9.8-8.3 11.3-5 1.9-10.7.4-14-3.9-1.7-2.1-2.4-2.5-4.8-.6-9.1 7.4-19.4 8.7-30.5 5.1-17.8-5.8-25.1-19.7-27.1-36.6-2.1-18.3 4-33.9 20.4-43.5 13.6-8.1 27.4-7.4 39.9 3.5zm-35.4 36.5c.2 4.4 1.6 8.6 4.2 12.1 5.4 7.2 15.7 8.7 23 3.3 1.2-.9 2.3-2 3.3-3.3 5.6-7.6 5.6-20.1 0-27.7-2.8-3.9-7.2-6.2-11.9-6.3-11-.7-18.7 7.8-18.6 21.9zM340.4 196.9c-.8-25.7 16.1-44.9 40.1-45.6 25.5-.8 44.1 16.3 44.9 41.3.8 25.3-14.7 43.2-38.6 45.6-26.1 2.6-46.8-16.3-46.4-41.3zm25.1-2.4c-.2 5 1.3 9.9 4.3 14 5.5 7.2 15.8 8.6 23 3 1.1-.8 2-1.8 2.9-2.8 5.8-7.6 5.8-20.4.1-28-2.8-3.8-7.2-6.2-11.9-6.3-10.8-.6-18.4 7.6-18.4 20.1zM331.6 177c0 15.5.1 31 0 46.5.1 7.1-5.5 13-12.6 13.2-1.2 0-2.5-.1-3.7-.4-5-1.3-8.8-6.6-8.8-12.9v-79.5c0-4.7-.1-9.3 0-14 .1-7.7 5-12.7 12.4-12.7 7.6-.1 12.7 4.9 12.7 12.9.1 15.6 0 31.3 0 46.9z"/><path class="st0" d="M235.7 196.3c-.1-14.1 7.6-22.6 18.5-22 4.7.2 9.1 2.5 11.9 6.4 5.6 7.5 5.6 20.1 0 27.7-5.4 7.2-15.7 8.7-23 3.3-1.2-.9-2.3-2-3.3-3.3-2.5-3.5-3.9-7.7-4.1-12.1zM365.5 194.5c0-12.4 7.6-20.7 18.4-20.1 4.7.1 9.1 2.5 11.9 6.3 5.7 7.6 5.7 20.5-.1 28-5.6 7.1-16 8.3-23.1 2.7-1.1-.8-2-1.8-2.8-2.9-3-4.1-4.4-9-4.3-14z"/><path class="st3" d="M66 1h328.1c35.9 0 65 29.1 65 65v303c0 35.9-29.1 65-65 65H66c-35.9 0-65-29.1-65-65V66C1 30.1 30.1 1 66 1z"/></svg>',
+	                    href: 'http://zalo.me/0963821912',
+	                    target: '_blank',
+	                    color: '#f7f7f7'
+	                },
+                
+                
+					                {
+	                    title: 'Email',
+	                    icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M464 64H48C21.5 64 0 85.5 0 112v288c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM48 96h416c8.8 0 16 7.2 16 16v41.4c-21.9 18.5-53.2 44-150.6 121.3-16.9 13.4-50.2 45.7-73.4 45.3-23.2.4-56.6-31.9-73.4-45.3C85.2 197.4 53.9 171.9 32 153.4V112c0-8.8 7.2-16 16-16zm416 320H48c-8.8 0-16-7.2-16-16V195c22.8 18.7 58.8 47.6 130.7 104.7 20.5 16.4 56.7 52.5 93.3 52.3 36.4.3 72.3-35.5 93.3-52.3 71.9-57.1 107.9-86 130.7-104.7v205c0 8.8-7.2 16-16 16z"></path></svg>',
+	                    href: 'mailto:nguyenthuy15996@gmail.com',
+	                    target: '_self',
+	                    color: '#FF643A'
+	                }
+                
+            ]
+        });
+    });
+
+
+
+	$(function(){
+		$('#Canvas #Vector use').css({ fill: "black" });
+	});
+</script>
+<!-- /Arcontactus ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
+    <script type="text/javascript">
+                                    var optionsPrice = new Product.OptionsPrice([]);
+                                </script>
+
+
+
+                                <script type="text/javascript">
+	                                /*
+ *	Cloud Zoom js
+ */
+if (typeof Object.create !== 'function') {
+	"use strict";
+	Object.create = function(obj) {
+		function F() {};
+		F.prototype = obj;
+		return new F();
+	};
+}
+(function(jQuery, window, document, undefined) {
+	var ElevateZoom = {
+		init: function(options, elem) {
+			var self = this;
+			self.elem = elem;
+			self.jQueryelem = jQuery(elem);
+			self.imageSrc = self.jQueryelem.data("zoom-image") ? self.jQueryelem.data("zoom-image") : self.jQueryelem.attr("src");
+			self.options = jQuery.extend({}, jQuery.fn.elevateZoom.options, options);
+			//TINT OVERRIDE SETTINGS
+			if (self.options.tint) {
+				self.options.lensColour = "none", //colour of the lens background
+					self.options.lensOpacity = "1" //opacity of the lens
+			}
+			//INNER OVERRIDE SETTINGS
+			if (self.options.zoomType == "inner") {
+				self.options.showLens = false;
+			}
+			//Remove alt on hover
+			self.jQueryelem.parent().removeAttr('title').removeAttr('alt');
+			self.zoomImage = self.imageSrc;
+			self.refresh(1);
+			//Create the image swap from the gallery
+			jQuery('#' + self.options.gallery + ' a').click(function(e) {
+				//Set a class on the currently active gallery image
+				if (self.options.galleryActiveClass) {
+					jQuery('#' + self.options.gallery + ' a').removeClass(self.options.galleryActiveClass);
+					jQuery(this).addClass(self.options.galleryActiveClass);
+				}
+				//stop any link on the a tag from working
+				e.preventDefault();
+				//call the swap image function
+				if (jQuery(this).data("zoom-image")) {
+					self.zoomImagePre = jQuery(this).data("zoom-image")
+				} else {
+					self.zoomImagePre = jQuery(this).data("image");
+				}
+				self.swaptheimage(jQuery(this).data("image"), self.zoomImagePre);
+				return false;
+			});
+		},
+		refresh: function(length) {
+			var self = this;
+			setTimeout(function() {
+				self.fetch(self.imageSrc);
+			}, length || self.options.refresh);
+		},
+		fetch: function(imgsrc) {
+			//get the image
+			var self = this;
+			var newImg = new Image();
+			newImg.onload = function() {
+				//set the large image dimensions - used to calculte ratio's
+				self.largeWidth = newImg.width;
+				self.largeHeight = newImg.height;
+				//once image is loaded start the calls
+				self.startZoom();
+				self.currentImage = self.imageSrc;
+				//let caller know image has been loaded
+				self.options.onZoomedImageLoaded(self.jQueryelem);
+			}
+			newImg.src = imgsrc; // this must be done AFTER setting onload
+			return;
+		},
+		startZoom: function() {
+			var self = this;
+			//get dimensions of the non zoomed image
+			self.nzWidth = self.jQueryelem.width();
+			self.nzHeight = self.jQueryelem.height();
+			//activated elements
+			self.isWindowActive = false;
+			self.isLensActive = false;
+			self.isTintActive = false;
+			self.overWindow = false;
+			//CrossFade Wrappe
+			if (self.options.imageCrossfade) {
+				self.zoomWrap = self.jQueryelem.wrap('<div style="height:' + self.nzHeight + 'px;width:' + self.nzWidth + 'px;" class="zoomWrapper" />');
+				self.jQueryelem.css('position', 'absolute');
+			}
+			self.zoomLock = 1;
+			self.scrollingLock = false;
+			self.changeBgSize = false;
+			self.currentZoomLevel = self.options.zoomLevel;
+			//get offset of the non zoomed image
+			self.nzOffset = self.jQueryelem.offset();
+			//calculate the width ratio of the large/small image
+			self.widthRatio = (self.largeWidth / self.currentZoomLevel) / self.nzWidth;
+			self.heightRatio = (self.largeHeight / self.currentZoomLevel) / self.nzHeight;
+			//if window zoom
+			if (self.options.zoomType == "window") {
+				self.zoomWindowStyle = "overflow: hidden;" + "background-position: 0px 0px;text-align:center;" + "background-color: " + String(self.options.zoomWindowBgColour) + ";width: " + String(self.options.zoomWindowWidth) + "px;" + "height: " + String(self.options.zoomWindowHeight) + "px;float: left;" + "background-size: " + self.largeWidth / self.currentZoomLevel + "px " + self.largeHeight / self.currentZoomLevel + "px;" + "display: none;z-index:100;" + "border: " + String(self.options.borderSize) + "px solid " + self.options.borderColour + ";background-repeat: no-repeat;" + "position: absolute;";
+			}
+			//if inner  zoom
+			if (self.options.zoomType == "inner") {
+				//has a border been put on the image? Lets cater for this
+				var borderWidth = self.jQueryelem.css("border-left-width");
+				self.zoomWindowStyle = "overflow: hidden;" + "margin-left: " + String(borderWidth) + ";" + "margin-top: " + String(borderWidth) + ";" + "background-position: 0px 0px;" + "width: " + String(self.nzWidth) + "px;" + "height: " + String(self.nzHeight) + "px;float: left;" + "display: none;" + "cursor:" + (self.options.cursor) + ";" + "px solid " + self.options.borderColour + ";background-repeat: no-repeat;" + "position: absolute;";
+			}
+			//lens style for window zoom
+			if (self.options.zoomType == "window") {
+				// adjust images less than the window height
+				if (self.nzHeight < self.options.zoomWindowWidth / self.widthRatio) {
+					lensHeight = self.nzHeight;
+				} else {
+					lensHeight = String((self.options.zoomWindowHeight / self.heightRatio))
+				}
+				if (self.largeWidth < self.options.zoomWindowWidth) {
+					lensWidth = self.nzWidth;
+				} else {
+					lensWidth = (self.options.zoomWindowWidth / self.widthRatio);
+				}
+				self.lensStyle = "background-position: 0px 0px;width: " + String((self.options.zoomWindowWidth) / self.widthRatio) + "px;height: " + String((self.options.zoomWindowHeight) / self.heightRatio) + "px;float: right;display: none;" + "overflow: hidden;" + "z-index: 999;" + "-webkit-transform: translateZ(0);" + "opacity:" + (self.options.lensOpacity) + ";filter: alpha(opacity = " + (self.options.lensOpacity * 100) + "); zoom:1;" + "width:" + lensWidth + "px;" + "height:" + lensHeight + "px;" + "background-color:" + (self.options.lensColour) + ";" + "cursor:" + (self.options.cursor) + ";" + "border: " + (self.options.lensBorderSize) + "px" + " solid " + (self.options.lensBorderColour) + ";background-repeat: no-repeat;position: absolute;";
+			}
+			//tint style
+			self.tintStyle = "display: block;" + "position: absolute;" + "background-color: " + self.options.tintColour + ";" + "filter:alpha(opacity=0);" + "opacity: 0;" + "width: " + self.nzWidth + "px;" + "height: " + self.nzHeight + "px;";
+			//lens style for lens zoom with optional round for modern browsers
+			self.lensRound = '';
+			if (self.options.zoomType == "lens") {
+				self.lensStyle = "background-position: 0px 0px;" + "float: left;display: none;" + "border: " + String(self.options.borderSize) + "px solid " + self.options.borderColour + ";" + "width:" + String(self.options.lensSize) + "px;" + "height:" + String(self.options.lensSize) + "px;" + "background-repeat: no-repeat;position: absolute;";
+			}
+			//does not round in all browsers
+			if (self.options.lensShape == "round") {
+				self.lensRound = "border-top-left-radius: " + String(self.options.lensSize / 2 + self.options.borderSize) + "px;" + "border-top-right-radius: " + String(self.options.lensSize / 2 + self.options.borderSize) + "px;" + "border-bottom-left-radius: " + String(self.options.lensSize / 2 + self.options.borderSize) + "px;" + "border-bottom-right-radius: " + String(self.options.lensSize / 2 + self.options.borderSize) + "px;";
+			}
+			//create the div's                                                + ""
+			//self.zoomContainer = jQuery('<div/>').addClass('zoomContainer').css({"position":"relative", "height":self.nzHeight, "width":self.nzWidth});
+			self.zoomContainer = jQuery('<div class="zoomContainer" style="-webkit-transform: translateZ(0);position:absolute;left:' + self.nzOffset.left + 'px;top:' + self.nzOffset.top + 'px;height:' + self.nzHeight + 'px;width:' + self.nzWidth + 'px;"></div>');
+			jQuery('body').append(self.zoomContainer);
+			//this will add overflow hidden and contrain the lens on lens mode
+			if (self.options.containLensZoom && self.options.zoomType == "lens") {
+				self.zoomContainer.css("overflow", "hidden");
+			}
+			if (self.options.zoomType != "inner") {
+				self.zoomLens = jQuery("<div class='zoomLens' style='" + self.lensStyle + self.lensRound + "'>&nbsp;</div>").appendTo(self.zoomContainer).click(function() {
+					self.jQueryelem.trigger('click');
+				});
+				if (self.options.tint) {
+					self.tintContainer = jQuery('<div/>').addClass('tintContainer');
+					self.zoomTint = jQuery("<div class='zoomTint' style='" + self.tintStyle + "'></div>");
+					self.zoomLens.wrap(self.tintContainer);
+					self.zoomTintcss = self.zoomLens.after(self.zoomTint);
+					//if tint enabled - set an image to show over the tint
+					self.zoomTintImage = jQuery('<img style="position: absolute; left: 0px; top: 0px; max-width: none; width: ' + self.nzWidth + 'px; height: ' + self.nzHeight + 'px;" src="/default/template/' + self.imageSrc + '">').appendTo(self.zoomLens).click(function() {
+						self.jQueryelem.trigger('click');
+					});
+				}
+			}
+			//create zoom window
+			if (isNaN(self.options.zoomWindowPosition)) {
+				self.zoomWindow = jQuery("<div style='z-index:999;left:" + (self.windowOffsetLeft) + "px;top:" + (self.windowOffsetTop) + "px;" + self.zoomWindowStyle + "' class='zoomWindow'>&nbsp;</div>").appendTo('body').click(function() {
+					self.jQueryelem.trigger('click');
+				});
+			} else {
+				self.zoomWindow = jQuery("<div style='z-index:999;left:" + (self.windowOffsetLeft) + "px;top:" + (self.windowOffsetTop) + "px;" + self.zoomWindowStyle + "' class='zoomWindow'>&nbsp;</div>").appendTo(self.zoomContainer).click(function() {
+					self.jQueryelem.trigger('click');
+				});
+			}
+			self.zoomWindowContainer = jQuery('<div/>').addClass('zoomWindowContainer').css("width", self.options.zoomWindowWidth);
+			self.zoomWindow.wrap(self.zoomWindowContainer);
+			//  self.captionStyle = "text-align: left;background-color: black;color: white;font-weight: bold;padding: 10px;font-family: sans-serif;font-size: 11px";
+			// self.zoomCaption = jQuery('<div class="elevatezoom-caption" style="'+self.captionStyle+'display: block; width: 280px;">INSERT ALT TAG</div>').appendTo(self.zoomWindow.parent());
+			if (self.options.zoomType == "lens") {
+				self.zoomLens.css({
+					backgroundImage: "url('" + self.imageSrc + "')"
+				});
+			}
+			if (self.options.zoomType == "window") {
+				self.zoomWindow.css({
+					backgroundImage: "url('" + self.imageSrc + "')"
+				});
+			}
+			if (self.options.zoomType == "inner") {
+				self.zoomWindow.css({
+					backgroundImage: "url('" + self.imageSrc + "')"
+				});
+			}
+			/*-------------------END THE ZOOM WINDOW AND LENS----------------------------------*/
+			//touch events
+			self.jQueryelem.bind('touchmove', function(e) {
+				e.preventDefault();
+				var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
+				self.setPosition(touch);
+			});
+			self.zoomContainer.bind('touchmove', function(e) {
+				if (self.options.zoomType == "inner") {
+					self.showHideWindow("show");
+				}
+				e.preventDefault();
+				var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
+				self.setPosition(touch);
+			});
+			self.zoomContainer.bind('touchend', function(e) {
+				self.showHideWindow("hide");
+				if (self.options.showLens) {
+					self.showHideLens("hide");
+				}
+				if (self.options.tint && self.options.zoomType != "inner") {
+					self.showHideTint("hide");
+				}
+			});
+			self.jQueryelem.bind('touchend', function(e) {
+				self.showHideWindow("hide");
+				if (self.options.showLens) {
+					self.showHideLens("hide");
+				}
+				if (self.options.tint && self.options.zoomType != "inner") {
+					self.showHideTint("hide");
+				}
+			});
+			if (self.options.showLens) {
+				self.zoomLens.bind('touchmove', function(e) {
+					e.preventDefault();
+					var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
+					self.setPosition(touch);
+				});
+				self.zoomLens.bind('touchend', function(e) {
+					self.showHideWindow("hide");
+					if (self.options.showLens) {
+						self.showHideLens("hide");
+					}
+					if (self.options.tint && self.options.zoomType != "inner") {
+						self.showHideTint("hide");
+					}
+				});
+			}
+			//Needed to work in IE
+			self.jQueryelem.bind('mousemove', function(e) {
+				if (self.overWindow == false) {
+					self.setElements("show");
+				}
+				//make sure on orientation change the setposition is not fired
+				if (self.lastX !== e.clientX || self.lastY !== e.clientY) {
+					self.setPosition(e);
+					self.currentLoc = e;
+				}
+				self.lastX = e.clientX;
+				self.lastY = e.clientY;
+			});
+			self.zoomContainer.bind('mousemove', function(e) {
+				if (self.overWindow == false) {
+					self.setElements("show");
+				}
+				//make sure on orientation change the setposition is not fired
+				if (self.lastX !== e.clientX || self.lastY !== e.clientY) {
+					self.setPosition(e);
+					self.currentLoc = e;
+				}
+				self.lastX = e.clientX;
+				self.lastY = e.clientY;
+			});
+			if (self.options.zoomType != "inner") {
+				self.zoomLens.bind('mousemove', function(e) {
+					//make sure on orientation change the setposition is not fired
+					if (self.lastX !== e.clientX || self.lastY !== e.clientY) {
+						self.setPosition(e);
+						self.currentLoc = e;
+					}
+					self.lastX = e.clientX;
+					self.lastY = e.clientY;
+				});
+			}
+			if (self.options.tint && self.options.zoomType != "inner") {
+				self.zoomTint.bind('mousemove', function(e) {
+					//make sure on orientation change the setposition is not fired
+					if (self.lastX !== e.clientX || self.lastY !== e.clientY) {
+						self.setPosition(e);
+						self.currentLoc = e;
+					}
+					self.lastX = e.clientX;
+					self.lastY = e.clientY;
+				});
+			}
+			if (self.options.zoomType == "inner") {
+				self.zoomWindow.bind('mousemove', function(e) {
+					//self.overWindow = true;
+					//make sure on orientation change the setposition is not fired
+					if (self.lastX !== e.clientX || self.lastY !== e.clientY) {
+						self.setPosition(e);
+						self.currentLoc = e;
+					}
+					self.lastX = e.clientX;
+					self.lastY = e.clientY;
+				});
+			}
+			//  lensFadeOut: 500,  zoomTintFadeIn
+			self.zoomContainer.add(self.jQueryelem).mouseenter(function() {
+				if (self.overWindow == false) {
+					self.setElements("show");
+				}
+			}).mouseleave(function() {
+				if (!self.scrollLock) {
+					self.setElements("hide");
+				}
+			});
+			//end ove image
+			if (self.options.zoomType != "inner") {
+				self.zoomWindow.mouseenter(function() {
+					self.overWindow = true;
+					self.setElements("hide");
+				}).mouseleave(function() {
+					self.overWindow = false;
+				});
+			}
+			//end ove image
+			//				var delta = parseInt(e.originalEvent.wheelDelta || -e.originalEvent.detail);
+			//      jQuery(this).empty();
+			//    return false;
+			//fix for initial zoom setting
+			if (self.options.zoomLevel != 1) {
+				//	self.changeZoomLevel(self.currentZoomLevel);
+			}
+			//set the min zoomlevel
+			if (self.options.minZoomLevel) {
+				self.minZoomLevel = self.options.minZoomLevel;
+			} else {
+				self.minZoomLevel = self.options.scrollZoomIncrement * 2;
+			}
+			if (self.options.scrollZoom) {
+				self.zoomContainer.add(self.jQueryelem).bind('mousewheel DOMMouseScroll MozMousePixelScroll', function(e) {
+					//						in IE there is issue with firing of mouseleave - So check whether still scrolling
+					//						and on mouseleave check if scrolllock
+					self.scrollLock = true;
+					clearTimeout(jQuery.data(this, 'timer'));
+					jQuery.data(this, 'timer', setTimeout(function() {
+						self.scrollLock = false;
+						//do something
+					}, 250));
+					var theEvent = e.originalEvent.wheelDelta || e.originalEvent.detail * -1
+						//this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+						//   e.preventDefault();
+					e.stopImmediatePropagation();
+					e.stopPropagation();
+					e.preventDefault();
+					if (theEvent / 120 > 0) {
+						//scrolling up
+						if (self.currentZoomLevel >= self.minZoomLevel) {
+							self.changeZoomLevel(self.currentZoomLevel - self.options.scrollZoomIncrement);
+						}
+					} else {
+						//scrolling down
+						if (self.options.maxZoomLevel) {
+							if (self.currentZoomLevel <= self.options.maxZoomLevel) {
+								self.changeZoomLevel(parseFloat(self.currentZoomLevel) + self.options.scrollZoomIncrement);
+							}
+						} else {
+							//andy
+							self.changeZoomLevel(parseFloat(self.currentZoomLevel) + self.options.scrollZoomIncrement);
+						}
+					}
+					return false;
+				});
+			}
+		},
+		setElements: function(type) {
+			var self = this;
+			if (!self.options.zoomEnabled) {
+				return false;
+			}
+			if (type == "show") {
+				if (self.isWindowSet) {
+					if (self.options.zoomType == "inner") {
+						self.showHideWindow("show");
+					}
+					if (self.options.zoomType == "window") {
+						self.showHideWindow("show");
+					}
+					if (self.options.showLens) {
+						self.showHideLens("show");
+					}
+					if (self.options.tint && self.options.zoomType != "inner") {
+						self.showHideTint("show");
+					}
+				}
+			}
+			if (type == "hide") {
+				if (self.options.zoomType == "window") {
+					self.showHideWindow("hide");
+				}
+				if (!self.options.tint) {
+					self.showHideWindow("hide");
+				}
+				if (self.options.showLens) {
+					self.showHideLens("hide");
+				}
+				if (self.options.tint) {
+					self.showHideTint("hide");
+				}
+			}
+		},
+		setPosition: function(e) {
+			var self = this;
+			if (!self.options.zoomEnabled) {
+				return false;
+			}
+			//recaclc offset each time in case the image moves
+			//this can be caused by other on page elements
+			self.nzHeight = self.jQueryelem.height();
+			self.nzWidth = self.jQueryelem.width();
+			self.nzOffset = self.jQueryelem.offset();
+			if (self.options.tint && self.options.zoomType != "inner") {
+				self.zoomTint.css({
+					top: 0
+				});
+				self.zoomTint.css({
+					left: 0
+				});
+			}
+			//set responsive
+			//will checking if the image needs changing before running this code work faster?
+			if (self.options.responsive && !self.options.scrollZoom) {
+				if (self.options.showLens) {
+					if (self.nzHeight < self.options.zoomWindowWidth / self.widthRatio) {
+						lensHeight = self.nzHeight;
+					} else {
+						lensHeight = String((self.options.zoomWindowHeight / self.heightRatio))
+					}
+					if (self.largeWidth < self.options.zoomWindowWidth) {
+						lensWidth = self.nzWidth;
+					} else {
+						lensWidth = (self.options.zoomWindowWidth / self.widthRatio);
+					}
+					self.widthRatio = self.largeWidth / self.nzWidth;
+					self.heightRatio = self.largeHeight / self.nzHeight;
+					if (self.options.zoomType != "lens") {
+						//possibly dont need to keep recalcalculating
+						//if the lens is heigher than the image, then set lens size to image size
+						if (self.nzHeight < self.options.zoomWindowWidth / self.widthRatio) {
+							lensHeight = self.nzHeight;
+						} else {
+							lensHeight = String((self.options.zoomWindowHeight / self.heightRatio))
+						}
+						if (self.options.zoomWindowWidth < self.options.zoomWindowWidth) {
+							lensWidth = self.nzWidth;
+						} else {
+							lensWidth = (self.options.zoomWindowWidth / self.widthRatio);
+						}
+						self.zoomLens.css('width', lensWidth);
+						self.zoomLens.css('height', lensHeight);
+						if (self.options.tint) {
+							self.zoomTintImage.css('width', self.nzWidth);
+							self.zoomTintImage.css('height', self.nzHeight);
+						}
+					}
+					if (self.options.zoomType == "lens") {
+						self.zoomLens.css({
+							width: String(self.options.lensSize) + 'px',
+							height: String(self.options.lensSize) + 'px'
+						})
+					}
+					//end responsive image change
+				}
+			}
+			//container fix
+			self.zoomContainer.css({
+				top: self.nzOffset.top
+			});
+			self.zoomContainer.css({
+				left: self.nzOffset.left
+			});
+			self.mouseLeft = parseInt(e.pageX - self.nzOffset.left);
+			self.mouseTop = parseInt(e.pageY - self.nzOffset.top);
+			//calculate the Location of the Lens
+			//calculate the bound regions - but only if zoom window
+			if (self.options.zoomType == "window") {
+				self.Etoppos = (self.mouseTop < (self.zoomLens.height() / 2));
+				self.Eboppos = (self.mouseTop > self.nzHeight - (self.zoomLens.height() / 2) - (self.options.lensBorderSize * 2));
+				self.Eloppos = (self.mouseLeft < 0 + ((self.zoomLens.width() / 2)));
+				self.Eroppos = (self.mouseLeft > (self.nzWidth - (self.zoomLens.width() / 2) - (self.options.lensBorderSize * 2)));
+			}
+			//calculate the bound regions - but only for inner zoom
+			if (self.options.zoomType == "inner") {
+				self.Etoppos = (self.mouseTop < ((self.nzHeight / 2) / self.heightRatio));
+				self.Eboppos = (self.mouseTop > (self.nzHeight - ((self.nzHeight / 2) / self.heightRatio)));
+				self.Eloppos = (self.mouseLeft < 0 + (((self.nzWidth / 2) / self.widthRatio)));
+				self.Eroppos = (self.mouseLeft > (self.nzWidth - (self.nzWidth / 2) / self.widthRatio - (self.options.lensBorderSize * 2)));
+			}
+			// if the mouse position of the slider is one of the outerbounds, then hide  window and lens
+			if (self.mouseLeft <= 0 || self.mouseTop < 0 || self.mouseLeft > self.nzWidth || self.mouseTop > self.nzHeight) {
+				self.setElements("hide");
+				return;
+			}
+			//else continue with operations
+			else {
+				//lens options
+				if (self.options.showLens) {
+					//		self.showHideLens("show");
+					//set background position of lens
+					self.lensLeftPos = String(self.mouseLeft - self.zoomLens.width() / 2);
+					self.lensTopPos = String(self.mouseTop - self.zoomLens.height() / 2);
+				}
+				//adjust the background position if the mouse is in one of the outer regions
+				//Top region
+				if (self.Etoppos) {
+					self.lensTopPos = 0;
+				}
+				//Left Region
+				if (self.Eloppos) {
+					self.windowLeftPos = 0;
+					self.lensLeftPos = 0;
+					self.tintpos = 0;
+				}
+				//Set bottom and right region for window mode
+				if (self.options.zoomType == "window") {
+					if (self.Eboppos) {
+						self.lensTopPos = Math.max((self.nzHeight) - self.zoomLens.height() - (self.options.lensBorderSize * 2), 0);
+					}
+					if (self.Eroppos) {
+						self.lensLeftPos = (self.nzWidth - (self.zoomLens.width()) - (self.options.lensBorderSize * 2));
+					}
+				}
+				//Set bottom and right region for inner mode
+				if (self.options.zoomType == "inner") {
+					if (self.Eboppos) {
+						self.lensTopPos = Math.max(((self.nzHeight) - (self.options.lensBorderSize * 2)), 0);
+					}
+					if (self.Eroppos) {
+						self.lensLeftPos = (self.nzWidth - (self.nzWidth) - (self.options.lensBorderSize * 2));
+					}
+				}
+				//if lens zoom
+				if (self.options.zoomType == "lens") {
+					self.windowLeftPos = String(((e.pageX - self.nzOffset.left) * self.widthRatio - self.zoomLens.width() / 2) * (-1));
+					self.windowTopPos = String(((e.pageY - self.nzOffset.top) * self.heightRatio - self.zoomLens.height() / 2) * (-1));
+					self.zoomLens.css({
+						backgroundPosition: self.windowLeftPos + 'px ' + self.windowTopPos + 'px'
+					});
+					if (self.changeBgSize) {
+						if (self.nzHeight > self.nzWidth) {
+							if (self.options.zoomType == "lens") {
+								self.zoomLens.css({
+									"background-size": self.largeWidth / self.newvalueheight + 'px ' + self.largeHeight / self.newvalueheight + 'px'
+								});
+							}
+							self.zoomWindow.css({
+								"background-size": self.largeWidth / self.newvalueheight + 'px ' + self.largeHeight / self.newvalueheight + 'px'
+							});
+						} else {
+							if (self.options.zoomType == "lens") {
+								self.zoomLens.css({
+									"background-size": self.largeWidth / self.newvaluewidth + 'px ' + self.largeHeight / self.newvaluewidth + 'px'
+								});
+							}
+							self.zoomWindow.css({
+								"background-size": self.largeWidth / self.newvaluewidth + 'px ' + self.largeHeight / self.newvaluewidth + 'px'
+							});
+						}
+						self.changeBgSize = false;
+					}
+					self.setWindowPostition(e);
+				}
+				//if tint zoom
+				if (self.options.tint && self.options.zoomType != "inner") {
+					self.setTintPosition(e);
+				}
+				//set the css background position
+				if (self.options.zoomType == "window") {
+					self.setWindowPostition(e);
+				}
+				if (self.options.zoomType == "inner") {
+					self.setWindowPostition(e);
+				}
+				if (self.options.showLens) {
+					if (self.fullwidth && self.options.zoomType != "lens") {
+						self.lensLeftPos = 0;
+					}
+					self.zoomLens.css({
+						left: self.lensLeftPos + 'px',
+						top: self.lensTopPos + 'px'
+					})
+				}
+			} //end else
+		},
+		showHideWindow: function(change) {
+			var self = this;
+			if (change == "show") {
+				if (!self.isWindowActive) {
+					if (self.options.zoomWindowFadeIn) {
+						self.zoomWindow.stop(true, true, false).fadeIn(self.options.zoomWindowFadeIn);
+					} else {
+						self.zoomWindow.show();
+					}
+					self.isWindowActive = true;
+				}
+			}
+			if (change == "hide") {
+				if (self.isWindowActive) {
+					if (self.options.zoomWindowFadeOut) {
+						self.zoomWindow.stop(true, true).fadeOut(self.options.zoomWindowFadeOut);
+					} else {
+						self.zoomWindow.hide();
+					}
+					self.isWindowActive = false;
+				}
+			}
+		},
+		showHideLens: function(change) {
+			var self = this;
+			if (change == "show") {
+				if (!self.isLensActive) {
+					if (self.options.lensFadeIn) {
+						self.zoomLens.stop(true, true, false).fadeIn(self.options.lensFadeIn);
+					} else {
+						self.zoomLens.show();
+					}
+					self.isLensActive = true;
+				}
+			}
+			if (change == "hide") {
+				if (self.isLensActive) {
+					if (self.options.lensFadeOut) {
+						self.zoomLens.stop(true, true).fadeOut(self.options.lensFadeOut);
+					} else {
+						self.zoomLens.hide();
+					}
+					self.isLensActive = false;
+				}
+			}
+		},
+		showHideTint: function(change) {
+			var self = this;
+			if (change == "show") {
+				if (!self.isTintActive) {
+					if (self.options.zoomTintFadeIn) {
+						self.zoomTint.css({
+							opacity: self.options.tintOpacity
+						}).animate().stop(true, true).fadeIn("slow");
+					} else {
+						self.zoomTint.css({
+							opacity: self.options.tintOpacity
+						}).animate();
+						self.zoomTint.show();
+					}
+					self.isTintActive = true;
+				}
+			}
+			if (change == "hide") {
+				if (self.isTintActive) {
+					if (self.options.zoomTintFadeOut) {
+						self.zoomTint.stop(true, true).fadeOut(self.options.zoomTintFadeOut);
+					} else {
+						self.zoomTint.hide();
+					}
+					self.isTintActive = false;
+				}
+			}
+		},
+		setLensPostition: function(e) {},
+		setWindowPostition: function(e) {
+			//return obj.slice( 0, count );
+			var self = this;
+			if (!isNaN(self.options.zoomWindowPosition)) {
+				switch (self.options.zoomWindowPosition) {
+					case 1: //done
+						self.windowOffsetTop = (self.options.zoomWindowOffety); //DONE - 1
+						self.windowOffsetLeft = (+self.nzWidth); //DONE 1, 2, 3, 4, 16
+						break;
+					case 2:
+						if (self.options.zoomWindowHeight > self.nzHeight) { //positive margin
+							self.windowOffsetTop = ((self.options.zoomWindowHeight / 2) - (self.nzHeight / 2)) * (-1);
+							self.windowOffsetLeft = (self.nzWidth); //DONE 1, 2, 3, 4, 16
+						} else { //negative margin
+						}
+						break;
+					case 3: //done
+						self.windowOffsetTop = (self.nzHeight - self.zoomWindow.height() - (self.options.borderSize * 2)); //DONE 3,9
+						self.windowOffsetLeft = (self.nzWidth); //DONE 1, 2, 3, 4, 16
+						break;
+					case 4: //done
+						self.windowOffsetTop = (self.nzHeight); //DONE - 4,5,6,7,8
+						self.windowOffsetLeft = (self.nzWidth); //DONE 1, 2, 3, 4, 16
+						break;
+					case 5: //done
+						self.windowOffsetTop = (self.nzHeight); //DONE - 4,5,6,7,8
+						self.windowOffsetLeft = (self.nzWidth - self.zoomWindow.width() - (self.options.borderSize * 2)); //DONE - 5,15
+						break;
+					case 6:
+						if (self.options.zoomWindowHeight > self.nzHeight) { //positive margin
+							self.windowOffsetTop = (self.nzHeight); //DONE - 4,5,6,7,8
+							self.windowOffsetLeft = ((self.options.zoomWindowWidth / 2) - (self.nzWidth / 2) + (self.options.borderSize * 2)) * (-1);
+						} else { //negative margin
+						}
+						break;
+					case 7: //done
+						self.windowOffsetTop = (self.nzHeight); //DONE - 4,5,6,7,8
+						self.windowOffsetLeft = 0; //DONE 7, 13
+						break;
+					case 8: //done
+						self.windowOffsetTop = (self.nzHeight); //DONE - 4,5,6,7,8
+						self.windowOffsetLeft = (self.zoomWindow.width() + (self.options.borderSize * 2)) * (-1); //DONE 8,9,10,11,12
+						break;
+					case 9: //done
+						self.windowOffsetTop = (self.nzHeight - self.zoomWindow.height() - (self.options.borderSize * 2)); //DONE 3,9
+						self.windowOffsetLeft = (self.zoomWindow.width() + (self.options.borderSize * 2)) * (-1); //DONE 8,9,10,11,12
+						break;
+					case 10:
+						if (self.options.zoomWindowHeight > self.nzHeight) { //positive margin
+							self.windowOffsetTop = ((self.options.zoomWindowHeight / 2) - (self.nzHeight / 2)) * (-1);
+							self.windowOffsetLeft = (self.zoomWindow.width() + (self.options.borderSize * 2)) * (-1); //DONE 8,9,10,11,12
+						} else { //negative margin
+						}
+						break;
+					case 11:
+						self.windowOffsetTop = (self.options.zoomWindowOffety);
+						self.windowOffsetLeft = (self.zoomWindow.width() + (self.options.borderSize * 2)) * (-1); //DONE 8,9,10,11,12
+						break;
+					case 12: //done
+						self.windowOffsetTop = (self.zoomWindow.height() + (self.options.borderSize * 2)) * (-1); //DONE 12,13,14,15,16
+						self.windowOffsetLeft = (self.zoomWindow.width() + (self.options.borderSize * 2)) * (-1); //DONE 8,9,10,11,12
+						break;
+					case 13: //done
+						self.windowOffsetTop = (self.zoomWindow.height() + (self.options.borderSize * 2)) * (-1); //DONE 12,13,14,15,16
+						self.windowOffsetLeft = (0); //DONE 7, 13
+						break;
+					case 14:
+						if (self.options.zoomWindowHeight > self.nzHeight) { //positive margin
+							self.windowOffsetTop = (self.zoomWindow.height() + (self.options.borderSize * 2)) * (-1); //DONE 12,13,14,15,16
+							self.windowOffsetLeft = ((self.options.zoomWindowWidth / 2) - (self.nzWidth / 2) + (self.options.borderSize * 2)) * (-1);
+						} else { //negative margin
+						}
+						break;
+					case 15: //done
+						self.windowOffsetTop = (self.zoomWindow.height() + (self.options.borderSize * 2)) * (-1); //DONE 12,13,14,15,16
+						self.windowOffsetLeft = (self.nzWidth - self.zoomWindow.width() - (self.options.borderSize * 2)); //DONE - 5,15
+						break;
+					case 16: //done
+						self.windowOffsetTop = (self.zoomWindow.height() + (self.options.borderSize * 2)) * (-1); //DONE 12,13,14,15,16
+						self.windowOffsetLeft = (self.nzWidth); //DONE 1, 2, 3, 4, 16
+						break;
+					default: //done
+						self.windowOffsetTop = (self.options.zoomWindowOffety); //DONE - 1
+						self.windowOffsetLeft = (self.nzWidth); //DONE 1, 2, 3, 4, 16
+				}
+			} //end isNAN
+			else {
+				//WE CAN POSITION IN A CLASS - ASSUME THAT ANY STRING PASSED IS
+				self.externalContainer = jQuery('#' + self.options.zoomWindowPosition);
+				self.externalContainerWidth = self.externalContainer.width();
+				self.externalContainerHeight = self.externalContainer.height();
+				self.externalContainerOffset = self.externalContainer.offset();
+				self.windowOffsetTop = self.externalContainerOffset.top; //DONE - 1
+				self.windowOffsetLeft = self.externalContainerOffset.left; //DONE 1, 2, 3, 4, 16
+			}
+			self.isWindowSet = true;
+			self.windowOffsetTop = self.windowOffsetTop + self.options.zoomWindowOffety;
+			self.windowOffsetLeft = self.windowOffsetLeft + self.options.zoomWindowOffetx;
+			self.zoomWindow.css({
+				top: self.windowOffsetTop
+			});
+			self.zoomWindow.css({
+				left: self.windowOffsetLeft
+			});
+			if (self.options.zoomType == "inner") {
+				self.zoomWindow.css({
+					top: 0
+				});
+				self.zoomWindow.css({
+					left: 0
+				});
+			}
+			self.windowLeftPos = String(((e.pageX - self.nzOffset.left) * self.widthRatio - self.zoomWindow.width() / 2) * (-1));
+			self.windowTopPos = String(((e.pageY - self.nzOffset.top) * self.heightRatio - self.zoomWindow.height() / 2) * (-1));
+			if (self.Etoppos) {
+				self.windowTopPos = 0;
+			}
+			if (self.Eloppos) {
+				self.windowLeftPos = 0;
+			}
+			if (self.Eboppos) {
+				self.windowTopPos = (self.largeHeight / self.currentZoomLevel - self.zoomWindow.height()) * (-1);
+			}
+			if (self.Eroppos) {
+				self.windowLeftPos = ((self.largeWidth / self.currentZoomLevel - self.zoomWindow.width()) * (-1));
+			}
+			//stops micro movements
+			if (self.fullheight) {
+				self.windowTopPos = 0;
+			}
+			if (self.fullwidth) {
+				self.windowLeftPos = 0;
+			}
+			//set the css background position
+			if (self.options.zoomType == "window" || self.options.zoomType == "inner") {
+				if (self.zoomLock == 1) {
+					//overrides for images not zoomable
+					if (self.widthRatio <= 1) {
+						self.windowLeftPos = 0;
+					}
+					if (self.heightRatio <= 1) {
+						self.windowTopPos = 0;
+					}
+				}
+				// adjust images less than the window height
+				if (self.largeHeight < self.options.zoomWindowHeight) {
+					self.windowTopPos = 0;
+				}
+				if (self.largeWidth < self.options.zoomWindowWidth) {
+					self.windowLeftPos = 0;
+				}
+				//set the zoomwindow background position
+				if (self.options.easing) {
+					//     if(self.changeZoom){
+					//           clearInterval(self.loop);
+					//           self.changeZoom = false;
+					//           self.loop = false;
+					//            }
+					//set the pos to 0 if not set
+					if (!self.xp) {
+						self.xp = 0;
+					}
+					if (!self.yp) {
+						self.yp = 0;
+					}
+					//if loop not already started, then run it
+					if (!self.loop) {
+						self.loop = setInterval(function() {
+							//using zeno's paradox
+							self.xp += (self.windowLeftPos - self.xp) / self.options.easingAmount;
+							self.yp += (self.windowTopPos - self.yp) / self.options.easingAmount;
+							if (self.scrollingLock) {
+								clearInterval(self.loop);
+								self.xp = self.windowLeftPos;
+								self.yp = self.windowTopPos
+								self.xp = ((e.pageX - self.nzOffset.left) * self.widthRatio - self.zoomWindow.width() / 2) * (-1);
+								self.yp = (((e.pageY - self.nzOffset.top) * self.heightRatio - self.zoomWindow.height() / 2) * (-1));
+								if (self.changeBgSize) {
+									if (self.nzHeight > self.nzWidth) {
+										if (self.options.zoomType == "lens") {
+											self.zoomLens.css({
+												"background-size": self.largeWidth / self.newvalueheight + 'px ' + self.largeHeight / self.newvalueheight + 'px'
+											});
+										}
+										self.zoomWindow.css({
+											"background-size": self.largeWidth / self.newvalueheight + 'px ' + self.largeHeight / self.newvalueheight + 'px'
+										});
+									} else {
+										if (self.options.zoomType != "lens") {
+											self.zoomLens.css({
+												"background-size": self.largeWidth / self.newvaluewidth + 'px ' + self.largeHeight / self.newvalueheight + 'px'
+											});
+										}
+										self.zoomWindow.css({
+											"background-size": self.largeWidth / self.newvaluewidth + 'px ' + self.largeHeight / self.newvaluewidth + 'px'
+										});
+									}
+									/*
+             if(!self.bgxp){self.bgxp = self.largeWidth/self.newvalue;}
+						if(!self.bgyp){self.bgyp = self.largeHeight/self.newvalue ;}
+                 if (!self.bgloop){
+                 	self.bgloop = setInterval(function(){
+
+                 self.bgxp += (self.largeWidth/self.newvalue  - self.bgxp) / self.options.easingAmount;
+								self.bgyp += (self.largeHeight/self.newvalue  - self.bgyp) / self.options.easingAmount;
+
+           self.zoomWindow.css({ "background-size": self.bgxp + 'px ' + self.bgyp + 'px' });
+
+
+                  }, 16);
+
+                 }
+										 */
+									self.changeBgSize = false;
+								}
+								self.zoomWindow.css({
+									backgroundPosition: self.windowLeftPos + 'px ' + self.windowTopPos + 'px'
+								});
+								self.scrollingLock = false;
+								self.loop = false;
+							} else {
+								if (self.changeBgSize) {
+									if (self.nzHeight > self.nzWidth) {
+										if (self.options.zoomType == "lens") {
+											self.zoomLens.css({
+												"background-size": self.largeWidth / self.newvalueheight + 'px ' + self.largeHeight / self.newvalueheight + 'px'
+											});
+										}
+										self.zoomWindow.css({
+											"background-size": self.largeWidth / self.newvalueheight + 'px ' + self.largeHeight / self.newvalueheight + 'px'
+										});
+									} else {
+										if (self.options.zoomType != "lens") {
+											self.zoomLens.css({
+												"background-size": self.largeWidth / self.newvaluewidth + 'px ' + self.largeHeight / self.newvaluewidth + 'px'
+											});
+										}
+										self.zoomWindow.css({
+											"background-size": self.largeWidth / self.newvaluewidth + 'px ' + self.largeHeight / self.newvaluewidth + 'px'
+										});
+									}
+									self.changeBgSize = false;
+								}
+								self.zoomWindow.css({
+									backgroundPosition: self.xp + 'px ' + self.yp + 'px'
+								});
+							}
+						}, 16);
+					}
+				} else {
+					if (self.changeBgSize) {
+						if (self.nzHeight > self.nzWidth) {
+							if (self.options.zoomType == "lens") {
+								self.zoomLens.css({
+									"background-size": self.largeWidth / self.newvalueheight + 'px ' + self.largeHeight / self.newvalueheight + 'px'
+								});
+							}
+							self.zoomWindow.css({
+								"background-size": self.largeWidth / self.newvalueheight + 'px ' + self.largeHeight / self.newvalueheight + 'px'
+							});
+						} else {
+							if (self.options.zoomType == "lens") {
+								self.zoomLens.css({
+									"background-size": self.largeWidth / self.newvaluewidth + 'px ' + self.largeHeight / self.newvaluewidth + 'px'
+								});
+							}
+							if ((self.largeHeight / self.newvaluewidth) < self.options.zoomWindowHeight) {
+								self.zoomWindow.css({
+									"background-size": self.largeWidth / self.newvaluewidth + 'px ' + self.largeHeight / self.newvaluewidth + 'px'
+								});
+							} else {
+								self.zoomWindow.css({
+									"background-size": self.largeWidth / self.newvalueheight + 'px ' + self.largeHeight / self.newvalueheight + 'px'
+								});
+							}
+						}
+						self.changeBgSize = false;
+					}
+					self.zoomWindow.css({
+						backgroundPosition: self.windowLeftPos + 'px ' + self.windowTopPos + 'px'
+					});
+				}
+			}
+		},
+		setTintPosition: function(e) {
+			var self = this;
+			self.nzOffset = self.jQueryelem.offset();
+			self.tintpos = String(((e.pageX - self.nzOffset.left) - (self.zoomLens.width() / 2)) * (-1));
+			self.tintposy = String(((e.pageY - self.nzOffset.top) - self.zoomLens.height() / 2) * (-1));
+			if (self.Etoppos) {
+				self.tintposy = 0;
+			}
+			if (self.Eloppos) {
+				self.tintpos = 0;
+			}
+			if (self.Eboppos) {
+				self.tintposy = (self.nzHeight - self.zoomLens.height() - (self.options.lensBorderSize * 2)) * (-1);
+			}
+			if (self.Eroppos) {
+				self.tintpos = ((self.nzWidth - self.zoomLens.width() - (self.options.lensBorderSize * 2)) * (-1));
+			}
+			if (self.options.tint) {
+				//stops micro movements
+				if (self.fullheight) {
+					self.tintposy = 0;
+				}
+				if (self.fullwidth) {
+					self.tintpos = 0;
+				}
+				self.zoomTintImage.css({
+					'left': self.tintpos + 'px'
+				});
+				self.zoomTintImage.css({
+					'top': self.tintposy + 'px'
+				});
+			}
+		},
+		swaptheimage: function(smallimage, largeimage) {
+			var self = this;
+			var newImg = new Image();
+			if (self.options.loadingIcon) {
+				self.spinner = jQuery('<div style="background: url(\'' + self.options.loadingIcon + '\') no-repeat center;height:' + self.nzHeight + 'px;width:' + self.nzWidth + 'px;z-index: 2000;position: absolute; background-position: center center;"></div>');
+				self.jQueryelem.after(self.spinner);
+			}
+			self.options.onImageSwap(self.jQueryelem);
+			newImg.onload = function() {
+				self.largeWidth = newImg.width;
+				self.largeHeight = newImg.height;
+				self.zoomImage = largeimage;
+				self.zoomWindow.css({
+					"background-size": self.largeWidth + 'px ' + self.largeHeight + 'px'
+				});
+				self.zoomWindow.css({
+					"background-size": self.largeWidth + 'px ' + self.largeHeight + 'px'
+				});
+				self.swapAction(smallimage, largeimage);
+				return;
+			}
+			newImg.src = largeimage; // this must be done AFTER setting onload
+		},
+		swapAction: function(smallimage, largeimage) {
+			var self = this;
+			var newImg2 = new Image();
+			newImg2.onload = function() {
+				//re-calculate values
+				self.nzHeight = newImg2.height;
+				self.nzWidth = newImg2.width;
+				self.options.onImageSwapComplete(self.jQueryelem);
+				self.doneCallback();
+				return;
+			}
+			newImg2.src = smallimage;
+			//reset the zoomlevel to that initially set in options
+			self.currentZoomLevel = self.options.zoomLevel;
+			self.options.maxZoomLevel = false;
+			//swaps the main image
+			//self.jQueryelem.attr("src",smallimage);
+			//swaps the zoom image
+			if (self.options.zoomType == "lens") {
+				self.zoomLens.css({
+					backgroundImage: "url('" + largeimage + "')"
+				});
+			}
+			if (self.options.zoomType == "window") {
+				self.zoomWindow.css({
+					backgroundImage: "url('" + largeimage + "')"
+				});
+			}
+			if (self.options.zoomType == "inner") {
+				self.zoomWindow.css({
+					backgroundImage: "url('" + largeimage + "')"
+				});
+			}
+			self.currentImage = largeimage;
+			if (self.options.imageCrossfade) {
+				var oldImg = self.jQueryelem;
+				var newImg = oldImg.clone();
+				self.jQueryelem.attr("src", smallimage)
+				self.jQueryelem.after(newImg);
+				newImg.stop(true).fadeOut(self.options.imageCrossfade, function() {
+					jQuery(this).remove();
+				});
+				//       				if(self.options.zoomType == "inner"){
+				//remove any attributes on the cloned image so we can resize later
+				self.jQueryelem.width("auto").removeAttr("width");
+				self.jQueryelem.height("auto").removeAttr("height");
+				//   }
+				oldImg.fadeIn(self.options.imageCrossfade);
+				if (self.options.tint && self.options.zoomType != "inner") {
+					var oldImgTint = self.zoomTintImage;
+					var newImgTint = oldImgTint.clone();
+					self.zoomTintImage.attr("src", largeimage)
+					self.zoomTintImage.after(newImgTint);
+					newImgTint.stop(true).fadeOut(self.options.imageCrossfade, function() {
+						jQuery(this).remove();
+					});
+					oldImgTint.fadeIn(self.options.imageCrossfade);
+					//self.zoomTintImage.attr("width",elem.data("image"));
+					//resize the tint window
+					self.zoomTint.css({
+						height: self.jQueryelem.height()
+					});
+					self.zoomTint.css({
+						width: self.jQueryelem.width()
+					});
+				}
+				self.zoomContainer.css("height", self.jQueryelem.height());
+				self.zoomContainer.css("width", self.jQueryelem.width());
+				if (self.options.zoomType == "inner") {
+					if (!self.options.constrainType) {
+						self.zoomWrap.parent().css("height", self.jQueryelem.height());
+						self.zoomWrap.parent().css("width", self.jQueryelem.width());
+						self.zoomWindow.css("height", self.jQueryelem.height());
+						self.zoomWindow.css("width", self.jQueryelem.width());
+					}
+				}
+				if (self.options.imageCrossfade) {
+					self.zoomWrap.css("height", self.jQueryelem.height());
+					self.zoomWrap.css("width", self.jQueryelem.width());
+				}
+			} else {
+				self.jQueryelem.attr("src", smallimage);
+				if (self.options.tint) {
+					self.zoomTintImage.attr("src", largeimage);
+					//self.zoomTintImage.attr("width",elem.data("image"));
+					self.zoomTintImage.attr("height", self.jQueryelem.height());
+					//self.zoomTintImage.attr('src') = elem.data("image");
+					self.zoomTintImage.css({
+						height: self.jQueryelem.height()
+					});
+					self.zoomTint.css({
+						height: self.jQueryelem.height()
+					});
+				}
+				self.zoomContainer.css("height", self.jQueryelem.height());
+				self.zoomContainer.css("width", self.jQueryelem.width());
+				if (self.options.imageCrossfade) {
+					self.zoomWrap.css("height", self.jQueryelem.height());
+					self.zoomWrap.css("width", self.jQueryelem.width());
+				}
+			}
+			if (self.options.constrainType) {
+				//This will contrain the image proportions
+				if (self.options.constrainType == "height") {
+					self.zoomContainer.css("height", self.options.constrainSize);
+					self.zoomContainer.css("width", "auto");
+					if (self.options.imageCrossfade) {
+						self.zoomWrap.css("height", self.options.constrainSize);
+						self.zoomWrap.css("width", "auto");
+						self.constwidth = self.zoomWrap.width();
+					} else {
+						self.jQueryelem.css("height", self.options.constrainSize);
+						self.jQueryelem.css("width", "auto");
+						self.constwidth = self.jQueryelem.width();
+					}
+					if (self.options.zoomType == "inner") {
+						self.zoomWrap.parent().css("height", self.options.constrainSize);
+						self.zoomWrap.parent().css("width", self.constwidth);
+						self.zoomWindow.css("height", self.options.constrainSize);
+						self.zoomWindow.css("width", self.constwidth);
+					}
+					if (self.options.tint) {
+						self.tintContainer.css("height", self.options.constrainSize);
+						self.tintContainer.css("width", self.constwidth);
+						self.zoomTint.css("height", self.options.constrainSize);
+						self.zoomTint.css("width", self.constwidth);
+						self.zoomTintImage.css("height", self.options.constrainSize);
+						self.zoomTintImage.css("width", self.constwidth);
+					}
+				}
+				if (self.options.constrainType == "width") {
+					self.zoomContainer.css("height", "auto");
+					self.zoomContainer.css("width", self.options.constrainSize);
+					if (self.options.imageCrossfade) {
+						self.zoomWrap.css("height", "auto");
+						self.zoomWrap.css("width", self.options.constrainSize);
+						self.constheight = self.zoomWrap.height();
+					} else {
+						self.jQueryelem.css("height", "auto");
+						self.jQueryelem.css("width", self.options.constrainSize);
+						self.constheight = self.jQueryelem.height();
+					}
+					if (self.options.zoomType == "inner") {
+						self.zoomWrap.parent().css("height", self.constheight);
+						self.zoomWrap.parent().css("width", self.options.constrainSize);
+						self.zoomWindow.css("height", self.constheight);
+						self.zoomWindow.css("width", self.options.constrainSize);
+					}
+					if (self.options.tint) {
+						self.tintContainer.css("height", self.constheight);
+						self.tintContainer.css("width", self.options.constrainSize);
+						self.zoomTint.css("height", self.constheight);
+						self.zoomTint.css("width", self.options.constrainSize);
+						self.zoomTintImage.css("height", self.constheight);
+						self.zoomTintImage.css("width", self.options.constrainSize);
+					}
+				}
+			}
+		},
+		doneCallback: function() {
+			var self = this;
+			if (self.options.loadingIcon) {
+				self.spinner.hide();
+			}
+			self.nzOffset = self.jQueryelem.offset();
+			self.nzWidth = self.jQueryelem.width();
+			self.nzHeight = self.jQueryelem.height();
+			// reset the zoomlevel back to default
+			self.currentZoomLevel = self.options.zoomLevel;
+			//ratio of the large to small image
+			self.widthRatio = self.largeWidth / self.nzWidth;
+			self.heightRatio = self.largeHeight / self.nzHeight;
+			//NEED TO ADD THE LENS SIZE FOR ROUND
+			// adjust images less than the window height
+			if (self.options.zoomType == "window") {
+				if (self.nzHeight < self.options.zoomWindowWidth / self.widthRatio) {
+					lensHeight = self.nzHeight;
+				} else {
+					lensHeight = String((self.options.zoomWindowHeight / self.heightRatio))
+				}
+				if (self.options.zoomWindowWidth < self.options.zoomWindowWidth) {
+					lensWidth = self.nzWidth;
+				} else {
+					lensWidth = (self.options.zoomWindowWidth / self.widthRatio);
+				}
+				if (self.zoomLens) {
+					self.zoomLens.css('width', lensWidth);
+					self.zoomLens.css('height', lensHeight);
+				}
+			}
+		},
+		getCurrentImage: function() {
+			var self = this;
+			return self.zoomImage;
+		},
+		getGalleryList: function() {
+			var self = this;
+			//loop through the gallery options and set them in list for fancybox
+			self.gallerylist = [];
+			if (self.options.gallery) {
+				jQuery('#' + self.options.gallery + ' a').each(function() {
+					var img_src = '/default/template/';
+					if (jQuery(this).data("zoom-image")) {
+						img_src = jQuery(this).data("zoom-image");
+					} else if (jQuery(this).data("image")) {
+						img_src = jQuery(this).data("image");
+					}
+					//put the current image at the start
+					if (img_src == self.zoomImage) {
+						self.gallerylist.unshift({
+							href: '' + img_src + '',
+							title: jQuery(this).find('img').attr("title")
+						});
+					} else {
+						self.gallerylist.push({
+							href: '' + img_src + '',
+							title: jQuery(this).find('img').attr("title")
+						});
+					}
+				});
+			}
+			//if no gallery - return current image
+			else {
+				self.gallerylist.push({
+					href: '' + self.zoomImage + '',
+					title: jQuery(this).find('img').attr("title")
+				});
+			}
+			return self.gallerylist;
+		},
+		changeZoomLevel: function(value) {
+			var self = this;
+			//flag a zoom, so can adjust the easing during setPosition
+			self.scrollingLock = true;
+			//round to two decimal places
+			self.newvalue = parseFloat(value).toFixed(2);
+			newvalue = parseFloat(value).toFixed(2);
+			//maxwidth & Maxheight of the image
+			maxheightnewvalue = self.largeHeight / ((self.options.zoomWindowHeight / self.nzHeight) * self.nzHeight);
+			maxwidthtnewvalue = self.largeWidth / ((self.options.zoomWindowWidth / self.nzWidth) * self.nzWidth);
+			//calculate new heightratio
+			if (self.options.zoomType != "inner") {
+				if (maxheightnewvalue <= newvalue) {
+					self.heightRatio = (self.largeHeight / maxheightnewvalue) / self.nzHeight;
+					self.newvalueheight = maxheightnewvalue;
+					self.fullheight = true;
+				} else {
+					self.heightRatio = (self.largeHeight / newvalue) / self.nzHeight;
+					self.newvalueheight = newvalue;
+					self.fullheight = false;
+				}
+				//					calculate new width ratio
+				if (maxwidthtnewvalue <= newvalue) {
+					self.widthRatio = (self.largeWidth / maxwidthtnewvalue) / self.nzWidth;
+					self.newvaluewidth = maxwidthtnewvalue;
+					self.fullwidth = true;
+				} else {
+					self.widthRatio = (self.largeWidth / newvalue) / self.nzWidth;
+					self.newvaluewidth = newvalue;
+					self.fullwidth = false;
+				}
+				if (self.options.zoomType == "lens") {
+					if (maxheightnewvalue <= newvalue) {
+						self.fullwidth = true;
+						self.newvaluewidth = maxheightnewvalue;
+					} else {
+						self.widthRatio = (self.largeWidth / newvalue) / self.nzWidth;
+						self.newvaluewidth = newvalue;
+						self.fullwidth = false;
+					}
+				}
+			}
+			if (self.options.zoomType == "inner") {
+				maxheightnewvalue = parseFloat(self.largeHeight / self.nzHeight).toFixed(2);
+				maxwidthtnewvalue = parseFloat(self.largeWidth / self.nzWidth).toFixed(2);
+				if (newvalue > maxheightnewvalue) {
+					newvalue = maxheightnewvalue;
+				}
+				if (newvalue > maxwidthtnewvalue) {
+					newvalue = maxwidthtnewvalue;
+				}
+				if (maxheightnewvalue <= newvalue) {
+					self.heightRatio = (self.largeHeight / newvalue) / self.nzHeight;
+					if (newvalue > maxheightnewvalue) {
+						self.newvalueheight = maxheightnewvalue;
+					} else {
+						self.newvalueheight = newvalue;
+					}
+					self.fullheight = true;
+				} else {
+					self.heightRatio = (self.largeHeight / newvalue) / self.nzHeight;
+					if (newvalue > maxheightnewvalue) {
+						self.newvalueheight = maxheightnewvalue;
+					} else {
+						self.newvalueheight = newvalue;
+					}
+					self.fullheight = false;
+				}
+				if (maxwidthtnewvalue <= newvalue) {
+					self.widthRatio = (self.largeWidth / newvalue) / self.nzWidth;
+					if (newvalue > maxwidthtnewvalue) {
+						self.newvaluewidth = maxwidthtnewvalue;
+					} else {
+						self.newvaluewidth = newvalue;
+					}
+					self.fullwidth = true;
+				} else {
+					self.widthRatio = (self.largeWidth / newvalue) / self.nzWidth;
+					self.newvaluewidth = newvalue;
+					self.fullwidth = false;
+				}
+			} //end inner
+			scrcontinue = false;
+			if (self.options.zoomType == "inner") {
+				if (self.nzWidth >= self.nzHeight) {
+					if (self.newvaluewidth <= maxwidthtnewvalue) {
+						scrcontinue = true;
+					} else {
+						scrcontinue = false;
+						self.fullheight = true;
+						self.fullwidth = true;
+					}
+				}
+				if (self.nzHeight > self.nzWidth) {
+					if (self.newvaluewidth <= maxwidthtnewvalue) {
+						scrcontinue = true;
+					} else {
+						scrcontinue = false;
+						self.fullheight = true;
+						self.fullwidth = true;
+					}
+				}
+			}
+			if (self.options.zoomType != "inner") {
+				scrcontinue = true;
+			}
+			if (scrcontinue) {
+				self.zoomLock = 0;
+				self.changeZoom = true;
+				//if lens height is less than image height
+				if (((self.options.zoomWindowHeight) / self.heightRatio) <= self.nzHeight) {
+					self.currentZoomLevel = self.newvalueheight;
+					if (self.options.zoomType != "lens" && self.options.zoomType != "inner") {
+						self.changeBgSize = true;
+						self.zoomLens.css({
+							height: String((self.options.zoomWindowHeight) / self.heightRatio) + 'px'
+						})
+					}
+					if (self.options.zoomType == "lens" || self.options.zoomType == "inner") {
+						self.changeBgSize = true;
+					}
+				}
+				if ((self.options.zoomWindowWidth / self.widthRatio) <= self.nzWidth) {
+					if (self.options.zoomType != "inner") {
+						if (self.newvaluewidth > self.newvalueheight) {
+							self.currentZoomLevel = self.newvaluewidth;
+						}
+					}
+					if (self.options.zoomType != "lens" && self.options.zoomType != "inner") {
+						self.changeBgSize = true;
+						self.zoomLens.css({
+							width: String((self.options.zoomWindowWidth) / self.widthRatio) + 'px'
+						})
+					}
+					if (self.options.zoomType == "lens" || self.options.zoomType == "inner") {
+						self.changeBgSize = true;
+					}
+				}
+				if (self.options.zoomType == "inner") {
+					self.changeBgSize = true;
+					if (self.nzWidth > self.nzHeight) {
+						self.currentZoomLevel = self.newvaluewidth;
+					}
+					if (self.nzHeight > self.nzWidth) {
+						self.currentZoomLevel = self.newvaluewidth;
+					}
+				}
+			} //under
+			//sets the boundry change, called in setWindowPos
+			self.setPosition(self.currentLoc);
+			//
+		},
+		closeAll: function() {
+			if (self.zoomWindow) {
+				self.zoomWindow.hide();
+			}
+			if (self.zoomLens) {
+				self.zoomLens.hide();
+			}
+			if (self.zoomTint) {
+				self.zoomTint.hide();
+			}
+		},
+		changeState: function(value) {
+			var self = this;
+			if (value == 'enable') {
+				self.options.zoomEnabled = true;
+			}
+			if (value == 'disable') {
+				self.options.zoomEnabled = false;
+			}
+		}
+	};
+	jQuery.fn.elevateZoom = function(options) {
+		return this.each(function() {
+			var elevate = Object.create(ElevateZoom);
+			elevate.init(options, this);
+			jQuery.data(this, 'elevateZoom', elevate);
+		});
+	};
+	jQuery.fn.elevateZoom.options = {
+		zoomActivation: "hover", // Can also be click (PLACEHOLDER FOR NEXT VERSION)
+		zoomEnabled: true, //false disables zoomwindow from showing
+		preloading: 1, //by default, load all the images, if 0, then only load images after activated (PLACEHOLDER FOR NEXT VERSION)
+		zoomLevel: 1, //default zoom level of image
+		scrollZoom: false, //allow zoom on mousewheel, true to activate
+		scrollZoomIncrement: 0.1, //steps of the scrollzoom
+		minZoomLevel: false,
+		maxZoomLevel: false,
+		easing: false,
+		easingAmount: 12,
+		lensSize: 200,
+		zoomWindowWidth: 400,
+		zoomWindowHeight: 400,
+		zoomWindowOffetx: 0,
+		zoomWindowOffety: 0,
+		zoomWindowPosition: 1,
+		zoomWindowBgColour: "#fff",
+		lensFadeIn: false,
+		lensFadeOut: false,
+		debug: false,
+		zoomWindowFadeIn: false,
+		zoomWindowFadeOut: false,
+		zoomWindowAlwaysShow: false,
+		zoomTintFadeIn: false,
+		zoomTintFadeOut: false,
+		borderSize: 4,
+		showLens: true,
+		borderColour: "#888",
+		lensBorderSize: 1,
+		lensBorderColour: "#000",
+		lensShape: "square", //can be "round"
+		zoomType: "window", //window is default,  also "lens" available -
+		containLensZoom: false,
+		lensColour: "white", //colour of the lens background
+		lensOpacity: 0.4, //opacity of the lens
+		lenszoom: false,
+		tint: false, //enable the tinting
+		tintColour: "#333", //default tint color, can be anything, red, #ccc, rgb(0,0,0)
+		tintOpacity: 0.4, //opacity of the tint
+		gallery: false,
+		galleryActiveClass: "zoomGalleryActive",
+		imageCrossfade: false,
+		constrainType: false, //width or height
+		constrainSize: false, //in pixels the dimensions you want to constrain on
+		loadingIcon: false, //http://www.example.com/spinner.gif
+		cursor: "default", // user should set to what they want the cursor as, if they have set a click function
+		responsive: true,
+		onComplete: jQuery.noop,
+		onZoomedImageLoaded: function() {},
+		onImageSwap: jQuery.noop,
+		onImageSwapComplete: jQuery.noop
+	};
+})(jQuery, window, document);
+/* Zoom image */
+
+if (jQuery('#product-zoom').length > 0) {
+	jQuery('#product-zoom').elevateZoom({
+		zoomType: "inner",
+		cursor: "crosshair",
+		zoomWindowFadeIn: 500,
+		zoomWindowFadeOut: 750,
+		gallery: 'gallery_01'
+	});
+}
+jQuery("#gallery_01 .slider-items").owlCarousel({
+	autoplay: false,
+	items: 4, //10 items above 1000px browser width
+	itemsDesktop: [1024, 3], //5 items between 1024px and 901px
+	itemsDesktopSmall: [900, 2], // 3 items betweem 900px and 601px
+	itemsTablet: [600, 3], //2 items between 600 and 0;
+	itemsMobile: [320, 2],
+	navigation: true,
+	navigationText: ["<a class=\"flex-prev\"></a>", "<a class=\"flex-next\"></a>"],
+	slideSpeed: 500,
+	pagination: false
+});
+                                    var productAddToCartForm = new VarienForm('product_addtocart_form');
+                                    productAddToCartForm.submit = function(button, url) {
+                                        if (this.validator.validate()) {
+                                            var form = this.form;
+                                            var oldUrl = form.action;
+                                            if (url) {
+                                                form.action = url;
+                                            }
+                                            var e = null;
+                                            try {
+                                                this.form.submit();
+                                            } catch (e) {}
+                                            this.form.action = oldUrl;
+                                            if (e) {
+                                                throw e;
+                                            }
+                                            if (button && button != 'undefined') {
+                                                button.disabled = true;
+                                            }
+                                        }
+                                    }.bind(productAddToCartForm);
+                                    productAddToCartForm.submitLight = function(button, url) {
+                                        if (this.validator) {
+                                            var nv = Validation.methods;
+                                            delete Validation.methods['required-entry'];
+                                            delete Validation.methods['validate-one-required'];
+                                            delete Validation.methods['validate-one-required-by-name'];
+                                            for (var methodName in Validation.methods) {
+                                                if (methodName.match(/^validate-datetime-.*/i)) {
+                                                    delete Validation.methods[methodName];
+                                                }
+                                            }
+                                            if (this.validator.validate()) {
+                                                if (url) {
+                                                    this.form.action = url;
+                                                }
+                                                this.form.submit();
+                                            }
+                                            Object.extend(Validation.methods, nv);
+                                        }
+                                    }.bind(productAddToCartForm);
+                                </script>
+
+                                <script type="text/javascript">
+                                                        decorateTable('product-attribute-specs-table')
+                                                    </script>
+
+                                                    <script type="text/javascript">
+                                                                var addTagFormJs = new VarienForm('addTagForm');
+
+                                                                function submitTagForm() {
+                                                                    if (addTagFormJs.validator.validate()) {
+                                                                        addTagFormJs.form.submit();
+                                                                    }
+                                                                }
+                                                            </script>
+                                                            <script type="text/javascript">
+	                    decorateTable('product-review-table')
+	                </script>
+	                <script type="text/javascript">
+	                    var dataForm = new VarienForm('review-form');
+	                    Validation.addAllThese([
+	                        ['validate-rating', 'Please select one of each of the ratings above', function(v) {
+	                            var trs = $('product-review-table').select('tr');
+	                            var inputs;
+	                            var error = 1;
+	                            for (var j = 0; j < trs.length; j++) {
+	                                var tr = trs[j];
+	                                if (j > 0) {
+	                                    inputs = tr.select('input');
+	                                    for (i in inputs) {
+	                                        if (inputs[i].checked == true) {
+	                                            error = 0;
+	                                        }
+	                                    }
+	                                    if (error == 1) {
+	                                        return false;
+	                                    } else {
+	                                        error = 1;
+	                                    }
+	                                }
+	                            }
+	                            return true;
+	                        }]
+	                    ]);
+	                </script>
+	                <script type="text/javascript" language="javascript">
+	                    function showDiv() {
+	                        document.getElementById('showHideReview').style.display = "";
+	                        document.getElementById('hide_review').style.display = "";
+	                        document.getElementById('show_review_all').style.display = "none";
+	                    }
+
+	                    function HideDiv() {
+	                        document.getElementById('showHideReview').style.display = "none";
+	                        document.getElementById('show_review_all').style.display = "";
+	                        document.getElementById('hide_review').style.display = "none";
+	                    }
+	                </script>
+	                <script type="text/javascript">
+	                    Varien.Tabs = Class.create();
+	                    Varien.Tabs.prototype = {
+	                        initialize: function(selector) {
+	                            var self = this;
+	                            $$(selector + ' a').each(this.initTab.bind(this));
+	                        },
+	                        initTab: function(el) {
+	                            el.href = 'javascript:void(0)';
+	                            if ($(el.parentNode).hasClassName('active')) {
+	                                this.showContent(el);
+	                            }
+	                            el.observe('click', this.showContent.bind(this, el));
+	                        },
+	                        showContent: function(a) {
+	                            var li = $(a.parentNode),
+	                                ul = $(li.parentNode);
+	                            ul.select('li', 'ol').each(function(el) {
+	                                var contents = $(el.id + '_contents');
+	                                if (el == li) {
+	                                    el.addClassName('active');
+	                                    contents.show();
+	                                } else {
+	                                    el.removeClassName('active');
+	                                    contents.hide();
+	                                }
+	                            });
+	                        }
+	                    }
+	                    new Varien.Tabs('.product-tabs');
+	                </script>
+                    <script type="text/javascript">
+                        var lifetime = 3600;
+                        var expireAt = Mage.Cookies.expires;
+                        if (lifetime > 0) {
+                            expireAt = new Date();
+                            expireAt.setTime(expireAt.getTime() + lifetime * 1000);
+                        }
+                        Mage.Cookies.set('external_no_cache', 1, expireAt);
+                    </script>
+
+
+<!-- !Addthis ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
+	<!-- Go to www.addthis.com/dashboard to customize your tools -->
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a9f4d89cb825409"></script>
+
+<!-- /Addthis ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
+
+
+
+
+
+
+
+<!-- Send email ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
+	<!-- /Send email ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
+
+
+
+
+
+<!-- !reCaptcha ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
+			<script src="https://www.google.com/recaptcha/api.js?render=6LciFdgUAAAAAKikSK-C4OzsWC1wQuTPql-z81Ji"></script>
+		<script>
+			grecaptcha.ready(function(){
+				grecaptcha.execute('6LciFdgUAAAAAKikSK-C4OzsWC1wQuTPql-z81Ji',{action:'contact_support'}).then(function(token){
+					document.getElementById('g-recaptcha-response').value = token;
+				});
+			});
+		</script>
+	<!-- /reCaptcha ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
+
+
+
+
+
+</body>
+</html>

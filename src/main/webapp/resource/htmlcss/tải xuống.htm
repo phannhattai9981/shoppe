@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]> <html lang="vi" prefix="og: https://ogp.me/ns#" class="ie9 loading-site no-js"> <![endif]-->
+<!--[if IE 8 ]> <html lang="vi" prefix="og: https://ogp.me/ns#" class="ie8 loading-site no-js"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="vi" prefix="og: https://ogp.me/ns#" class="loading-site no-js"> <!--<![endif]-->
+<head><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(e){this.triggerEvents=e,this.eventOptions={passive:!0},this.userEventListener=this.triggerListener.bind(this),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventListener,e.eventOptions)))}_removeUserInteractionListener(e){this.triggerEvents.forEach((t=>window.removeEventListener(t,e.userEventListener,e.eventOptions)))}triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}async _loadEverythingNow(){this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async),await this._triggerDOMContentLoaded(),await this._triggerWindowLoad(),window.dispatchEvent(new Event("rocket-allScriptsLoaded"))}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._requestAnimFrame(),new Promise((t=>{const n=document.createElement("script");let r;[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type",r=e.nodeValue),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t()),e.parentNode.replaceChild(n,e)}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){var e=document.createDocumentFragment();[...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async].forEach((t=>{const n=t.getAttribute("src");if(n){const t=document.createElement("link");t.href=n,t.rel="preload",t.as="script",e.appendChild(t)}})),document.head.appendChild(e)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(r){e["rocket"+t]=n=r}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._requestAnimFrame(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-load")),await this._requestAnimFrame(),window.rocketonload&&window.rocketonload(),await this._requestAnimFrame(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),window.dispatchEvent(new Event("rocket-pageshow")),await this._requestAnimFrame(),window.rocketonpageshow&&window.rocketonpageshow()}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,r=document.createRange(),i=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const a=document.createDocumentFragment();r.setStart(a,0),a.appendChild(r.createContextualFragment(t)),i.insertBefore(a,o)}}async _requestAnimFrame(){return new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts(["keydown","mousemove","touchmove","touchstart","touchend","wheel"]);e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();
+</script>
+	<meta charset="UTF-8" />
+	<link rel="profile" href="https://gmpg.org/xfn/11" />
+	<link rel="pingback" href="https://brademar.com/xmlrpc.php" />
+
+	<script type="rocketlazyloadscript">(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<!-- Search Engine Optimization by Rank Math PRO - https://s.rankmath.com/home -->
+<title>Shopee Logo PNG | Brade Mar</title><style id="rocket-critical-css">.readingProgressbar{display:none;position:fixed;left:0;bottom:0;width:100%;z-index:9999999;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:none;background-color:transparent}#toc_container li,#toc_container ul{margin:0;padding:0}#toc_container.no_bullets li,#toc_container.no_bullets ul,#toc_container.no_bullets ul li{background:0 0;list-style-type:none;list-style:none}#toc_container ul ul{margin-left:1.5em}#toc_container{background:#f9f9f9;border:1px solid #aaa;padding:10px;margin-bottom:1em;width:auto;display:table;font-size:95%}#toc_container p.toc_title{text-align:center;font-weight:700;margin:0;padding:0}#toc_container p.toc_title+ul.toc_list{margin-top:1em}#toc_container a{text-decoration:none;text-shadow:none}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,header,main,nav{display:block}progress{display:inline-block}progress{vertical-align:baseline}a{background-color:transparent}strong{font-weight:inherit}strong{font-weight:bolder}img{border-style:none}svg:not(:root){overflow:hidden}button,input{font:inherit}button,input{overflow:visible}button{text-transform:none}button,[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}button:-moz-focusring,input:-moz-focusring{outline:1px dotted ButtonText}[type=search]{-webkit-appearance:textfield}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}*,*:before,*:after{-webkit-box-sizing:border-box;box-sizing:border-box}html{-webkit-box-sizing:border-box;box-sizing:border-box;background-attachment:fixed}body{color:#777;scroll-behavior:smooth;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}img{max-width:100%;height:auto;display:inline-block;vertical-align:middle}p:empty{display:none}a,button,input{-ms-touch-action:manipulation;touch-action:manipulation}.col{position:relative;margin:0;padding:0 15px 30px;width:100%}@media screen and (max-width:849px){.col{padding-bottom:30px}}@media screen and (min-width:850px){.row-divided>.col+.col:not(.large-12){border-left:1px solid #ececec}}.align-top{-webkit-box-pack:start!important;-ms-flex-pack:start!important;justify-content:flex-start!important;-webkit-box-align:start!important;-ms-flex-align:start!important;align-items:flex-start!important;-ms-flex-item-align:start!important;align-self:flex-start!important;vertical-align:top!important}@media screen and (min-width:850px){.large-3{max-width:25%;-ms-flex-preferred-size:25%;flex-basis:25%}.large-9{max-width:75%;-ms-flex-preferred-size:75%;flex-basis:75%}}body,.container,.row{width:100%;margin-left:auto;margin-right:auto}.container{padding-left:15px;padding-right:15px}.container,.row{max-width:1080px}.row.row-large{max-width:1110px}.flex-row{-js-display:flex;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;width:100%}.header .flex-row{height:100%}.flex-col{max-height:100%}.flex-grow{-webkit-box-flex:1;-ms-flex:1;flex:1;-ms-flex-negative:1;-ms-flex-preferred-size:auto!important}.flex-left{margin-right:auto}.flex-right{margin-left:auto}@media all and (-ms-high-contrast:none){.nav>li>a>i{top:-1px}}.row{width:100%;-js-display:flex;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row wrap;flex-flow:row wrap}@media screen and (min-width:850px){.row-large{padding-left:0;padding-right:0}.row-large>.col{padding:0 30px 30px;margin-bottom:0}}.nav-dropdown{position:absolute;min-width:260px;max-height:0;z-index:9;padding:20px 0 20px;opacity:0;margin:0;color:#777;background-color:#fff;text-align:left;display:table;left:-99999px}.nav-dropdown:after{visibility:hidden;display:block;content:"";clear:both;height:0}.nav-dropdown li{display:block;margin:0;vertical-align:top}.nav-dropdown>li.html{min-width:260px}.nav-dropdown>li>a{width:auto;display:block;padding:10px 20px;line-height:1.3}.nav-dropdown>li:last-child:not(.nav-dropdown-col)>a{border-bottom:0!important}.nav-dropdown.nav-dropdown-bold>li>a{margin:0 10px;padding-left:10px;border-radius:10px;padding-right:5px}.nav-dropdown.nav-dropdown-bold li.html{padding:0 20px 10px}.nav-dropdown-has-arrow li.has-dropdown:after,.nav-dropdown-has-arrow li.has-dropdown:before{bottom:-2px;z-index:10;opacity:0;left:50%;border:solid transparent;content:"";height:0;width:0;position:absolute}.nav-dropdown-has-arrow li.has-dropdown:after{border-color:rgba(221,221,221,0);border-bottom-color:#fff;border-width:8px;margin-left:-8px}.nav-dropdown-has-arrow li.has-dropdown:before{z-index:-999;border-width:11px;margin-left:-11px}.nav-dropdown-has-shadow .nav-dropdown{-webkit-box-shadow:1px 1px 15px rgba(0,0,0,.15);box-shadow:1px 1px 15px rgba(0,0,0,.15)}.nav,.nav ul:not(.nav-dropdown){margin:0;padding:0}.nav{width:100%;position:relative;display:inline-block;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row wrap;flex-flow:row wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.nav>li{display:inline-block;list-style:none;margin:0;padding:0;position:relative;margin:0 7px}.nav>li>a{padding:10px 0;display:inline-block;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.nav-left{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}.nav-right{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}.nav>li>a,.nav-dropdown>li>a{color:rgba(102,102,102,.85)}.nav-dropdown>li>a{display:block}.nav>li.active>a,.nav-dropdown li.active>a{color:rgba(17,17,17,.85)}.nav li:first-child{margin-left:0!important}.nav li:last-child{margin-right:0!important}.nav-uppercase>li>a{letter-spacing:.02em;text-transform:uppercase;font-weight:bolder}li.html form,li.html input{margin:0}.active>ul.sub-menu{display:block!important}.nav.nav-vertical{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-flow:column;flex-flow:column}.nav.nav-vertical li{list-style:none;margin:0;width:100%}.nav-vertical li li{font-size:1em;padding-left:.5em}.nav-vertical>li{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row wrap;flex-flow:row wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.nav-vertical>li ul{width:100%}.nav-vertical>li>ul>li a,.nav-vertical>li>a{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:auto;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.nav-vertical>li.html{padding-top:1em;padding-bottom:1em}.nav-vertical>li>ul li a{color:#666}.nav-vertical>li>ul{margin:0 0 2em;padding-left:1em}.nav .children{position:fixed;opacity:0;left:-99999px;-webkit-transform:translateX(-10px);-ms-transform:translateX(-10px);transform:translateX(-10px)}.nav-sidebar.nav-vertical>li+li{border-top:1px solid #ececec}.nav-vertical>li+li{border-top:1px solid #ececec}.badge{display:table;z-index:20;height:2.8em;width:2.8em;-webkit-backface-visibility:hidden;backface-visibility:hidden}.badge-inner{display:table-cell;vertical-align:middle;text-align:center;width:100%;height:100%;background-color:#446084;line-height:.85;color:#fff;font-weight:bolder;padding:2px;white-space:nowrap}.badge-outline .badge-inner{color:#446084;background-color:#fff;border:2px solid currentColor}.badge-outline{margin-left:-0.4em}.widget .badge-outline .badge-inner{background-color:transparent}.widget .badge{margin:0!important}.button,button{position:relative;display:inline-block;background-color:transparent;text-transform:uppercase;font-size:.97em;letter-spacing:.03em;font-weight:bolder;text-align:center;color:currentColor;text-decoration:none;border:1px solid transparent;vertical-align:middle;border-radius:0;margin-top:0;margin-right:1em;text-shadow:none;line-height:2.4em;min-height:2.5em;padding:0 1.2em;max-width:100%;text-rendering:optimizeLegibility;-webkit-box-sizing:border-box;box-sizing:border-box}.button span{display:inline-block;line-height:1.6}.button.is-outline{line-height:2.19em}.button{color:#fff;background-color:#446084;background-color:var(--primary-color);border-color:rgba(0,0,0,.05)}.button.is-outline{border:2px solid currentColor;background-color:transparent}.is-outline{color:silver}.primary{background-color:#446084}.secondary{background-color:#d26e4b}.header-button{display:inline-block}.header-button .plain.is-outline:not(:hover){color:#999}.header-button .button{margin:0}.flex-col button,.flex-col .button,.flex-col input{margin-bottom:0}.is-divider{height:3px;display:block;background-color:rgba(0,0,0,.1);margin:1em 0 1em;width:100%;max-width:30px}.widget .is-divider{margin-top:.66em}form{margin-bottom:0}input[type=search]{-webkit-box-sizing:border-box;box-sizing:border-box;border:1px solid #ddd;padding:0 .75em;height:2.507em;font-size:.97em;border-radius:0;max-width:100%;width:100%;vertical-align:middle;background-color:#fff;color:#333;-webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,.1);box-shadow:inset 0 1px 2px rgba(0,0,0,.1)}input[type=search]{-webkit-appearance:none;-moz-appearance:none;appearance:none}.form-flat input:not([type=submit]){background-color:rgba(0,0,0,.03);-webkit-box-shadow:none;box-shadow:none;border-color:rgba(0,0,0,.09);color:currentColor!important;border-radius:99px}.form-flat button,.form-flat input{border-radius:99px}.form-flat .flex-row .flex-col{padding-right:4px}.form-flat .button.icon{color:currentColor!important;border-color:transparent!important;background-color:transparent!important;-webkit-box-shadow:none;box-shadow:none}i[class^=icon-]{font-family:"fl-icons"!important;font-display:block;speak:none!important;margin:0;padding:0;display:inline-block;font-style:normal!important;font-weight:normal!important;font-variant:normal!important;text-transform:none!important;position:relative;line-height:1.2}button i,.button i{vertical-align:middle;top:-1.5px}.button.icon{margin-left:.12em;margin-right:.12em;min-width:2.5em;padding-left:.6em;padding-right:.6em;display:inline-block}.button.icon i{font-size:1.2em}.button.icon.circle{padding-left:0;padding-right:0}.button.icon.circle>i{margin:0 8px}.button.icon.circle>i:only-child{margin:0}.nav>li>a>i{vertical-align:middle;font-size:20px}.nav>li>a>i.icon-search{font-size:1.2em}.nav>li>a>i.icon-menu{font-size:1.9em}.nav>li.has-icon>a>i{min-width:1em}.has-dropdown .icon-angle-down{font-size:16px;margin-left:.2em;opacity:.6}img{opacity:1}.mfp-hide{display:none!important}a{color:#334862;text-decoration:none}a.plain{color:currentColor}ul{list-style:disc}ul{margin-top:0;padding:0}ul ul{margin:1.5em 0 1.5em 3em}li{margin-bottom:.6em}.entry-content ul li{margin-left:1.3em}.button,button,input{margin-bottom:1em}form,p,ul{margin-bottom:1.3em}body{line-height:1.6}h1,h2{color:#555;width:100%;margin-top:0;margin-bottom:.5em;text-rendering:optimizeSpeed}h1{font-size:1.7em;line-height:1.3}h2{font-size:1.6em;line-height:1.3}@media (max-width:549px){h1{font-size:1.4em}h2{font-size:1.2em}}p{margin-top:0}h2>span{-webkit-box-decoration-break:clone;box-decoration-break:clone}span.widget-title{line-height:1.05;letter-spacing:.05em;text-transform:uppercase}span.widget-title{font-size:1em;font-weight:600}.is-normal{font-weight:normal}.is-small{font-size:.8em}.is-xsmall{font-size:.7em}.nav>li>a{font-size:.8em}.nav>li.html{font-size:.85em}.nav-size-large>li>a{font-size:1em}.nav-spacing-xlarge>li{margin:0 13px}.container:after,.row:after{content:"";display:table;clear:both}@media (min-width:850px){.show-for-medium{display:none!important}}@media (max-width:849px){.hide-for-medium{display:none!important}}.full-width{width:100%!important;max-width:100%!important;padding-left:0!important;padding-right:0!important;display:block}.mb-0{margin-bottom:0!important}.ml-0{margin-left:0!important}.mr-half{margin-right:15px}.pb-half{padding-bottom:15px}.pt-half{padding-top:15px}.text-left{text-align:left}.text-left .is-divider{margin-right:auto;margin-left:0}.relative{position:relative!important}.fill{position:absolute;top:0;left:0;height:100%;right:0;bottom:0;padding:0!important;margin:0!important}.bg-fill{background-size:cover!important;background-repeat:no-repeat!important;background-position:50% 50%}.circle{border-radius:999px!important;-o-object-fit:cover;object-fit:cover}.z-top{z-index:9995}.block{display:block}.op-7{opacity:.7}.no-scrollbar{-ms-overflow-style:-ms-autohiding-scrollbar;scrollbar-width:none}.no-scrollbar::-webkit-scrollbar{width:0px!important;height:0px!important}.screen-reader-text{clip:rect(1px,1px,1px,1px);position:absolute!important;height:1px;width:1px;overflow:hidden}.button.tooltip{opacity:1}.dark p{color:#f1f1f1}.nav-dark .nav>li>a{color:rgba(255,255,255,.8)}.nav-dark .nav>li.active>a{color:#fff}html{overflow-x:hidden}@media (max-width:849px){body{overflow-x:hidden}}#wrapper,#main{background-color:#fff;position:relative}.page-wrapper{padding-top:30px;padding-bottom:30px}.header,.header-wrapper{width:100%;z-index:30;position:relative;background-size:cover;background-position:50% 0}.header-bg-color{background-color:rgba(255,255,255,.9)}.header-bottom{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-wrap:no-wrap;flex-wrap:no-wrap}.header-bg-image,.header-bg-color{background-position:50% 0}.header-main{z-index:10;position:relative}.header-bottom{z-index:9;position:relative;min-height:35px}.top-divider{margin-bottom:-1px;border-top:1px solid currentColor;opacity:.1}@media (max-width:849px){.header-main li.html.custom{display:none}}.post{margin:0 0 30px}.entry-header-text{padding:1.5em 0 1.5em}.entry-header-text-top{padding-top:0}.entry-content{padding-top:1.5em;padding-bottom:1.5em}.badge.post-date{top:7%}.box-blog-post .is-divider{margin-top:.5em;margin-bottom:.5em;height:2px}.widget{margin-bottom:1.5em}.widget ul{margin:0}.widget li{list-style:none}.widget>ul>li{list-style:none;margin-bottom:.3em;text-align:left;margin:0}.widget>ul>li:before{font-family:"fl-icons";display:inline-block;opacity:.6;margin-right:6px}.widget>ul>li+li{border-top:1px solid #ececec}.recent-blog-posts{padding:10px 0 10px}.recent-blog-posts a{line-height:1.2;display:block;margin-bottom:6px}html{background-color:#5b5b5b}.logo{line-height:1;margin:0}.logo a{text-decoration:none;display:block;color:#446084;font-size:32px;text-transform:uppercase;font-weight:bolder;margin:0}.logo img{display:block;width:auto}.header-logo-dark{display:none!important}.logo-left .logo{margin-left:0;margin-right:30px}@media screen and (max-width:849px){.header-inner .nav{-ms-flex-wrap:nowrap;flex-wrap:nowrap}.medium-logo-center .flex-left{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;-webkit-box-flex:1;-ms-flex:1 1 0px;flex:1 1 0}.medium-logo-center .logo{-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2;text-align:center;margin:0 15px}.medium-logo-center .logo img{margin:0 auto}.medium-logo-center .flex-right{-webkit-box-flex:1;-ms-flex:1 1 0px;flex:1 1 0;-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3}}.sidebar-menu .search-form{display:block!important}.searchform-wrapper form{margin-bottom:0}.sidebar-menu .search-form{padding:5px 0;width:100%}.searchform{position:relative}.searchform .button.icon{margin:0}.searchform .button.icon i{font-size:1.2em}.searchform-wrapper{width:100%}.searchform-wrapper.form-flat .flex-col:last-of-type{margin-left:-2.9em}.header .search-form .live-search-results{text-align:left;color:#111;top:105%;-webkit-box-shadow:0 0 10px 0 rgba(0,0,0,.1);box-shadow:0 0 10px 0 rgba(0,0,0,.1);left:0;right:0;background-color:rgba(255,255,255,.95);position:absolute}.header li .html .live-search-results{top:0;position:relative;-webkit-box-shadow:none;box-shadow:none;background-color:transparent}.icon-menu:before{content:""}.icon-angle-down:before{content:""}.icon-twitter:before{content:""}.icon-envelop:before{content:""}.icon-facebook:before{content:""}.icon-instagram:before{content:""}.icon-search:before{content:""}.icon-linkedin:before{content:""}.icon-youtube:before{content:""}.social-icons{display:inline-block;vertical-align:middle;font-size:.85em;color:#999}.html .social-icons{font-size:1em}.html .social-icons .button{margin-bottom:0}.social-icons i{min-width:1em}.social-icons .button.icon:not(.is-outline){background-color:currentColor!important;border-color:currentColor!important}.social-icons .button.icon:not(.is-outline)>i{color:#fff!important}.button.facebook:not(.is-outline){color:#3a589d!important}.button.instagram:not(.is-outline){color:#3b6994!important}.button.twitter:not(.is-outline){color:#2478ba!important}.button.email:not(.is-outline){color:#111!important}.button.linkedin:not(.is-outline){color:#0072b7!important}.button.youtube:not(.is-outline){color:#c33223!important}</style><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Roboto%3Aregular%2C700%2Cregular%2C700%7C-apple-system%2C%20BlinkMacSystemFont%2C%20%26quot%3BSegoe%20UI%26quot%3B%2C%20Roboto%2C%20Oxygen-Sans%2C%20Ubuntu%2C%20Cantarell%2C%20%26quot%3BHelvetica%20Neue%26quot%3B%2C%20sans-serif%3Aregular%2Cregular&#038;display=swap" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3Aregular%2C700%2Cregular%2C700%7C-apple-system%2C%20BlinkMacSystemFont%2C%20%26quot%3BSegoe%20UI%26quot%3B%2C%20Roboto%2C%20Oxygen-Sans%2C%20Ubuntu%2C%20Cantarell%2C%20%26quot%3BHelvetica%20Neue%26quot%3B%2C%20sans-serif%3Aregular%2Cregular&#038;display=swap" media="print" onload="this.media='all'" /><noscript><link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto%3Aregular%2C700%2Cregular%2C700%7C-apple-system%2C%20BlinkMacSystemFont%2C%20%26quot%3BSegoe%20UI%26quot%3B%2C%20Roboto%2C%20Oxygen-Sans%2C%20Ubuntu%2C%20Cantarell%2C%20%26quot%3BHelvetica%20Neue%26quot%3B%2C%20sans-serif%3Aregular%2Cregular&#038;display=swap" data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" /></noscript><link rel="preload" href="https://brademar.com/wp-content/cache/min/1/41711c332c7b7d08a96c54eeb5ffd19e.css" data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" media="all" data-minify="1" />
+<meta name="description" content="Shopee Logo PNG - Shopee là một công ty công nghệ đa quốc gia của Singapore chuyên về thương mại điện tử."/>
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+<link rel="canonical" href="https://brademar.com/shopee-logo-png/" />
+<meta property="og:locale" content="vi_VN" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Shopee Logo PNG | Brade Mar" />
+<meta property="og:description" content="Shopee Logo PNG - Shopee là một công ty công nghệ đa quốc gia của Singapore chuyên về thương mại điện tử." />
+<meta property="og:url" content="https://brademar.com/shopee-logo-png/" />
+<meta property="og:site_name" content="Brade Mar" />
+<meta property="article:publisher" content="https://www.facebook.com/brademarketing/" />
+<meta property="article:section" content="Logo PNG" />
+<meta property="og:updated_time" content="2022-09-27T18:46:46+07:00" />
+<meta property="og:image" content="https://brademar.com/wp-content/uploads/2022/09/Shopee-Logo-PNG-1.png" />
+<meta property="og:image:secure_url" content="https://brademar.com/wp-content/uploads/2022/09/Shopee-Logo-PNG-1.png" />
+<meta property="og:image:width" content="800" />
+<meta property="og:image:height" content="500" />
+<meta property="og:image:alt" content="Shopee Logo PNG 1" />
+<meta property="og:image:type" content="image/png" />
+<meta property="article:published_time" content="2022-09-27T18:45:59+07:00" />
+<meta property="article:modified_time" content="2022-09-27T18:46:46+07:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Shopee Logo PNG | Brade Mar" />
+<meta name="twitter:description" content="Shopee Logo PNG - Shopee là một công ty công nghệ đa quốc gia của Singapore chuyên về thương mại điện tử." />
+<meta name="twitter:site" content="@twitter:brademarketing" />
+<meta name="twitter:creator" content="@twitter:brademarketing" />
+<meta name="twitter:image" content="https://brademar.com/wp-content/uploads/2022/09/Shopee-Logo-PNG-1.png" />
+<meta name="twitter:label1" content="Written by" />
+<meta name="twitter:data1" content="Brade Mar" />
+<meta name="twitter:label2" content="Time to read" />
+<meta name="twitter:data2" content="2 minutes" />
+<script type="application/ld+json" class="rank-math-schema-pro">{"@context":"https://schema.org","@graph":[{"@type":"Place","@id":"https://brademar.com/#place","geo":{"@type":"GeoCoordinates","latitude":"10.785588586621824","longitude":" 106.74741293549509"},"hasMap":"https://www.google.com/maps/search/?api=1&amp;query=10.785588586621824, 106.74741293549509","address":{"@type":"PostalAddress","streetAddress":"654 Mai Chi Tho Street","addressLocality":"An Ph\u00fa Ward, District 2","addressRegion":"Ho Chi Minh City","postalCode":"700000","addressCountry":"Vietnam"}},{"@type":["NewsMediaOrganization","Organization"],"@id":"https://brademar.com/#organization","name":"Brade Mar","url":"https://brademar.com","email":"brademar.contact@gmail.com","address":{"@type":"PostalAddress","streetAddress":"654 Mai Chi Tho Street","addressLocality":"An Ph\u00fa Ward, District 2","addressRegion":"Ho Chi Minh City","postalCode":"700000","addressCountry":"Vietnam"},"logo":{"@type":"ImageObject","@id":"https://brademar.com/#logo","url":"https://brademar.com/wp-content/uploads/2022/06/Brade-Mar-Black-Logo.png","caption":"Brade Mar","inLanguage":"vi","width":"929","height":"600"},"contactPoint":[{"@type":"ContactPoint","telephone":"+84-368-979-826","contactType":"sales"}],"location":{"@id":"https://brademar.com/#place"}},{"@type":"WebSite","@id":"https://brademar.com/#website","url":"https://brademar.com","name":"Brade Mar","publisher":{"@id":"https://brademar.com/#organization"},"inLanguage":"vi"},{"@type":"ImageObject","@id":"https://brademar.com/wp-content/uploads/2022/09/Shopee-Logo-PNG-1.png","url":"https://brademar.com/wp-content/uploads/2022/09/Shopee-Logo-PNG-1.png","width":"800","height":"500","caption":"Shopee Logo PNG 1","inLanguage":"vi"},{"@type":"BreadcrumbList","@id":"https://brademar.com/shopee-logo-png/#breadcrumb","itemListElement":[{"@type":"ListItem","position":"1","item":{"@id":"https://brademar.com","name":"Trang ch\u1ee7"}},{"@type":"ListItem","position":"2","item":{"@id":"https://brademar.com/network/","name":"Network"}},{"@type":"ListItem","position":"3","item":{"@id":"https://brademar.com/network/logo-png/","name":"Logo PNG"}},{"@type":"ListItem","position":"4","item":{"@id":"https://brademar.com/shopee-logo-png/","name":"Shopee Logo PNG"}}]},{"@type":"Person","@id":"https://brademar.com/shopee-logo-png/#author","name":"Brade Mar","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/fbd3998922f943a737ebee02cd324ce2?s=96&amp;d=identicon&amp;r=g","url":"https://secure.gravatar.com/avatar/fbd3998922f943a737ebee02cd324ce2?s=96&amp;d=identicon&amp;r=g","caption":"Brade Mar","inLanguage":"vi"},"sameAs":["https://brademar.com/"],"worksFor":{"@id":"https://brademar.com/#organization"}},{"@type":"WebPage","@id":"https://brademar.com/shopee-logo-png/#webpage","url":"https://brademar.com/shopee-logo-png/","name":"Shopee Logo PNG | Brade Mar","datePublished":"2022-09-27T18:45:59+07:00","dateModified":"2022-09-27T18:46:46+07:00","author":{"@id":"https://brademar.com/shopee-logo-png/#author"},"isPartOf":{"@id":"https://brademar.com/#website"},"primaryImageOfPage":{"@id":"https://brademar.com/wp-content/uploads/2022/09/Shopee-Logo-PNG-1.png"},"inLanguage":"vi","breadcrumb":{"@id":"https://brademar.com/shopee-logo-png/#breadcrumb"}},{"@type":"BlogPosting","headline":"Shopee Logo PNG | Brade Mar","keywords":"Shopee Logo PNG","datePublished":"2022-09-27T18:45:59+07:00","dateModified":"2022-09-27T18:46:46+07:00","author":{"@id":"https://brademar.com/shopee-logo-png/#author"},"publisher":{"@id":"https://brademar.com/#organization"},"description":"Shopee Logo PNG - Shopee l\u00e0 m\u1ed9t c\u00f4ng ty c\u00f4ng ngh\u1ec7 \u0111a qu\u1ed1c gia c\u1ee7a Singapore chuy\u00ean v\u1ec1 th\u01b0\u01a1ng m\u1ea1i \u0111i\u1ec7n t\u1eed.","name":"Shopee Logo PNG | Brade Mar","@id":"https://brademar.com/shopee-logo-png/#richSnippet","isPartOf":{"@id":"https://brademar.com/shopee-logo-png/#webpage"},"image":{"@id":"https://brademar.com/wp-content/uploads/2022/09/Shopee-Logo-PNG-1.png"},"inLanguage":"vi","mainEntityOfPage":{"@id":"https://brademar.com/shopee-logo-png/#webpage"}}]}</script>
+<!-- /Rank Math WordPress SEO plugin -->
+
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel='dns-prefetch' href='//www.google.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//pagead2.googlesyndication.com' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Dòng thông tin Brade Mar &raquo;" href="https://brademar.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Dòng phản hồi Brade Mar &raquo;" href="https://brademar.com/comments/feed/" />
+
+
+
+
+
+
+
+
+
+<style id='flatsome-main-inline-css' type='text/css'>
+@font-face {
+				font-family: "fl-icons";
+				font-display: block;
+				src: url(https://brademar.com/wp-content/themes/flatsome/assets/css/icons/fl-icons.eot?v=3.14.2);
+				src:
+					url(https://brademar.com/wp-content/themes/flatsome/assets/css/icons/fl-icons.eot#iefix?v=3.14.2) format("embedded-opentype"),
+					url(https://brademar.com/wp-content/themes/flatsome/assets/css/icons/fl-icons.woff2?v=3.14.2) format("woff2"),
+					url(https://brademar.com/wp-content/themes/flatsome/assets/css/icons/fl-icons.ttf?v=3.14.2) format("truetype"),
+					url(https://brademar.com/wp-content/themes/flatsome/assets/css/icons/fl-icons.woff?v=3.14.2) format("woff"),
+					url(https://brademar.com/wp-content/themes/flatsome/assets/css/icons/fl-icons.svg?v=3.14.2#fl-icons) format("svg");
+			}
+</style>
+
+
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://brademar.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.1' id='jquery-core-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://brademar.com/wp-content/cache/min/1/wp-content/plugins/reading-progress-bar/public/js/rp-public.js?ver=1667751580' id='rp-public-scripts-js' defer></script>
+
+<!-- Google Analytics snippet added by Site Kit -->
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.googletagmanager.com/gtag/js?id=UA-213323624-1' id='google_gtagjs-js' async></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='google_gtagjs-js-after'>
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag('set', 'linker', {"domains":["brademar.com"]} );
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "UA-213323624-1", {"anonymize_ip":true});
+gtag("config", "G-CSB4JR7FW9");
+</script>
+
+<!-- End Google Analytics snippet added by Site Kit -->
+<link rel="https://api.w.org/" href="https://brademar.com/wp-json/" /><link rel="alternate" type="application/json" href="https://brademar.com/wp-json/wp/v2/posts/16631" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://brademar.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://brademar.com/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.1" />
+<link rel='shortlink' href='https://brademar.com/?p=16631' />
+<meta name="generator" content="Site Kit by Google 1.71.0" /><script type="application/ld+json">{
+    "@context": "https://schema.org/",
+    "@type": "CreativeWorkSeries",
+    "name": "Shopee Logo PNG",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "ratingCount": "2"
+    }
+}</script><style type="text/css">div#toc_container {width: 100%;}div#toc_container ul li {font-size: 100%;}</style><style>.bg{opacity: 0; transition: opacity 1s; -webkit-transition: opacity 1s;} .bg-loaded{opacity: 1;}</style><!--[if IE]><link rel="stylesheet" type="text/css" href="https://brademar.com/wp-content/themes/flatsome/assets/css/ie-fallback.css"><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js"></script><script>var head = document.getElementsByTagName('head')[0],style = document.createElement('style');style.type = 'text/css';style.styleSheet.cssText = ':before,:after{content:none !important';head.appendChild(style);setTimeout(function(){head.removeChild(style);}, 0);</script><script src="https://brademar.com/wp-content/themes/flatsome/assets/libs/ie-flexibility.js"></script><![endif]--><!-- Google Tag Manager -->
+<script type="rocketlazyloadscript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TQ86KJR');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script type="rocketlazyloadscript" async src="https://www.googletagmanager.com/gtag/js?id=UA-213323624-1">
+</script>
+<script type="rocketlazyloadscript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-213323624-1');
+</script>
+<meta name='dmca-site-verification' content='WlJiakc2TDVrL21MWHhDSFErZndmUT090' />
+
+<script type="rocketlazyloadscript" id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/8928b287c6272adadf8582b60/9ffae188d6a64cf02f2fb1fe0.js");</script>
+<!-- Google AdSense snippet added by Site Kit -->
+<meta name="google-adsense-platform-account" content="ca-host-pub-2644536267352236">
+<meta name="google-adsense-platform-domain" content="sitekit.withgoogle.com">
+<!-- End Google AdSense snippet added by Site Kit -->
+
+<!-- Google AdSense snippet added by Site Kit -->
+<script type="rocketlazyloadscript" async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7391598418349240" crossorigin="anonymous" data-rocket-type="text/javascript"></script>
+
+<!-- End Google AdSense snippet added by Site Kit -->
+
+<!-- Google Tag Manager snippet added by Site Kit -->
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+			( function( w, d, s, l, i ) {
+				w[l] = w[l] || [];
+				w[l].push( {'gtm.start': new Date().getTime(), event: 'gtm.js'} );
+				var f = d.getElementsByTagName( s )[0],
+					j = d.createElement( s ), dl = l != 'dataLayer' ? '&l=' + l : '';
+				j.async = true;
+				j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+				f.parentNode.insertBefore( j, f );
+			} )( window, document, 'script', 'dataLayer', 'GTM-TQ86KJR' );
+			
+</script>
+
+<!-- End Google Tag Manager snippet added by Site Kit -->
+<link rel="icon" href="https://brademar.com/wp-content/uploads/2021/12/cropped-Brade-Mar-favicon-black-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://brademar.com/wp-content/uploads/2021/12/cropped-Brade-Mar-favicon-black-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://brademar.com/wp-content/uploads/2021/12/cropped-Brade-Mar-favicon-black-180x180.png" />
+<meta name="msapplication-TileImage" content="https://brademar.com/wp-content/uploads/2021/12/cropped-Brade-Mar-favicon-black-270x270.png" />
+<style id="custom-css" type="text/css">:root {--primary-color: #000000;}.full-width .ubermenu-nav, .container, .row{max-width: 1200px}.row.row-collapse{max-width: 1170px}.row.row-small{max-width: 1192.5px}.row.row-large{max-width: 1230px}.header-main{height: 90px}#logo img{max-height: 90px}#logo{width:220px;}.header-bottom{min-height: 43px}.header-top{min-height: 30px}.transparent .header-main{height: 30px}.transparent #logo img{max-height: 30px}.has-transparent + .page-title:first-of-type,.has-transparent + #main > .page-title,.has-transparent + #main > div > .page-title,.has-transparent + #main .page-header-wrapper:first-of-type .page-title{padding-top: 80px;}.header.show-on-scroll,.stuck .header-main{height:60px!important}.stuck #logo img{max-height: 60px!important}.search-form{ width: 60%;}.header-bg-color, .header-wrapper {background-color: rgba(255,255,255,0.9)}.header-bottom {background-color: #000000}.stuck .header-main .nav > li > a{line-height: 50px }.header-bottom-nav > li > a{line-height: 16px }@media (max-width: 549px) {.header-main{height: 70px}#logo img{max-height: 70px}}.nav-dropdown{font-size:100%}/* Color */.accordion-title.active, .has-icon-bg .icon .icon-inner,.logo a, .primary.is-underline, .primary.is-link, .badge-outline .badge-inner, .nav-outline > li.active> a,.nav-outline >li.active > a, .cart-icon strong,[data-color='primary'], .is-outline.primary{color: #000000;}/* Color !important */[data-text-color="primary"]{color: #000000!important;}/* Background Color */[data-text-bg="primary"]{background-color: #000000;}/* Background */.scroll-to-bullets a,.featured-title, .label-new.menu-item > a:after, .nav-pagination > li > .current,.nav-pagination > li > span:hover,.nav-pagination > li > a:hover,.has-hover:hover .badge-outline .badge-inner,button[type="submit"], .button.wc-forward:not(.checkout):not(.checkout-button), .button.submit-button, .button.primary:not(.is-outline),.featured-table .title,.is-outline:hover, .has-icon:hover .icon-label,.nav-dropdown-bold .nav-column li > a:hover, .nav-dropdown.nav-dropdown-bold > li > a:hover, .nav-dropdown-bold.dark .nav-column li > a:hover, .nav-dropdown.nav-dropdown-bold.dark > li > a:hover, .is-outline:hover, .tagcloud a:hover,.grid-tools a, input[type='submit']:not(.is-form), .box-badge:hover .box-text, input.button.alt,.nav-box > li > a:hover,.nav-box > li.active > a,.nav-pills > li.active > a ,.current-dropdown .cart-icon strong, .cart-icon:hover strong, .nav-line-bottom > li > a:before, .nav-line-grow > li > a:before, .nav-line > li > a:before,.banner, .header-top, .slider-nav-circle .flickity-prev-next-button:hover svg, .slider-nav-circle .flickity-prev-next-button:hover .arrow, .primary.is-outline:hover, .button.primary:not(.is-outline), input[type='submit'].primary, input[type='submit'].primary, input[type='reset'].button, input[type='button'].primary, .badge-inner{background-color: #000000;}/* Border */.nav-vertical.nav-tabs > li.active > a,.scroll-to-bullets a.active,.nav-pagination > li > .current,.nav-pagination > li > span:hover,.nav-pagination > li > a:hover,.has-hover:hover .badge-outline .badge-inner,.accordion-title.active,.featured-table,.is-outline:hover, .tagcloud a:hover,blockquote, .has-border, .cart-icon strong:after,.cart-icon strong,.blockUI:before, .processing:before,.loading-spin, .slider-nav-circle .flickity-prev-next-button:hover svg, .slider-nav-circle .flickity-prev-next-button:hover .arrow, .primary.is-outline:hover{border-color: #000000}.nav-tabs > li.active > a{border-top-color: #000000}.widget_shopping_cart_content .blockUI.blockOverlay:before { border-left-color: #000000 }.woocommerce-checkout-review-order .blockUI.blockOverlay:before { border-left-color: #000000 }/* Fill */.slider .flickity-prev-next-button:hover svg,.slider .flickity-prev-next-button:hover .arrow{fill: #000000;}/* Background Color */[data-icon-label]:after, .secondary.is-underline:hover,.secondary.is-outline:hover,.icon-label,.button.secondary:not(.is-outline),.button.alt:not(.is-outline), .badge-inner.on-sale, .button.checkout, .single_add_to_cart_button, .current .breadcrumb-step{ background-color:#b20000; }[data-text-bg="secondary"]{background-color: #b20000;}/* Color */.secondary.is-underline,.secondary.is-link, .secondary.is-outline,.stars a.active, .star-rating:before, .woocommerce-page .star-rating:before,.star-rating span:before, .color-secondary{color: #b20000}/* Color !important */[data-text-color="secondary"]{color: #b20000!important;}/* Border */.secondary.is-outline:hover{border-color:#b20000}body{font-size: 100%;}@media screen and (max-width: 549px){body{font-size: 100%;}}body{font-family:"Roboto", sans-serif}body{font-weight: 0}body{color: #0a0a0a}.nav > li > a {font-family:"Roboto", sans-serif;}.mobile-sidebar-levels-2 .nav > li > ul > li > a {font-family:"Roboto", sans-serif;}.nav > li > a {font-weight: 700;}.mobile-sidebar-levels-2 .nav > li > ul > li > a {font-weight: 700;}h1,h2,h3,h4,h5,h6,.heading-font, .off-canvas-center .nav-sidebar.nav-vertical > li > a{font-family: "Roboto", sans-serif;}h1,h2,h3,h4,h5,h6,.heading-font,.banner h1,.banner h2{font-weight: 700;}h1,h2,h3,h4,h5,h6,.heading-font{color: #0a0a0a;}.breadcrumbs{text-transform: none;}button,.button{text-transform: none;}.section-title span{text-transform: none;}.alt-font{font-family: "-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif", sans-serif;}.alt-font{font-weight: 0!important;}.header:not(.transparent) .header-bottom-nav.nav > li > a{color: #ffffff;}.header:not(.transparent) .header-bottom-nav.nav > li > a:hover,.header:not(.transparent) .header-bottom-nav.nav > li.active > a,.header:not(.transparent) .header-bottom-nav.nav > li.current > a,.header:not(.transparent) .header-bottom-nav.nav > li > a.active,.header:not(.transparent) .header-bottom-nav.nav > li > a.current{color: #f2f2f2;}.header-bottom-nav.nav-line-bottom > li > a:before,.header-bottom-nav.nav-line-grow > li > a:before,.header-bottom-nav.nav-line > li > a:before,.header-bottom-nav.nav-box > li > a:hover,.header-bottom-nav.nav-box > li.active > a,.header-bottom-nav.nav-pills > li > a:hover,.header-bottom-nav.nav-pills > li.active > a{color:#FFF!important;background-color: #f2f2f2;}a{color: #b20000;}a:hover{color: #0a0a0a;}.tagcloud a:hover{border-color: #0a0a0a;background-color: #0a0a0a;}.footer-1{background-color: #000000}.footer-2{background-color: #0a0a0a}.absolute-footer, html{background-color: #b20000}/* Custom CSS */.nav>li>a, .nav-dropdown>li>a, .nav-column>li>a {color: #333;}blockquote {font-size: 1em;font-style: normal;}.flex-col.hide-for-medium.flex-left.flex-grow {margin-left: 130px;}.header-button .button span {line-height: 1.4;margin-right: 5px;}.box-blog-post .is-divider, span.post_comments {display: none;}.nav-spacing-xlarge>li {margin: 0 20px;}.nav-dropdown {padding: 5px 0 5px;}.title-bar {border-bottom: 2px solid #f3f3f3;padding-bottom: 5px;margin-bottom: 15px;}.title-bar h2 {display: inline;position: relative;padding: 0 15px 0 20px;margin: 6px 0 4px 0;}.title-bar h2:before {content: '';position: absolute;width: 5px;left: 5px;top: 5px;bottom: 5px;background-color: #b20000;}.title-bar ul {float: right;margin-top: 5px;}.title-bar ul li {list-style: none;display: inline-block;}/**************** Related post****************/.xem-them .tieu-de-xem-them, .title-related {font-weight: 700;display: block;margin: 20px 0 10px;font-size: 1.2em;}.xem-them ul li {margin-bottom: 3px;}.blog-single .entry-meta {text-transform: none;font-size: 14px;letter-spacing: 0;border-top: 1px solid #e2e2e2;border-bottom: 1px solid #e2e2e2;padding: 10px;background: #f9f9f9;}.danh-muc {margin-bottom: 15px;}.danh-muc span.title, .the-tim-kiem span.title {border-radius: 4px;background: #126e32;padding: 4px 10px;color: white;margin-right: 5px;}.danh-muc a, .the-tim-kiem a {line-height:32px;border-radius: 4px;margin-bottom: 10px;padding: 4px 10px;background: #dedede;color: #464646;}.danh-muc a:hover, .the-tim-kiem a:hover {background: #6dca19;color: white;}.bai-viet-lien-quan {margin-top: 15px;}.bai-viet-lien-quan ul {margin-bottom: 0;display: inline-block;width: 100%;}.bai-viet-lien-quan ul li {list-style: none;width: 25%;color: graytext;float: left;padding-left: 4px;padding-right: 5px;}.bai-viet-lien-quan ul li .box-image img {height: 120px;border-radius: 4px;object-fit: cover;object-position: center;}.rating-fblike, .fb-like iframe {margin-top: 5px;}.footer #text-3 {padding-left: 8%;}.footer #text-4 .textwidget {}.network-form {width: 50%;margin: 10px auto;}/* Custom CSS Mobile */@media (max-width: 549px){.title-bar ul {display: flex;flex-wrap: nowrap;overflow-x: auto;justify-content: flex-start;white-space: nowrap;-webkit-overflow-scrolling: touch;float: none;}.footer #text-3 {padding-left: 15px;}.network-form {width: 100%;}}.label-new.menu-item > a:after{content:"New";}.label-hot.menu-item > a:after{content:"Hot";}.label-sale.menu-item > a:after{content:"Sale";}.label-popular.menu-item > a:after{content:"Popular";}</style><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript><script type="rocketlazyloadscript">
+/*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
+(function(w){"use strict";if(!w.loadCSS){w.loadCSS=function(){}}
+var rp=loadCSS.relpreload={};rp.support=(function(){var ret;try{ret=w.document.createElement("link").relList.supports("preload")}catch(e){ret=!1}
+return function(){return ret}})();rp.bindMediaToggle=function(link){var finalMedia=link.media||"all";function enableStylesheet(){link.media=finalMedia}
+if(link.addEventListener){link.addEventListener("load",enableStylesheet)}else if(link.attachEvent){link.attachEvent("onload",enableStylesheet)}
+setTimeout(function(){link.rel="stylesheet";link.media="only x"});setTimeout(enableStylesheet,3000)};rp.poly=function(){if(rp.support()){return}
+var links=w.document.getElementsByTagName("link");for(var i=0;i<links.length;i++){var link=links[i];if(link.rel==="preload"&&link.getAttribute("as")==="style"&&!link.getAttribute("data-loadcss")){link.setAttribute("data-loadcss",!0);rp.bindMediaToggle(link)}}};if(!rp.support()){rp.poly();var run=w.setInterval(rp.poly,500);if(w.addEventListener){w.addEventListener("load",function(){rp.poly();w.clearInterval(run)})}else if(w.attachEvent){w.attachEvent("onload",function(){rp.poly();w.clearInterval(run)})}}
+if(typeof exports!=="undefined"){exports.loadCSS=loadCSS}
+else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this))
+</script></head>
+
+<body data-rsssl=1 class="post-template-default single single-post postid-16631 single-format-standard lightbox nav-dropdown-has-arrow nav-dropdown-has-shadow parallax-mobile">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQ86KJR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->		<!-- Google Tag Manager (noscript) snippet added by Site Kit -->
+		<noscript>
+			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQ86KJR" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+		</noscript>
+		<!-- End Google Tag Manager (noscript) snippet added by Site Kit -->
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg>
+<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+
+<div id="wrapper">
+
+	
+	<header id="header" class="header has-sticky sticky-jump">
+		<div class="header-wrapper">
+			<div id="masthead" class="header-main ">
+      <div class="header-inner flex-row container logo-left medium-logo-center" role="navigation">
+
+          <!-- Logo -->
+          <div id="logo" class="flex-col logo">
+            <!-- Header logo -->
+<a href="https://brademar.com/" title="Brade Mar - Toàn cảnh Marketing thời đại mới" rel="home">
+    <span style="display: none;">Brade Mar - Toàn cảnh Marketing thời đại mới</span><img width="220" height="90" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20220%2090'%3E%3C/svg%3E" class="header_logo header-logo" alt="Brade Mar" data-lazy-src="https://brademar.com/wp-content/uploads/2021/11/logo.png"/><noscript><img width="220" height="90" src="https://brademar.com/wp-content/uploads/2021/11/logo.png" class="header_logo header-logo" alt="Brade Mar"/></noscript><img  width="220" height="90" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20220%2090'%3E%3C/svg%3E" class="header-logo-dark" alt="Brade Mar" data-lazy-src="https://brademar.com/wp-content/uploads/2021/11/logo.png"/><noscript><img  width="220" height="90" src="https://brademar.com/wp-content/uploads/2021/11/logo.png" class="header-logo-dark" alt="Brade Mar"/></noscript></a>
+          </div>
+
+          <!-- Mobile Left Elements -->
+          <div class="flex-col show-for-medium flex-left">
+            <ul class="mobile-nav nav nav-left ">
+              <li class="nav-icon has-icon">
+  		<a href="#" data-open="#main-menu" data-pos="left" data-bg="main-menu-overlay" data-color="" class="is-small" aria-label="Menu" aria-controls="main-menu" aria-expanded="false">
+		
+		  <i class="icon-menu" ></i>
+		  		</a>
+	</li>            </ul>
+          </div>
+
+          <!-- Left Elements -->
+          <div class="flex-col hide-for-medium flex-left
+            flex-grow">
+            <ul class="header-nav header-nav-main nav nav-left  nav-uppercase" >
+              <li class="header-search-form search-form html relative has-icon">
+	<div class="header-search-form-wrapper">
+		<div class="searchform-wrapper ux-search-box relative form-flat is-normal"><form method="get" class="searchform" action="https://brademar.com/" role="search">
+		<div class="flex-row relative">
+			<div class="flex-col flex-grow">
+	   	   <input type="search" class="search-field mb-0" name="s" value="" id="s" placeholder="Tìm kiếm tất cả bài viết" />
+			</div>
+			<div class="flex-col">
+				<button type="submit" class="ux-search-submit submit-button secondary button icon mb-0" aria-label="Submit">
+					<i class="icon-search" ></i>				</button>
+			</div>
+		</div>
+    <div class="live-search-results text-left z-top"></div>
+</form>
+</div>	</div>
+</li>            </ul>
+          </div>
+
+          <!-- Right Elements -->
+          <div class="flex-col hide-for-medium flex-right">
+            <ul class="header-nav header-nav-main nav nav-right  nav-uppercase">
+              <li class="html custom html_topbar_left"><div class="header-button">
+	<a href="/moi-nhat/" class="button plain is-outline" style="border-radius:5px;">
+<span class="dashicons dashicons-controls-play"></span><span>BÀI VIẾT MỚI NHẤT</span>
+  </a>
+	</div></li><li class="html header-social-icons ml-0">
+	<div class="social-icons follow-icons" ><a href="https://www.facebook.com/brademarketing" target="_blank" data-label="Facebook" rel="noopener noreferrer nofollow" class="icon primary button circle facebook tooltip" title="Follow on Facebook" aria-label="Follow on Facebook"><i class="icon-facebook" ></i></a><a href="https://www.instagram.com/brademarketing" target="_blank" rel="noopener noreferrer nofollow" data-label="Instagram" class="icon primary button circle  instagram tooltip" title="Follow on Instagram" aria-label="Follow on Instagram"><i class="icon-instagram" ></i></a><a href="https://twitter.com/brademarketing" target="_blank" data-label="Twitter" rel="noopener noreferrer nofollow" class="icon primary button circle  twitter tooltip" title="Follow on Twitter" aria-label="Follow on Twitter"><i class="icon-twitter" ></i></a><a href="mailto:brademar.contact@gmail.com" data-label="E-mail" rel="nofollow" class="icon primary button circle  email tooltip" title="Send us an email" aria-label="Send us an email"><i class="icon-envelop" ></i></a><a href="https://www.linkedin.com/company/brademarketing" target="_blank" rel="noopener noreferrer nofollow" data-label="LinkedIn" class="icon primary button circle  linkedin tooltip" title="Follow on LinkedIn" aria-label="Follow on LinkedIn"><i class="icon-linkedin" ></i></a><a href="https://www.youtube.com/channel/UCkQInEmhznQiDzh1TO_zS5w" target="_blank" rel="noopener noreferrer nofollow" data-label="YouTube" class="icon primary button circle  youtube tooltip" title="Follow on YouTube" aria-label="Follow on YouTube"><i class="icon-youtube" ></i></a></div></li>            </ul>
+          </div>
+
+          <!-- Mobile Right Elements -->
+          <div class="flex-col show-for-medium flex-right">
+            <ul class="mobile-nav nav nav-right ">
+              <li class="header-search header-search-dropdown has-icon has-dropdown menu-item-has-children">
+		<a href="#" aria-label="Search" class="is-small"><i class="icon-search" ></i></a>
+		<ul class="nav-dropdown nav-dropdown-bold">
+	 	<li class="header-search-form search-form html relative has-icon">
+	<div class="header-search-form-wrapper">
+		<div class="searchform-wrapper ux-search-box relative form-flat is-normal"><form method="get" class="searchform" action="https://brademar.com/" role="search">
+		<div class="flex-row relative">
+			<div class="flex-col flex-grow">
+	   	   <input type="search" class="search-field mb-0" name="s" value="" id="s" placeholder="Tìm kiếm tất cả bài viết" />
+			</div>
+			<div class="flex-col">
+				<button type="submit" class="ux-search-submit submit-button secondary button icon mb-0" aria-label="Submit">
+					<i class="icon-search" ></i>				</button>
+			</div>
+		</div>
+    <div class="live-search-results text-left z-top"></div>
+</form>
+</div>	</div>
+</li>	</ul>
+</li>
+            </ul>
+          </div>
+
+      </div>
+     
+            <div class="container"><div class="top-divider full-width"></div></div>
+      </div><div id="wide-nav" class="header-bottom wide-nav nav-dark hide-for-medium">
+    <div class="flex-row container">
+
+                        <div class="flex-col hide-for-medium flex-left">
+                <ul class="nav header-nav header-bottom-nav nav-left  nav-size-large nav-spacing-xlarge nav-uppercase">
+                    <li id="menu-item-119" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-119 menu-item-design-default"><a href="https://brademar.com/" class="nav-top-link">Home</a></li>
+<li id="menu-item-112" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-112 menu-item-design-default"><a href="https://brademar.com/news/" class="nav-top-link">News</a></li>
+<li id="menu-item-102" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-102 menu-item-design-default has-dropdown"><a href="https://brademar.com/marketing/" class="nav-top-link">Marketing<i class="icon-angle-down" ></i></a>
+<ul class="sub-menu nav-dropdown nav-dropdown-bold">
+	<li id="menu-item-103" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-103"><a href="https://brademar.com/marketing/branding/">Branding</a></li>
+	<li id="menu-item-104" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-104"><a href="https://brademar.com/marketing/advertising/">Advertising</a></li>
+	<li id="menu-item-105" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-105"><a href="https://brademar.com/marketing/trade-marketing/">Trade Marketing</a></li>
+	<li id="menu-item-111" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-111"><a href="https://brademar.com/marketing/digital-marketing/">Digital Marketing</a></li>
+</ul>
+</li>
+<li id="menu-item-97" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-97 active menu-item-design-default has-dropdown"><a href="https://brademar.com/network/" class="nav-top-link">Network<i class="icon-angle-down" ></i></a>
+<ul class="sub-menu nav-dropdown nav-dropdown-bold">
+	<li id="menu-item-98" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-98"><a href="https://brademar.com/network/brand/">Brand</a></li>
+	<li id="menu-item-99" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-99"><a href="https://brademar.com/network/client/">Client</a></li>
+	<li id="menu-item-100" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-100"><a href="https://brademar.com/network/agency/">Agency</a></li>
+	<li id="menu-item-4888" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4888"><a href="https://brademar.com/most-valuable-brands/">Most Valuable Brands</a></li>
+	<li id="menu-item-5516" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-5516 active"><a href="https://brademar.com/network/logo-png/">Logo PNG</a></li>
+</ul>
+</li>
+<li id="menu-item-12347" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-12347 menu-item-design-default has-dropdown"><a href="https://brademar.com/reference/" class="nav-top-link">Reference<i class="icon-angle-down" ></i></a>
+<ul class="sub-menu nav-dropdown nav-dropdown-bold">
+	<li id="menu-item-12348" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-12348"><a href="https://brademar.com/reference/marketing-strategy/">Marketing Strategy</a></li>
+	<li id="menu-item-12349" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-12349"><a href="https://brademar.com/reference/creativity/">Creativity</a></li>
+	<li id="menu-item-12350" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-12350"><a href="https://brademar.com/reference/reports/">Reports</a></li>
+	<li id="menu-item-12361" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-12361"><a href="https://brademar.com/reference/document/">Document</a></li>
+	<li id="menu-item-15068" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15068"><a href="https://brademar.com/cannes-lions-winners/">Cannes Lions Winners</a></li>
+</ul>
+</li>
+<li id="menu-item-106" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-106 menu-item-design-default"><a href="https://brademar.com/skill/" class="nav-top-link">Skill</a></li>
+<li id="menu-item-484" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-484 menu-item-design-default has-dropdown"><a href="https://brademar.com/about/" class="nav-top-link">About<i class="icon-angle-down" ></i></a>
+<ul class="sub-menu nav-dropdown nav-dropdown-bold">
+	<li id="menu-item-13249" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13249"><a href="https://brademar.com/contact/">Contact</a></li>
+	<li id="menu-item-13251" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13251"><a href="https://brademar.com/terms/">Điều khoản sử dụng</a></li>
+	<li id="menu-item-13250" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-13250"><a href="https://brademar.com/privacy-policy/">Chính sách bảo mật</a></li>
+</ul>
+</li>
+                </ul>
+            </div>
+            
+            
+                        <div class="flex-col hide-for-medium flex-right flex-grow">
+              <ul class="nav header-nav header-bottom-nav nav-right  nav-size-large nav-spacing-xlarge nav-uppercase">
+                                 </ul>
+            </div>
+            
+            
+    </div>
+</div>
+
+<div class="header-bg-container fill"><div class="header-bg-image fill"></div><div class="header-bg-color fill"></div></div>		</div>
+	</header>
+
+	
+	<main id="main" class="">
+
+<div id="content" class="blog-wrapper blog-single page-wrapper">
+	
+
+<div class="row row-large row-divided ">
+
+	<div class="large-9 col">
+		
+
+
+<article id="post-16631" class="post-16631 post type-post status-publish format-standard has-post-thumbnail hentry category-logo-png category-network">
+	<div class="article-inner ">
+		<header class="entry-header">
+	<div class="entry-header-text entry-header-text-top text-left">
+		<nav aria-label="breadcrumbs" class="rank-math-breadcrumb"><p><a href="https://brademar.com">Trang chủ</a><span class="separator"> &raquo; </span><a href="https://brademar.com/network/">Network</a><span class="separator"> &raquo; </span><a href="https://brademar.com/network/logo-png/">Logo PNG</a></p></nav>
+<h1 class="entry-title">Shopee Logo PNG</h1>
+
+<div class="rating-fblike">
+<div class="fb-like" data-href="https://brademar.com/shopee-logo-png/" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
+</div>	</div>
+				</header>
+		<div class="entry-content single-page">
+ 
+ <p><strong>Shopee Logo PNG &#8211; Shopee là một công ty công nghệ đa quốc gia của Singapore chuyên về thương mại điện tử.</strong></p>
+<blockquote><p><strong>Truy cập thư viện <a href="https://brademar.com/network/logo-png/">Logo PNG</a></strong></p></blockquote>
+<div id="toc_container" class="no_bullets"><p class="toc_title">Nội dung ch&iacute;nh</p><ul class="toc_list"><li><a href="#1-gioi-thieu-ve-shopee">1. Giới thiệu về Shopee</a></li><li><a href="#2-shopee-logo-png">2. Shopee Logo PNG</a></li></ul></div>
+<h2><span id="1-gioi-thieu-ve-shopee"><strong>1. Giới thiệu về Shopee</strong></span></h2>
+<p><a href="https://en.wikipedia.org/wiki/Shopee" target="_blank" rel="noopener"><strong>Shopee</strong></a> là một công ty công nghệ đa quốc gia của Singapore chuyên về thương mại điện tử. Là một công ty con của <a href="https://en.wikipedia.org/wiki/Sea_Ltd" target="_blank" rel="noopener"><strong>Sea Ltd</strong></a>, Shopee được ra mắt lần đầu tiên tại Singapore vào năm 2015, và sau đó mở rộng phạm vi ra nước ngoài.</p>
+<p>Tính đến năm 2021, <strong>Shopee</strong> được nhiều người coi là nền tảng thương mại điện tử lớn nhất ở Đông Nam Á với 343 triệu khách truy cập hàng tháng và công ty cũng phục vụ người tiêu dùng và người bán tại một số quốc gia trên khắp Đông Á (Đài Loan), Mỹ Latinh và Châu Âu (Ba Lan).</p>
+<p>Vào tháng 02/2015, <strong>Shopee</strong> ra mắt tại Singapore. Nền tảng này đã ra mắt một trang Web để cạnh tranh với các công ty thương mại điện tử khác như <strong>Coupang, Lazada, Tokopedia</strong> và <strong>AliExpress</strong>. Để tạo sự khác biệt, Shopee cung cấp bảo mật mua sắm trực tuyến thông qua dịch vụ ký quỹ của riêng mình có tên là <strong>Shopee Guarantee</strong>, có thể được sử dụng để giữ lại các khoản thanh toán từ người bán cho đến khi người mua nhận được đơn đặt hàng của họ.</p>
+<p>Ngày 3/9/2019, <strong>Shopee</strong> chính thức khai trương trụ sở khu vực sáu tầng tại Công viên Khoa học Singapore. Tòa nhà mới trải dài 244,000 feet vuông (22,700 m2), có thể chứa 3,000 nhân viên và lớn hơn sáu lần so với trụ sở trước đây của Shopee tại Tòa nhà Ascent. Tòa nhà đã được WeWork cho thuê trước khi nó được chuyển giao cho Shopee.</p>
+<h2><span id="2-shopee-logo-png"><strong>2. Shopee Logo PNG</strong></span></h2>
+<figure id="attachment_16664" aria-describedby="caption-attachment-16664" style="width: 800px" class="wp-caption aligncenter"><a href="https://brademar.com/wp-content/uploads/2022/09/Shopee-Logo-PNG-1.png"><img decoding="async" class="lazy-load size-full wp-image-16664" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20800%20500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://brademar.com/wp-content/uploads/2022/09/Shopee-Logo-PNG-1.png" alt="Shopee Logo PNG 1" width="800" height="500" srcset="" data-srcset="https://brademar.com/wp-content/uploads/2022/09/Shopee-Logo-PNG-1.png 800w, https://brademar.com/wp-content/uploads/2022/09/Shopee-Logo-PNG-1-768x480.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></a><figcaption id="caption-attachment-16664" class="wp-caption-text">Shopee Logo PNG 1</figcaption></figure>
+<figure id="attachment_16665" aria-describedby="caption-attachment-16665" style="width: 800px" class="wp-caption aligncenter"><a href="https://brademar.com/wp-content/uploads/2022/09/Shopee-Logo-PNG-2.png"><img decoding="async" class="lazy-load size-full wp-image-16665" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20800%20500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://brademar.com/wp-content/uploads/2022/09/Shopee-Logo-PNG-2.png" alt="Shopee Logo PNG 2" width="800" height="500" srcset="" data-srcset="https://brademar.com/wp-content/uploads/2022/09/Shopee-Logo-PNG-2.png 800w, https://brademar.com/wp-content/uploads/2022/09/Shopee-Logo-PNG-2-768x480.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></a><figcaption id="caption-attachment-16665" class="wp-caption-text">Shopee Logo PNG 2</figcaption></figure>
+<figure id="attachment_16666" aria-describedby="caption-attachment-16666" style="width: 800px" class="wp-caption aligncenter"><a href="https://brademar.com/wp-content/uploads/2022/09/Shopee-Logo-PNG-3-.png"><img decoding="async" class="lazy-load size-full wp-image-16666" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20800%20500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://brademar.com/wp-content/uploads/2022/09/Shopee-Logo-PNG-3-.png" alt="Shopee Logo PNG 3" width="800" height="500" srcset="" data-srcset="https://brademar.com/wp-content/uploads/2022/09/Shopee-Logo-PNG-3-.png 800w, https://brademar.com/wp-content/uploads/2022/09/Shopee-Logo-PNG-3--768x480.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></a><figcaption id="caption-attachment-16666" class="wp-caption-text">Shopee Logo PNG 3</figcaption></figure>
+<figure id="attachment_16667" aria-describedby="caption-attachment-16667" style="width: 800px" class="wp-caption aligncenter"><a href="https://brademar.com/wp-content/uploads/2022/09/Shopee-Logo-PNG-4.png"><img decoding="async" class="lazy-load size-full wp-image-16667" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20800%20500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://brademar.com/wp-content/uploads/2022/09/Shopee-Logo-PNG-4.png" alt="Shopee Logo PNG 4" width="800" height="500" srcset="" data-srcset="https://brademar.com/wp-content/uploads/2022/09/Shopee-Logo-PNG-4.png 800w, https://brademar.com/wp-content/uploads/2022/09/Shopee-Logo-PNG-4-768x480.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></a><figcaption id="caption-attachment-16667" class="wp-caption-text">Shopee Logo PNG 4</figcaption></figure>
+<figure id="attachment_16668" aria-describedby="caption-attachment-16668" style="width: 800px" class="wp-caption aligncenter"><a href="https://brademar.com/wp-content/uploads/2022/09/Shopee-Logo-PNG-5.png"><img decoding="async" class="lazy-load size-full wp-image-16668" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20800%20500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://brademar.com/wp-content/uploads/2022/09/Shopee-Logo-PNG-5.png" alt="Shopee Logo PNG 5" width="800" height="500" srcset="" data-srcset="https://brademar.com/wp-content/uploads/2022/09/Shopee-Logo-PNG-5.png 800w, https://brademar.com/wp-content/uploads/2022/09/Shopee-Logo-PNG-5-768x480.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></a><figcaption id="caption-attachment-16668" class="wp-caption-text">Shopee Logo PNG 5</figcaption></figure>
+<figure id="attachment_16669" aria-describedby="caption-attachment-16669" style="width: 800px" class="wp-caption aligncenter"><a href="https://brademar.com/wp-content/uploads/2022/09/Shopee-Logo-PNG-6.png"><img decoding="async" class="lazy-load size-full wp-image-16669" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20800%20500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://brademar.com/wp-content/uploads/2022/09/Shopee-Logo-PNG-6.png" alt="Shopee Logo PNG 6" width="800" height="500" srcset="" data-srcset="https://brademar.com/wp-content/uploads/2022/09/Shopee-Logo-PNG-6.png 800w, https://brademar.com/wp-content/uploads/2022/09/Shopee-Logo-PNG-6-768x480.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></a><figcaption id="caption-attachment-16669" class="wp-caption-text">Shopee Logo PNG 6</figcaption></figure>
+<p style="text-align: right;"><strong>Brade Mar</strong></p>
+
+<div class="kk-star-ratings
+     kksr-valign-bottom     kksr-align-right    "
+    data-payload="{&quot;align&quot;:&quot;right&quot;,&quot;id&quot;:&quot;16631&quot;,&quot;slug&quot;:&quot;default&quot;,&quot;valign&quot;:&quot;bottom&quot;,&quot;reference&quot;:&quot;auto&quot;,&quot;count&quot;:&quot;2&quot;,&quot;readonly&quot;:&quot;&quot;,&quot;score&quot;:&quot;5&quot;,&quot;best&quot;:&quot;5&quot;,&quot;gap&quot;:&quot;4&quot;,&quot;greet&quot;:&quot;&quot;,&quot;legend&quot;:&quot;5\/5 - (2 b\u00ecnh ch\u1ecdn)&quot;,&quot;size&quot;:&quot;24&quot;,&quot;width&quot;:&quot;138&quot;,&quot;_legend&quot;:&quot;{score}\/{best} - ({count} {votes})&quot;}">
+    
+<div class="kksr-stars">
+    
+<div class="kksr-stars-inactive">
+            <div class="kksr-star" data-star="1" style="padding-right: 4px">
+            
+
+<div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="2" style="padding-right: 4px">
+            
+
+<div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="3" style="padding-right: 4px">
+            
+
+<div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="4" style="padding-right: 4px">
+            
+
+<div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="5" style="padding-right: 4px">
+            
+
+<div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+    </div>
+    
+<div class="kksr-stars-active" style="width: 138px;">
+            <div class="kksr-star" style="padding-right: 4px">
+            
+
+<div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" style="padding-right: 4px">
+            
+
+<div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" style="padding-right: 4px">
+            
+
+<div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" style="padding-right: 4px">
+            
+
+<div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" style="padding-right: 4px">
+            
+
+<div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+    </div>
+</div>
+    
+<div class="kksr-legend">
+            5/5 - (2 bình chọn)    </div>
+</div>
+ 
+<div class="xem-them">
+    <span class="tieu-de-xem-them">Xem thêm bài viết nổi bật :</span>
+    <ul>
+ 
+<li>
+    <a href="https://brademar.com/playstation-logo-png/">PlayStation Logo PNG</a>
+</li>
+ 
+ 
+<li>
+    <a href="https://brademar.com/di-dong-viet-logo-png/">Di Động Việt Logo PNG</a>
+</li>
+ 
+ 
+<li>
+    <a href="https://brademar.com/alfamart-logo-png/">Alfamart Logo PNG</a>
+</li>
+ 
+ 
+<li>
+    <a href="https://brademar.com/apple-logo-png/">Apple Logo PNG</a>
+</li>
+ 
+ 
+<li>
+    <a href="https://brademar.com/cac-doi-thu-canh-tranh-cua-nike/">Các đối thủ cạnh tranh của Nike</a>
+</li>
+ 
+  </ul>
+ 
+</div>
+ 
+ <div class="blog-share text-center"><div class="is-divider medium"></div><div class="social-icons share-icons share-row relative" ><a href="https://www.facebook.com/sharer.php?u=https://brademar.com/shopee-logo-png/" data-label="Facebook" onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;" rel="noopener noreferrer nofollow" target="_blank" class="icon primary button circle tooltip facebook" title="Share on Facebook" aria-label="Share on Facebook"><i class="icon-facebook" ></i></a><a href="https://twitter.com/share?url=https://brademar.com/shopee-logo-png/" onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;" rel="noopener noreferrer nofollow" target="_blank" class="icon primary button circle tooltip twitter" title="Share on Twitter" aria-label="Share on Twitter"><i class="icon-twitter" ></i></a><a href="mailto:enteryour@addresshere.com?subject=Shopee%20Logo%20PNG&amp;body=Check%20this%20out:%20https://brademar.com/shopee-logo-png/" rel="nofollow" class="icon primary button circle tooltip email" title="Email to a Friend" aria-label="Email to a Friend"><i class="icon-envelop" ></i></a><a href="https://pinterest.com/pin/create/button/?url=https://brademar.com/shopee-logo-png/&amp;media=https://brademar.com/wp-content/uploads/2022/09/Shopee-Logo-PNG-1.png&amp;description=Shopee%20Logo%20PNG" onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;" rel="noopener noreferrer nofollow" target="_blank" class="icon primary button circle tooltip pinterest" title="Pin on Pinterest" aria-label="Pin on Pinterest"><i class="icon-pinterest" ></i></a><a href="https://www.linkedin.com/shareArticle?mini=true&url=https://brademar.com/shopee-logo-png/&title=Shopee%20Logo%20PNG" onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;"  rel="noopener noreferrer nofollow" target="_blank" class="icon primary button circle tooltip linkedin" title="Share on LinkedIn" aria-label="Share on LinkedIn"><i class="icon-linkedin" ></i></a><a href="https://telegram.me/share/url?url=https://brademar.com/shopee-logo-png/" onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;" rel="noopener noreferrer nofollow" target="_blank" class="icon primary button circle tooltip telegram" title="Share on Telegram" aria-label="Share on Telegram"><i class="icon-telegram" ></i></a></div></div></div><!-- .entry-content2 -->
+ 
+ <footer class="entry-meta text-left">
+ <div class="danh-muc"><span class="title">Danh mục:</span>  <a href="https://brademar.com/network/logo-png/" rel="category tag">Logo PNG</a> <a href="https://brademar.com/network/" rel="category tag">Network</a></div> </footer><!-- .entry-meta -->
+
+
+<div class="bai-viet-lien-quan"><span class="title-related">Bài viết cùng chủ đề:</span>
+  
+    <div class="row large-columns-3 medium-columns-2 small-columns-2 slider row-slider slider-nav-simple slider-nav-inside slider-nav-push"  data-flickity-options='{"imagesLoaded": true, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": true,"prevNextButtons": true,"percentPosition": true,"pageDots": true, "rightToLeft": false, "autoPlay" : false}'>
+
+  		<div class="col post-item" >
+			<div class="col-inner">
+			<a href="https://brademar.com/the-north-face-logo-png/" class="plain">
+				<div class="box box-normal box-text-bottom box-blog-post has-hover">
+            					<div class="box-image" >
+  						<div class="image-cover" style="padding-top:56.25%;">
+  							<img width="800" height="500" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20800%20500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://brademar.com/wp-content/uploads/2022/10/The-North-Face-Logo-PNG-1.png" class="lazy-load attachment-medium size-medium wp-post-image" alt="The North Face Logo PNG 1" decoding="async" srcset="" data-srcset="https://brademar.com/wp-content/uploads/2022/10/The-North-Face-Logo-PNG-1.png 800w, https://brademar.com/wp-content/uploads/2022/10/The-North-Face-Logo-PNG-1-768x480.png 768w" sizes="(max-width: 800px) 100vw, 800px" />  							  							  						</div>
+  						  					</div>
+          					<div class="box-text text-left" >
+					<div class="box-text-inner blog-post-inner">
+
+					
+										<h5 class="post-title is-large ">The North Face Logo PNG</h5>
+										<div class="is-divider"></div>
+					                    
+					
+					
+					</div>
+					</div>
+									</div>
+				</a>
+			</div>
+		</div>
+		<div class="col post-item" >
+			<div class="col-inner">
+			<a href="https://brademar.com/timberland-logo-png/" class="plain">
+				<div class="box box-normal box-text-bottom box-blog-post has-hover">
+            					<div class="box-image" >
+  						<div class="image-cover" style="padding-top:56.25%;">
+  							<img width="800" height="500" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20800%20500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://brademar.com/wp-content/uploads/2022/10/Timberland-Logo-PNG-2.png" class="lazy-load attachment-medium size-medium wp-post-image" alt="Timberland Logo PNG 2" decoding="async" loading="lazy" srcset="" data-srcset="https://brademar.com/wp-content/uploads/2022/10/Timberland-Logo-PNG-2.png 800w, https://brademar.com/wp-content/uploads/2022/10/Timberland-Logo-PNG-2-768x480.png 768w" sizes="(max-width: 800px) 100vw, 800px" />  							  							  						</div>
+  						  					</div>
+          					<div class="box-text text-left" >
+					<div class="box-text-inner blog-post-inner">
+
+					
+										<h5 class="post-title is-large ">Timberland Logo PNG</h5>
+										<div class="is-divider"></div>
+					                    
+					
+					
+					</div>
+					</div>
+									</div>
+				</a>
+			</div>
+		</div>
+		<div class="col post-item" >
+			<div class="col-inner">
+			<a href="https://brademar.com/dickies-logo-png/" class="plain">
+				<div class="box box-normal box-text-bottom box-blog-post has-hover">
+            					<div class="box-image" >
+  						<div class="image-cover" style="padding-top:56.25%;">
+  							<img width="800" height="500" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20800%20500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://brademar.com/wp-content/uploads/2022/10/Dickies-Logo-PNG-1.png" class="lazy-load attachment-medium size-medium wp-post-image" alt="Dickies Logo PNG 1" decoding="async" loading="lazy" srcset="" data-srcset="https://brademar.com/wp-content/uploads/2022/10/Dickies-Logo-PNG-1.png 800w, https://brademar.com/wp-content/uploads/2022/10/Dickies-Logo-PNG-1-768x480.png 768w" sizes="(max-width: 800px) 100vw, 800px" />  							  							  						</div>
+  						  					</div>
+          					<div class="box-text text-left" >
+					<div class="box-text-inner blog-post-inner">
+
+					
+										<h5 class="post-title is-large ">Dickies Logo PNG</h5>
+										<div class="is-divider"></div>
+					                    
+					
+					
+					</div>
+					</div>
+									</div>
+				</a>
+			</div>
+		</div>
+		<div class="col post-item" >
+			<div class="col-inner">
+			<a href="https://brademar.com/chaumet-logo-png/" class="plain">
+				<div class="box box-normal box-text-bottom box-blog-post has-hover">
+            					<div class="box-image" >
+  						<div class="image-cover" style="padding-top:56.25%;">
+  							<img width="800" height="500" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20800%20500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://brademar.com/wp-content/uploads/2022/10/Chaumet-Logo-PNG-1.png" class="lazy-load attachment-medium size-medium wp-post-image" alt="Chaumet Logo PNG 1" decoding="async" loading="lazy" srcset="" data-srcset="https://brademar.com/wp-content/uploads/2022/10/Chaumet-Logo-PNG-1.png 800w, https://brademar.com/wp-content/uploads/2022/10/Chaumet-Logo-PNG-1-768x480.png 768w" sizes="(max-width: 800px) 100vw, 800px" />  							  							  						</div>
+  						  					</div>
+          					<div class="box-text text-left" >
+					<div class="box-text-inner blog-post-inner">
+
+					
+										<h5 class="post-title is-large ">Chaumet Logo PNG</h5>
+										<div class="is-divider"></div>
+					                    
+					
+					
+					</div>
+					</div>
+									</div>
+				</a>
+			</div>
+		</div>
+		<div class="col post-item" >
+			<div class="col-inner">
+			<a href="https://brademar.com/givenchy-logo-png/" class="plain">
+				<div class="box box-normal box-text-bottom box-blog-post has-hover">
+            					<div class="box-image" >
+  						<div class="image-cover" style="padding-top:56.25%;">
+  							<img width="800" height="500" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20800%20500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://brademar.com/wp-content/uploads/2022/10/Givenchy-Logo-PNG-1.png" class="lazy-load attachment-medium size-medium wp-post-image" alt="Givenchy Logo PNG 1" decoding="async" loading="lazy" srcset="" data-srcset="https://brademar.com/wp-content/uploads/2022/10/Givenchy-Logo-PNG-1.png 800w, https://brademar.com/wp-content/uploads/2022/10/Givenchy-Logo-PNG-1-768x480.png 768w" sizes="(max-width: 800px) 100vw, 800px" />  							  							  						</div>
+  						  					</div>
+          					<div class="box-text text-left" >
+					<div class="box-text-inner blog-post-inner">
+
+					
+										<h5 class="post-title is-large ">Givenchy Logo PNG</h5>
+										<div class="is-divider"></div>
+					                    
+					
+					
+					</div>
+					</div>
+									</div>
+				</a>
+			</div>
+		</div>
+		<div class="col post-item" >
+			<div class="col-inner">
+			<a href="https://brademar.com/kenzo-logo-png/" class="plain">
+				<div class="box box-normal box-text-bottom box-blog-post has-hover">
+            					<div class="box-image" >
+  						<div class="image-cover" style="padding-top:56.25%;">
+  							<img width="800" height="500" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20800%20500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://brademar.com/wp-content/uploads/2022/10/Kenzo-Logo-PNG-1.png" class="lazy-load attachment-medium size-medium wp-post-image" alt="Kenzo Logo PNG 1" decoding="async" loading="lazy" srcset="" data-srcset="https://brademar.com/wp-content/uploads/2022/10/Kenzo-Logo-PNG-1.png 800w, https://brademar.com/wp-content/uploads/2022/10/Kenzo-Logo-PNG-1-768x480.png 768w" sizes="(max-width: 800px) 100vw, 800px" />  							  							  						</div>
+  						  					</div>
+          					<div class="box-text text-left" >
+					<div class="box-text-inner blog-post-inner">
+
+					
+										<h5 class="post-title is-large ">Kenzo Logo PNG</h5>
+										<div class="is-divider"></div>
+					                    
+					
+					
+					</div>
+					</div>
+									</div>
+				</a>
+			</div>
+		</div>
+		<div class="col post-item" >
+			<div class="col-inner">
+			<a href="https://brademar.com/hennessy-logo-png/" class="plain">
+				<div class="box box-normal box-text-bottom box-blog-post has-hover">
+            					<div class="box-image" >
+  						<div class="image-cover" style="padding-top:56.25%;">
+  							<img width="800" height="500" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20800%20500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://brademar.com/wp-content/uploads/2022/10/Hennessy-Logo-PNG.png" class="lazy-load attachment-medium size-medium wp-post-image" alt="Hennessy Logo PNG" decoding="async" loading="lazy" srcset="" data-srcset="https://brademar.com/wp-content/uploads/2022/10/Hennessy-Logo-PNG.png 800w, https://brademar.com/wp-content/uploads/2022/10/Hennessy-Logo-PNG-768x480.png 768w" sizes="(max-width: 800px) 100vw, 800px" />  							  							  						</div>
+  						  					</div>
+          					<div class="box-text text-left" >
+					<div class="box-text-inner blog-post-inner">
+
+					
+										<h5 class="post-title is-large ">Hennessy Logo PNG</h5>
+										<div class="is-divider"></div>
+					                    
+					
+					
+					</div>
+					</div>
+									</div>
+				</a>
+			</div>
+		</div>
+		<div class="col post-item" >
+			<div class="col-inner">
+			<a href="https://brademar.com/veuve-clicquot-logo-png/" class="plain">
+				<div class="box box-normal box-text-bottom box-blog-post has-hover">
+            					<div class="box-image" >
+  						<div class="image-cover" style="padding-top:56.25%;">
+  							<img width="800" height="500" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20800%20500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://brademar.com/wp-content/uploads/2022/10/Veuve-Clicquot-Logo-PNG-1.png" class="lazy-load attachment-medium size-medium wp-post-image" alt="Veuve Clicquot Logo PNG 1" decoding="async" loading="lazy" srcset="" data-srcset="https://brademar.com/wp-content/uploads/2022/10/Veuve-Clicquot-Logo-PNG-1.png 800w, https://brademar.com/wp-content/uploads/2022/10/Veuve-Clicquot-Logo-PNG-1-768x480.png 768w" sizes="(max-width: 800px) 100vw, 800px" />  							  							  						</div>
+  						  					</div>
+          					<div class="box-text text-left" >
+					<div class="box-text-inner blog-post-inner">
+
+					
+										<h5 class="post-title is-large ">Veuve Clicquot Logo PNG</h5>
+										<div class="is-divider"></div>
+					                    
+					
+					
+					</div>
+					</div>
+									</div>
+				</a>
+			</div>
+		</div>
+</div>
+ 
+	</div>
+</article>
+
+
+
+
+<div id="comments" class="comments-area">
+
+	
+	
+	
+	
+</div>
+	</div>
+	<div class="post-sidebar large-3 col">
+				<div id="secondary" class="widget-area " role="complementary">
+		<form method="get" class="searchform" action="/" role="search">
+		<div class="flex-row relative">
+			<div class="flex-col flex-grow">
+	   	   <input type="search" class="search-field mb-0" name="s" value="" id="s" placeholder="Tìm kiếm Brand, Agency">
+		   <input type="hidden" value="16" name="cat" id="scat" />
+			</div>
+			<div class="flex-col">
+				<button type="submit" class="ux-search-submit submit-button secondary button icon mb-0" aria-label="Submit">
+					<i class="icon-search"></i>				</button>
+			</div>
+		</div>
+</form>
+	<aside id="text-8" class="widget widget_text">			<div class="textwidget">
+</div>
+		</aside>		<aside id="flatsome_recent_posts-2" class="widget flatsome_recent_posts">		<span class="widget-title "><span>Bài viết mới nhất</span></span><div class="is-divider small"></div>		<ul>		
+		
+		<li class="recent-blog-posts-li">
+			<div class="flex-row recent-blog-posts align-top pt-half pb-half">
+				<div class="flex-col mr-half">
+					<div class="badge post-date  badge-outline">
+							<div class="badge-inner bg-fill" style="background: url(https://brademar.com/wp-content/uploads/2022/11/Chien-dich-quang-cao-cua-KFC.jpg); border:0;">
+                                							</div>
+					</div>
+				</div>
+				<div class="flex-col flex-grow">
+					  <a href="https://brademar.com/chien-dich-quang-cao-cua-kfc/" title="Chiến dịch quảng cáo của KFC">Chiến dịch quảng cáo của KFC</a>
+				   	  <span class="post_comments op-7 block is-xsmall"><span>Chức năng bình luận bị tắt<span class="screen-reader-text"> ở Chiến dịch quảng cáo của KFC</span></span></span>
+				</div>
+			</div>
+		</li>
+		
+		
+		<li class="recent-blog-posts-li">
+			<div class="flex-row recent-blog-posts align-top pt-half pb-half">
+				<div class="flex-col mr-half">
+					<div class="badge post-date  badge-outline">
+							<div class="badge-inner bg-fill" style="background: url(https://brademar.com/wp-content/uploads/2022/11/Chien-dich-quang-cao-cua-Grab.jpg); border:0;">
+                                							</div>
+					</div>
+				</div>
+				<div class="flex-col flex-grow">
+					  <a href="https://brademar.com/chien-dich-quang-cao-cua-grab/" title="Chiến dịch quảng cáo của Grab">Chiến dịch quảng cáo của Grab</a>
+				   	  <span class="post_comments op-7 block is-xsmall"><span>Chức năng bình luận bị tắt<span class="screen-reader-text"> ở Chiến dịch quảng cáo của Grab</span></span></span>
+				</div>
+			</div>
+		</li>
+		
+		
+		<li class="recent-blog-posts-li">
+			<div class="flex-row recent-blog-posts align-top pt-half pb-half">
+				<div class="flex-col mr-half">
+					<div class="badge post-date  badge-outline">
+							<div class="badge-inner bg-fill" style="background: url(https://brademar.com/wp-content/uploads/2022/11/Chien-dich-quang-cao-cua-Durex.jpg); border:0;">
+                                							</div>
+					</div>
+				</div>
+				<div class="flex-col flex-grow">
+					  <a href="https://brademar.com/chien-dich-quang-cao-cua-durex/" title="Chiến dịch quảng cáo của Durex">Chiến dịch quảng cáo của Durex</a>
+				   	  <span class="post_comments op-7 block is-xsmall"><span>Chức năng bình luận bị tắt<span class="screen-reader-text"> ở Chiến dịch quảng cáo của Durex</span></span></span>
+				</div>
+			</div>
+		</li>
+		
+		
+		<li class="recent-blog-posts-li">
+			<div class="flex-row recent-blog-posts align-top pt-half pb-half">
+				<div class="flex-col mr-half">
+					<div class="badge post-date  badge-outline">
+							<div class="badge-inner bg-fill" style="background: url(https://brademar.com/wp-content/uploads/2022/11/Chien-dich-quang-cao-cua-Dien-May-Xanh.jpg); border:0;">
+                                							</div>
+					</div>
+				</div>
+				<div class="flex-col flex-grow">
+					  <a href="https://brademar.com/chien-dich-quang-cao-cua-dien-may-xanh/" title="Chiến dịch quảng cáo của Điện Máy Xanh">Chiến dịch quảng cáo của Điện Máy Xanh</a>
+				   	  <span class="post_comments op-7 block is-xsmall"><span>Chức năng bình luận bị tắt<span class="screen-reader-text"> ở Chiến dịch quảng cáo của Điện Máy Xanh</span></span></span>
+				</div>
+			</div>
+		</li>
+		
+		
+		<li class="recent-blog-posts-li">
+			<div class="flex-row recent-blog-posts align-top pt-half pb-half">
+				<div class="flex-col mr-half">
+					<div class="badge post-date  badge-outline">
+							<div class="badge-inner bg-fill" style="background: url(https://brademar.com/wp-content/uploads/2022/11/Chien-dich-quang-cao-cua-Coca-Cola.jpg); border:0;">
+                                							</div>
+					</div>
+				</div>
+				<div class="flex-col flex-grow">
+					  <a href="https://brademar.com/chien-dich-quang-cao-cua-coca-cola/" title="Chiến dịch quảng cáo của Coca-Cola">Chiến dịch quảng cáo của Coca-Cola</a>
+				   	  <span class="post_comments op-7 block is-xsmall"><span>Chức năng bình luận bị tắt<span class="screen-reader-text"> ở Chiến dịch quảng cáo của Coca-Cola</span></span></span>
+				</div>
+			</div>
+		</li>
+		
+		
+		<li class="recent-blog-posts-li">
+			<div class="flex-row recent-blog-posts align-top pt-half pb-half">
+				<div class="flex-col mr-half">
+					<div class="badge post-date  badge-outline">
+							<div class="badge-inner bg-fill" style="background: url(https://brademar.com/wp-content/uploads/2022/11/Chien-dich-quang-cao-cua-ca-phe-Trung-Nguyen.jpg); border:0;">
+                                							</div>
+					</div>
+				</div>
+				<div class="flex-col flex-grow">
+					  <a href="https://brademar.com/chien-dich-quang-cao-cua-ca-phe-trung-nguyen/" title="Chiến dịch quảng cáo của cà phê Trung Nguyên">Chiến dịch quảng cáo của cà phê Trung Nguyên</a>
+				   	  <span class="post_comments op-7 block is-xsmall"><span>Chức năng bình luận bị tắt<span class="screen-reader-text"> ở Chiến dịch quảng cáo của cà phê Trung Nguyên</span></span></span>
+				</div>
+			</div>
+		</li>
+		
+		
+		<li class="recent-blog-posts-li">
+			<div class="flex-row recent-blog-posts align-top pt-half pb-half">
+				<div class="flex-col mr-half">
+					<div class="badge post-date  badge-outline">
+							<div class="badge-inner bg-fill" style="background: url(https://brademar.com/wp-content/uploads/2022/11/Chien-dich-quang-cao-cua-Bitis-Hunter.jpg); border:0;">
+                                							</div>
+					</div>
+				</div>
+				<div class="flex-col flex-grow">
+					  <a href="https://brademar.com/chien-dich-quang-cao-cua-bitis-hunter/" title="Chiến dịch quảng cáo của Biti&#8217;s Hunter">Chiến dịch quảng cáo của Biti&#8217;s Hunter</a>
+				   	  <span class="post_comments op-7 block is-xsmall"><span>Chức năng bình luận bị tắt<span class="screen-reader-text"> ở Chiến dịch quảng cáo của Biti&#8217;s Hunter</span></span></span>
+				</div>
+			</div>
+		</li>
+		
+		
+		<li class="recent-blog-posts-li">
+			<div class="flex-row recent-blog-posts align-top pt-half pb-half">
+				<div class="flex-col mr-half">
+					<div class="badge post-date  badge-outline">
+							<div class="badge-inner bg-fill" style="background: url(https://brademar.com/wp-content/uploads/2022/11/Chien-dich-quang-cao-cua-Baemin-2.jpg); border:0;">
+                                							</div>
+					</div>
+				</div>
+				<div class="flex-col flex-grow">
+					  <a href="https://brademar.com/chien-dich-quang-cao-cua-baemin/" title="Chiến dịch quảng cáo của Baemin">Chiến dịch quảng cáo của Baemin</a>
+				   	  <span class="post_comments op-7 block is-xsmall"><span>Chức năng bình luận bị tắt<span class="screen-reader-text"> ở Chiến dịch quảng cáo của Baemin</span></span></span>
+				</div>
+			</div>
+		</li>
+		
+		
+		<li class="recent-blog-posts-li">
+			<div class="flex-row recent-blog-posts align-top pt-half pb-half">
+				<div class="flex-col mr-half">
+					<div class="badge post-date  badge-outline">
+							<div class="badge-inner bg-fill" style="background: url(https://brademar.com/wp-content/uploads/2022/11/Chien-dich-quang-cao-cua-Apple.jpg); border:0;">
+                                							</div>
+					</div>
+				</div>
+				<div class="flex-col flex-grow">
+					  <a href="https://brademar.com/chien-dich-quang-cao-cua-apple/" title="Chiến dịch quảng cáo của Apple">Chiến dịch quảng cáo của Apple</a>
+				   	  <span class="post_comments op-7 block is-xsmall"><span>Chức năng bình luận bị tắt<span class="screen-reader-text"> ở Chiến dịch quảng cáo của Apple</span></span></span>
+				</div>
+			</div>
+		</li>
+		
+		
+		<li class="recent-blog-posts-li">
+			<div class="flex-row recent-blog-posts align-top pt-half pb-half">
+				<div class="flex-col mr-half">
+					<div class="badge post-date  badge-outline">
+							<div class="badge-inner bg-fill" style="background: url(https://brademar.com/wp-content/uploads/2022/10/PDF-Bao-cao-thuong-nien-VPBank-2021.jpg); border:0;">
+                                							</div>
+					</div>
+				</div>
+				<div class="flex-col flex-grow">
+					  <a href="https://brademar.com/pdf-bao-cao-thuong-nien-vpbank-2021/" title="[PDF] Báo cáo thường niên VPBank 2021">[PDF] Báo cáo thường niên VPBank 2021</a>
+				   	  <span class="post_comments op-7 block is-xsmall"><span>Chức năng bình luận bị tắt<span class="screen-reader-text"> ở [PDF] Báo cáo thường niên VPBank 2021</span></span></span>
+				</div>
+			</div>
+		</li>
+				</ul>		</aside><aside id="custom_html-2" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><script type="rocketlazyloadscript" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7391598418349240"
+     crossorigin="anonymous"></script>
+<!-- Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7391598418349240"
+     data-ad-slot="1290122017"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script type="rocketlazyloadscript">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div></aside></div>
+			</div>
+</div>
+
+</div>
+
+
+</main>
+
+<footer id="footer" class="footer-wrapper">
+
+	
+<!-- FOOTER 1 -->
+<div class="footer-widgets footer footer-1">
+		<div class="row dark large-columns-4 mb-0">
+	   		<div id="text-2" class="col pb-0 widget widget_text">			<div class="textwidget"><p style="text-align: center;"><img decoding="async" class="aligncenter wp-image-523" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20154%2098'%3E%3C/svg%3E" alt="" width="154" height="98" data-lazy-src="https://brademar.com/wp-content/uploads/2021/11/logo-footer.png" /><noscript><img decoding="async" class="aligncenter wp-image-523" src="https://brademar.com/wp-content/uploads/2021/11/logo-footer.png" alt="" width="154" height="98" /></noscript></p>
+<p>Brade Mar là trang chia sẻ thông tin và kiến thức về xu hướng Marketing toàn cầu, mang tinh thần &#8220;To Learn, To Cope&#8221;, hướng tới một thế hệ Marketers Việt Nam dám nghĩ, dám đương đầu.<br />
+<div class="social-icons follow-icons full-width text-center" style="font-size:100%"><a href="https://www.facebook.com/brademarketing" target="_blank" data-label="Facebook" rel="noopener noreferrer nofollow" class="icon primary button circle facebook tooltip" title="Follow on Facebook" aria-label="Follow on Facebook"><i class="icon-facebook" ></i></a><a href="https://www.instagram.com/brademarketing" target="_blank" rel="noopener noreferrer nofollow" data-label="Instagram" class="icon primary button circle  instagram tooltip" title="Follow on Instagram" aria-label="Follow on Instagram"><i class="icon-instagram" ></i></a><a href="https://twitter.com/brademarketing" target="_blank" data-label="Twitter" rel="noopener noreferrer nofollow" class="icon primary button circle  twitter tooltip" title="Follow on Twitter" aria-label="Follow on Twitter"><i class="icon-twitter" ></i></a><a href="https://www.linkedin.com/company/brademarketing" target="_blank" rel="noopener noreferrer nofollow" data-label="LinkedIn" class="icon primary button circle  linkedin tooltip" title="Follow on LinkedIn" aria-label="Follow on LinkedIn"><i class="icon-linkedin" ></i></a><a href="https://www.youtube.com/channel/UCkQInEmhznQiDzh1TO_zS5w" target="_blank" rel="noopener noreferrer nofollow" data-label="YouTube" class="icon primary button circle  youtube tooltip" title="Follow on YouTube" aria-label="Follow on YouTube"><i class="icon-youtube" ></i></a></div></p>
+</div>
+		</div><div id="text-3" class="col pb-0 widget widget_text"><span class="widget-title">Khám phá</span><div class="is-divider small"></div>			<div class="textwidget"><ul>
+<li><a href="https://brademar.com/about/">About Us</a></li>
+<li><a href="https://brademar.com/network/brand/">Brand</a></li>
+<li><a href="https://brademar.com/network/client/">Client</a></li>
+<li><a href="https://brademar.com/network/agency/">Agency</a></li>
+<li><a href="https://brademar.com/skill/">Skill</a></li>
+</ul>
+</div>
+		</div><div id="text-9" class="col pb-0 widget widget_text"><span class="widget-title">Marketing</span><div class="is-divider small"></div>			<div class="textwidget"><ul>
+<li><a href="https://brademar.com/marketing/branding/">Branding</a></li>
+<li><a href="https://brademar.com/marketing/advertising/">Advertising</a></li>
+<li><a href="https://brademar.com/marketing/trade-marketing/">Trade Marketing</a></li>
+<li><a href="https://brademar.com/marketing/digital-marketing/">Digital Marketing</a></li>
+<li><a href="https://brademar.com/most-valuable-brands/">Most Valuable Brands</a></li>
+</ul>
+</div>
+		</div><div id="text-4" class="col pb-0 widget widget_text"><span class="widget-title">Follow Us</span><div class="is-divider small"></div>			<div class="textwidget"><div id="fb-root"></div>
+<p><script type="rocketlazyloadscript" async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&#038;version=v12.0&#038;appId=784371975544607&#038;autoLogAppEvents=1" nonce="W8pAsfqH"></script></p>
+<div class="fb-page" data-href="https://www.facebook.com/brademarketing/" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+<blockquote class="fb-xfbml-parse-ignore" cite="https://www.facebook.com/brademarketing/"><p><a href="https://www.facebook.com/brademarketing/">Brade Mar</a></p></blockquote>
+</div>
+<p>&nbsp;<br />
+<a class="dmca-badge" title="DMCA.com Protection Status" href="//www.dmca.com/Protection/Status.aspx?ID=e2c70e14-a118-49ed-905d-e1c2f9e2d678" target="_blank" rel="noopener"><img decoding="async" class="aligncenter" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="DMCA.com Protection Status" data-lazy-src="https://images.dmca.com/Badges/dmca-badge-w150-5x1-08.png?ID=e2c70e14-a118-49ed-905d-e1c2f9e2d678" /><noscript><img decoding="async" class="aligncenter" src="https://images.dmca.com/Badges/dmca-badge-w150-5x1-08.png?ID=e2c70e14-a118-49ed-905d-e1c2f9e2d678" alt="DMCA.com Protection Status" /></noscript></a> <script type="rocketlazyloadscript" src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js" defer> </script></p>
+</div>
+		</div>        
+		</div>
+</div>
+
+<!-- FOOTER 2 -->
+
+
+
+<div class="absolute-footer dark medium-text-center text-center">
+  <div class="container clearfix">
+
+    
+    <div class="footer-primary pull-left">
+            <div class="copyright-footer">
+        <strong>©</strong> <strong>Brademar</strong> <strong>2022</strong> | <a href="https://brademar.com/terms/"> Điều khoản sử dụng</a> | <a href="https://brademar.com/privacy-policy/"> Chính sách bảo mật</a> | <a href="https://brademar.com/sitemap_index.xml"> Sitemap</a>      </div>
+          </div>
+  </div>
+</div>
+
+</footer>
+
+</div>
+
+<div id="main-menu" class="mobile-sidebar no-scrollbar mfp-hide">
+	<div class="sidebar-menu no-scrollbar ">
+		<ul class="nav nav-sidebar nav-vertical nav-uppercase">
+			<li class="header-search-form search-form html relative has-icon">
+	<div class="header-search-form-wrapper">
+		<div class="searchform-wrapper ux-search-box relative form-flat is-normal"><form method="get" class="searchform" action="https://brademar.com/" role="search">
+		<div class="flex-row relative">
+			<div class="flex-col flex-grow">
+	   	   <input type="search" class="search-field mb-0" name="s" value="" id="s" placeholder="Tìm kiếm tất cả bài viết" />
+			</div>
+			<div class="flex-col">
+				<button type="submit" class="ux-search-submit submit-button secondary button icon mb-0" aria-label="Submit">
+					<i class="icon-search" ></i>				</button>
+			</div>
+		</div>
+    <div class="live-search-results text-left z-top"></div>
+</form>
+</div>	</div>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-119"><a href="https://brademar.com/">Home</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-112"><a href="https://brademar.com/news/">News</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-102"><a href="https://brademar.com/marketing/">Marketing</a>
+<ul class="sub-menu nav-sidebar-ul children">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-103"><a href="https://brademar.com/marketing/branding/">Branding</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-104"><a href="https://brademar.com/marketing/advertising/">Advertising</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-105"><a href="https://brademar.com/marketing/trade-marketing/">Trade Marketing</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-111"><a href="https://brademar.com/marketing/digital-marketing/">Digital Marketing</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-97"><a href="https://brademar.com/network/">Network</a>
+<ul class="sub-menu nav-sidebar-ul children">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-98"><a href="https://brademar.com/network/brand/">Brand</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-99"><a href="https://brademar.com/network/client/">Client</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-100"><a href="https://brademar.com/network/agency/">Agency</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4888"><a href="https://brademar.com/most-valuable-brands/">Most Valuable Brands</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-5516"><a href="https://brademar.com/network/logo-png/">Logo PNG</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-12347"><a href="https://brademar.com/reference/">Reference</a>
+<ul class="sub-menu nav-sidebar-ul children">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-12348"><a href="https://brademar.com/reference/marketing-strategy/">Marketing Strategy</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-12349"><a href="https://brademar.com/reference/creativity/">Creativity</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-12350"><a href="https://brademar.com/reference/reports/">Reports</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-12361"><a href="https://brademar.com/reference/document/">Document</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15068"><a href="https://brademar.com/cannes-lions-winners/">Cannes Lions Winners</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-106"><a href="https://brademar.com/skill/">Skill</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-484"><a href="https://brademar.com/about/">About</a>
+<ul class="sub-menu nav-sidebar-ul children">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13249"><a href="https://brademar.com/contact/">Contact</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13251"><a href="https://brademar.com/terms/">Điều khoản sử dụng</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-13250"><a href="https://brademar.com/privacy-policy/">Chính sách bảo mật</a></li>
+</ul>
+</li>
+		</ul>
+	</div>
+</div>
+<!-- Instagram Feed JS -->
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+var sbiajaxurl = "https://brademar.com/wp-admin/admin-ajax.php";
+</script>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://brademar.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9' id='regenerator-runtime-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://brademar.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/brademar.com\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://brademar.com/wp-content/cache/min/1/wp-content/plugins/contact-form-7/includes/js/index.js?ver=1667751576' id='contact-form-7-js' defer></script>
+<script type='text/javascript' id='kk-star-ratings-js-extra'>
+/* <![CDATA[ */
+var kk_star_ratings = {"action":"kk-star-ratings","endpoint":"https:\/\/brademar.com\/wp-admin\/admin-ajax.php","nonce":"3b1a6ed007"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://brademar.com/wp-content/cache/min/1/wp-content/plugins/kk-star-ratings/src/core/public/js/kk-star-ratings.js?ver=1667751576' id='kk-star-ratings-js' defer></script>
+<script type='text/javascript' id='toc-front-js-extra'>
+/* <![CDATA[ */
+var tocplus = {"smooth_scroll":"1"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://brademar.com/wp-content/plugins/table-of-contents-plus/front.min.js?ver=2106' id='toc-front-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='rocket-browser-checker-js-after'>
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script type='text/javascript' id='rocket-preload-links-js-extra'>
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/(.+\/)?feed\/?.+\/?|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/wp-admin\/|\/logout\/|\/wp-login.php","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|php|pdf|html|htm","siteUrl":"https:\/\/brademar.com","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='rocket-preload-links-js-after'>
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://brademar.com/wp-includes/js/hoverIntent.min.js?ver=1.10.2' id='hoverIntent-js' defer></script>
+<script type='text/javascript' id='flatsome-js-js-extra'>
+/* <![CDATA[ */
+var flatsomeVars = {"ajaxurl":"https:\/\/brademar.com\/wp-admin\/admin-ajax.php","rtl":"","sticky_height":"60","assets_url":"https:\/\/brademar.com\/wp-content\/themes\/flatsome\/assets\/js\/","lightbox":{"close_markup":"<button title=\"%title%\" type=\"button\" class=\"mfp-close\"><svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"feather feather-x\"><line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"><\/line><line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"><\/line><\/svg><\/button>","close_btn_inside":false},"user":{"can_edit_pages":false},"i18n":{"mainMenu":"Main Menu"},"options":{"cookie_notice_version":"1","swatches_layout":false,"swatches_box_select_event":false,"swatches_box_behavior_selected":false,"swatches_box_update_urls":"1","swatches_box_reset":false,"swatches_box_reset_extent":false,"swatches_box_reset_time":300,"search_result_latency":"0"}};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://brademar.com/wp-content/cache/min/1/wp-content/themes/flatsome/assets/js/flatsome.js?ver=1667751576' id='flatsome-js-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://brademar.com/wp-content/cache/min/1/wp-content/themes/flatsome/inc/integrations/wp-rocket/flatsome-wp-rocket.js?ver=1667751576' id='flatsome-wp-rocket-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://brademar.com/wp-content/cache/min/1/wp-content/themes/flatsome/inc/extensions/flatsome-instant-page/flatsome-instant-page.js?ver=1667751576' id='flatsome-instant-page-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://brademar.com/wp-content/cache/min/1/wp-content/themes/flatsome/inc/extensions/flatsome-live-search/flatsome-live-search.js?ver=1667751576' id='flatsome-live-search-js' defer></script>
+<script type='text/javascript' id='q2w3_fixed_widget-js-extra'>
+/* <![CDATA[ */
+var q2w3_sidebar_options = [{"sidebar":"sidebar-main","use_sticky_position":false,"margin_top":140,"margin_bottom":1000,"stop_elements_selectors":"","screen_max_width":960,"screen_max_height":0,"widgets":["#custom_html-2"]}];
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://brademar.com/wp-content/plugins/q2w3-fixed-widget/js/frontend.min.js?ver=6.1.0' id='q2w3_fixed_widget-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.google.com/recaptcha/api.js?render=6LcQesogAAAAADNLXHNUeabvS3yo0obds5ty2BBw&#038;ver=3.0' id='google-recaptcha-js'></script>
+<script type='text/javascript' id='wpcf7-recaptcha-js-extra'>
+/* <![CDATA[ */
+var wpcf7_recaptcha = {"sitekey":"6LcQesogAAAAADNLXHNUeabvS3yo0obds5ty2BBw","actions":{"homepage":"homepage","contactform":"contactform"}};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://brademar.com/wp-content/cache/min/1/wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=1667751576' id='wpcf7-recaptcha-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://brademar.com/wp-content/cache/min/1/wp-content/themes/flatsome/inc/extensions/flatsome-lazy-load/flatsome-lazy-load.js?ver=1667751576' id='flatsome-lazy-js' defer></script>
+<progress class="readingProgressbar" 
+							data-height="7" 
+							data-position="bottom" 
+							data-custom-position="" 
+							data-foreground="#000000" 
+							data-background="" 
+							value="0"></progress><script>window.lazyLoadOptions={elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://brademar.com/wp-content/plugins/wp-rocket/assets/js/lazyload/16.1/lazyload.min.js"></script>
+<script type="rocketlazyloadscript">"use strict";var wprRemoveCPCSS=function wprRemoveCPCSS(){var elem;document.querySelector('link[data-rocket-async="style"][rel="preload"]')?setTimeout(wprRemoveCPCSS,200):(elem=document.getElementById("rocket-critical-css"))&&"remove"in elem&&elem.remove()};window.addEventListener?window.addEventListener("load",wprRemoveCPCSS):window.attachEvent&&window.attachEvent("onload",wprRemoveCPCSS);</script><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3Aregular%2C700%2Cregular%2C700%7C-apple-system%2C%20BlinkMacSystemFont%2C%20%26quot%3BSegoe%20UI%26quot%3B%2C%20Roboto%2C%20Oxygen-Sans%2C%20Ubuntu%2C%20Cantarell%2C%20%26quot%3BHelvetica%20Neue%26quot%3B%2C%20sans-serif%3Aregular%2Cregular&#038;display=swap" /><link rel="stylesheet" href="https://brademar.com/wp-content/cache/min/1/41711c332c7b7d08a96c54eeb5ffd19e.css" media="all" data-minify="1" /></noscript></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1667760947 -->
